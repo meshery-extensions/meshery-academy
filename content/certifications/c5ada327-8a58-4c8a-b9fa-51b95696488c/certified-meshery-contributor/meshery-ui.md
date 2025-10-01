@@ -1,5 +1,5 @@
 ---
-title: "Meshery Server Contributor Exam"
+title: "Meshery UI Contributor Exam"
 type: "test"
 layout: "test"
 weight: 1
@@ -11,30 +11,26 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "C++"
+        text: "WebAssembly"
       - id: "b"
-        text: "Rust"
+        text: "Javascript"
       - id: "c"
-        text: "Golang"
+        text: "NodeJS"
         is_correct: true
       - id: "d"
-        text: WebAssembly
+        text: "Angular"
   - id: "q2"
-    text: "Which protocol does Meshery Server use for communication with adapters?"
+    text: "Meshery UI is considered a client of Meshery Server's GraphQL API and Meshery Server's REST API"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "gRPC"
+        text: "trure"
         is_correct: true
       - id: "b"
-        text: "HTTP/2"
-      - id: "c"
-        text: "WebSockets"
-      - id: "d"
-        text: "MQTT"
+        text: "false"
   - id: "q3"
-    text: "True or False: Meshery Server can manage multiple Meshery Adapters simultaneously."
+    text: "True or False: Meshery Server can manage multiple service meshes simultaneously."
     type: "single-answer"
     marks: 2
     options:
