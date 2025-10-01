@@ -7,9 +7,9 @@ title: Academy
 
 {{% blocks/lead color="primary" %}}
 
-[LearningPaths](https://cloud.layer5.io/academy/learning-paths)  
-
-[Challenge](https://cloud.layer5.io/academy/challenges)  
+- [Cerfications](https://cloud.meshery.io/academy/certifications)  
+- [Learning Paths](https://cloud.meshery.io/academy/learning-paths)  
+- [Challenges](https://cloud.meshery.io/academy/challenges)  
   
 
 ---
@@ -22,22 +22,20 @@ title: Academy
 
 #### What Your Academy Will Look Like
 
-> When published, your Academy will feature two main sections ([This Page looks like](https://cloud.layer5.io/academy/)
+> When published, your Academy will feature these main sections, if content is published with each respective section.
+See https://cloud.meshery.io/academy/.
 )
-
-> - **[Learning Paths](/academy/learning-paths/)** - Structured courses combining theoretical knowledge with hands-on labs  
-> 
-> - **[Challenges](/academy/challenges/)** - Time-based, practical labs to test and validate skills
+> - **- [Cerfications](https://cloud.meshery.io/academy/certifications) - Examination-based tests verifying student knowledge and offering officiated certificate.
+> - **[Learning Paths](/academy/learning-paths/)** - Structured courses combining theoretical knowledge with hands-on labs.
+> - **[Challenges](/academy/challenges/)** - Time-based, practical labs to test and validate skills.
 
 
 #### Build Process
 
 > Here's the simple workflow:
->> 1. **Develop locally** - Make your changes and test them here  
-
+>> 1. **Develop locally** - Make your changes and test them here.
 >> 2. **Merge when ready** - Your Academy stays private until you decide to publish  
-
 >> 3. **Publish when ready** - Release it to your organization
 
 
-**Need help?** [Documentation](https://github.com/layer5io/layer5-academy/blob/master/README.md) | [Contact Us](https://mesheryio.slack.com/ssb/redirect)
+**Need help?** [Documentation](https://docs.layer5.io/cloud/academy) | [Contact Us](https://slack.meshery.io)

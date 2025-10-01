@@ -1,11 +1,11 @@
 # Layer5 Academy Agents Guide
 
 Welcome to the Layer5 Academy Agents documentation. This guide provides instructions and templates for creating exams, learning paths, courses, certifications, and other supported content types in alignment with Layer5 Academy's standards.
-
 ---
 
 ## Table of Contents
 
+- [How to build project](#build)
 - [Exams](#exams)
 - [Learning Paths](#learning-paths)
 - [Courses](#courses)
@@ -14,6 +14,18 @@ Welcome to the Layer5 Academy Agents documentation. This guide provides instruct
 - [Contribution Guidelines](#contribution-guidelines)
 
 ---
+
+## Build
+
+Use the following `make` targets:
+
+```
+build               Local: Build site for local consumption 
+clean               Empty build cache and run on your local machine. 
+setup               Local: Install site dependencies 
+site                Local: Build and run site locally with draft and future content enabled. 
+theme-update        Update the academy-theme package to latest version 
+```
 
 ## Exams
 
