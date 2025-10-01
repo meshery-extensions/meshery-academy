@@ -138,3 +138,4 @@ questions:
       - id: "false"
         text: "false"
 ---
+The Meshery UI examination verifies contributor understanding of one of Meshery's core archtictural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
