@@ -34,7 +34,7 @@ questions:
         text: "Docker Engine"
   - id: "q3"
     text: "Which tool manages Kubernetes namespace labeling?" 
-    type: "short_answer" 
+    type: "short-answer" 
     marks: 2
     correct_answer: "kubectl" 
 type: "test"
