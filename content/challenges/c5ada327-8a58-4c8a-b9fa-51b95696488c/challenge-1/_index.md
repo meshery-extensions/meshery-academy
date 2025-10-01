@@ -4,4 +4,5 @@ description: "This is the first challenge in the series. It will help you get st
 banner: "image.png"
 id: "challenge-id"
 weight: 1
+draft: true
 ---
