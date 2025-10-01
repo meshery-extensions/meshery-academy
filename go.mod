@@ -1,4 +1,4 @@
-module github.com/layer5io/academy-example
+module github.com/meshery-extensions/meshery-example
 
 go 1.24.5
 
