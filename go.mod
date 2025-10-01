@@ -1,4 +1,4 @@
-module github.com/meshery-extensions/meshery-example
+module github.com/meshery-extensions/meshery-academy
 
 go 1.24.5
 
