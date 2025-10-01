@@ -7,4 +7,5 @@ id: "learning-path-id"
 banner: "image-1.png"
 weight: 1
 level: "beginner"
+draft: true
 ---
