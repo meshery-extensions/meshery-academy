@@ -1,6 +1,6 @@
 ---
 type: "certification"
-id: "44e9bcf5-fefe-4301-a0bf-aaeb7cc4d6bb"
+id: "a2852b8b-4c68-4897-8e5a-5b5c1a470b17"
 title: "Certified Meshery Contributor"
 description: "The Certified Meshery Contributor focuses on validating open-source contributions to Meshery, bridging user proficiency and advanced operational/architectural skills. It recognizes individuals who actively enhance the Meshery ecosystem through code, documentation, or community efforts."
 banner: "meshery-learn-logo-white.png"
