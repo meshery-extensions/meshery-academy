@@ -2,7 +2,6 @@
 title: "Meshery Server Contributor Exam"
 type: "test"
 layout: "test"
-weight: 1
 pass_percentage: 70
 questions:
   - id: "q1"
@@ -142,4 +141,4 @@ questions:
       - id: "false"
         text: "false"
 ---
-The Meshery Server examination verifies contributor understanding of one of Meshery's core archtictural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
+The Meshery Server examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
