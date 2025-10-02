@@ -21,5 +21,5 @@ certificate:
     issuing_authorities:
       - name: "Meshery"
         role: "Maintainers"
-        signature_url: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Chris_Hemsworth_Signature.png"
+        signature_url: "https://github.com/leecalcote/talks/blob/master/img/five-avatar-circle.png"
 ---
