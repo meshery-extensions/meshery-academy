@@ -1,5 +1,4 @@
 ---
----
 title: "Meshery CLI (mesheryctl) Contributor Exam"
 type: "test"
 layout: "test"
