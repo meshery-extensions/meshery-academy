@@ -21,6 +21,7 @@ Welcome to the Layer5 Academy Agents documentation. This guide provides instruct
 Exams are designed to assess learner proficiency on specific topics. Each exam should include clear metadata, a variety of question types, and an answer key.
 
 **Template:**
+
 ```yaml
 exam:
     title: "Exam Title"
@@ -31,12 +32,12 @@ exam:
         - type: "multiple-choice"
             question: "What is Meshery?"
             options:
-                - "Service Mesh Management Plane"
+                - "Collaborative Cloud Native Manager"
                 - "Container Orchestrator"
                 - "CI/CD Tool"
-            answer: "Service Mesh Management Plane"
+            answer: "Collaborative Cloud Native Manager"
         - type: "true-false"
-            question: "Meshery supports Istio."
+            question: "Meshery supports Helm."
             answer: true
 ```
 
@@ -48,6 +49,7 @@ exam:
 Learning paths sequence courses and resources to guide learners through a structured progression. Prerequisites and recommended order should be specified.
 
 **Template:**
+
 ```yaml
 learning_path:
     title: "Learning Path Title"
@@ -68,6 +70,7 @@ learning_path:
 Courses are comprehensive units containing modules, lessons, and assessments. Each course should be modular and support multiple content types.
 
 **Template:**
+
 ```yaml
 course:
     title: "Course Title"
@@ -96,6 +99,7 @@ course:
 Certifications validate learner achievement after completing required courses or exams. Include requirements and badge details.
 
 **Template:**
+
 ```yaml
 certification:
     title: "Certification Title"
@@ -120,6 +124,7 @@ Layer5 Academy supports the following content types:
 - **External Resource** (URL)
 
 **Example:**
+
 ```yaml
 lesson:
     title: "Introduction to Meshery"
@@ -140,4 +145,3 @@ lesson:
 ---
 
 For more details, refer to the [Layer5 Academy Documentation](https://docs.layer5.io/cloud/academy/).
-
