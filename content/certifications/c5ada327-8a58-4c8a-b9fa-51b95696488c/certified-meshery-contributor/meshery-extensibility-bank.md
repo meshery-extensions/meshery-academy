@@ -237,7 +237,6 @@ questions:
         text: "Meshery Load Generator"
       - id: "d"
         text: "Meshery CLI"
-        is_correct: true
   - id: "q18"
     text: "What is the primary architectural purpose of Meshery Providers as an extension point?"
     type: "single-answer"
