@@ -139,7 +139,7 @@ questions:
       - id: "b"
         text: "Integration Tests using a Helm chart."
       - id: "c"
-        text: "End-to-End Tests using a patternfile."
+        text: "End-to-End Tests using a Meshery design."
         is_correct: true
       - id: "d"
         text: "Load Tests using a Performance Profile."
