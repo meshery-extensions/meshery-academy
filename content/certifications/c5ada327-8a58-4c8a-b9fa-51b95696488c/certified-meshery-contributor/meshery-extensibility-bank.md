@@ -224,7 +224,7 @@ questions:
       - id: "d"
         text: "It will double-count performance metrics"
   - id: "q17"
-    text: "In architecture, adapters are extension points in Meshery. Which components directly interact with adapters?"
+    text: "In architectural terms, Meshery Adapters plugin as an extension. Which component directly interact with a Meshery Adapter once it has been plugged in?"
     type: "single-answer"
     marks: 2
     options:
@@ -243,17 +243,17 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "To manage the lifecycle of service meshes via gRPC."
+        text: "To manage the lifecycle of cloud native infrastructure via gRPC."
       - id: "b"
-        text: "To run performance testing and generate load."
+        text: "For service performance testing by first generating load, then analyzing performance metrics, including latency and throughput."
       - id: "c"
-        text: "To enrich the level of depth by which Meshery manages cloud native infrastructure."
+        text: "To offer a stateful interface for identity and a mechanism to deliver extensions on-the-fly to any running Meshery Server."
         is_correct: true
       - id: "d"
         text: "To deploy Meshery's custom controllers and manage MeshSync."
 - id: "q19"
     text: "Which of the following functionalities is exclusively offered by a Remote Provider and is not available with the Local Provider?"
-    type: "single-answer"
+    type: "multiple-answers"
     marks: 2
     options:
       - id: "a"
@@ -262,9 +262,10 @@ questions:
         text: "Long-term persistence of user preferences and environment setup."
         is_correct: true
       - id: "c"
-        text: "Storage of Server Events in a local database."
+        text: "Storage of MeshSync data."
       - id: "d"
-        text: "Interfacing with Meshery Server via a Go interface."
+        text: "Injection of out-of-tree UI components and backend capabilities."
+        is_correct: true
 - id: "q20"
     text: "True or False: A single Meshery Server deployment can support the use of multiple Providers."
     type: "single-answer"
@@ -276,7 +277,7 @@ questions:
       - id: "false"
         text: "False"
   - id: "q21"
-    text: "According to Meshery's component statefulness classification, what is the persistence description for **Meshery Providers**?"
+    text: "According to Meshery's component statefulness classification, what is the persistence description for **Meshery Remote Providers**?"
     type: "single-answer"
     marks: 3
     options:
