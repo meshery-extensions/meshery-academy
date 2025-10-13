@@ -209,15 +209,15 @@ questions:
         text: "The Meshery Adapter, which polls the Server for new tasks."
       - id: "d"
         text: "A system check upon the uploading of a new kubeconfig file."
-  - id: "q16"
+- id: "q16"
     text: "What is a pitfall when two adapter instances of the same type are registered under the same name without proper configuration?"
     type: "single-answer"
     marks: 3
     options:
       - id: "a"
-        text: "Meshery Server will refuse to start"
+        text: "Meshery Server will fail to initialize due to a conflict in required adapter configurations."
       - id: "b"
-        text: "It may lead to ambiguous routing of gRPC calls to the wrong instance"
+        text: "It may cause ambiguity for users, as both adapters appear identical while using separate callback interfaces on dedicated ports."
         is_correct: true
       - id: "c"
         text: "Adapters will merge their capabilities"
@@ -251,34 +251,30 @@ questions:
         is_correct: true
       - id: "d"
         text: "To deploy Meshery's custom controllers and manage MeshSync."
-  - id: "q19"
-    text: "What is the name of the built-in, default **Local Provider** in Meshery?"
+- id: "q19"
+    text: "Which of the following functionalities is exclusively offered by a Remote Provider and is not available with the Local Provider?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "Default"
+        text: "Ability to run performance tests."
       - id: "b"
-        text: "BuiltIn"
-      - id: "c"
-        text: "Meshery"
+        text: "Long-term persistence of user preferences and environment setup."
         is_correct: true
+      - id: "c"
+        text: "Storage of Server Events in a local database."
       - id: "d"
-        text: "LocalHost"
-  - id: "q20"
-    text: "Which environment variable is used to enforce the use of a specific Remote Provider in a Meshery instance?"
+        text: "Interfacing with Meshery Server via a Go interface."
+- id: "q20"
+    text: "True or False: A single Meshery Server deployment can support the use of multiple Providers."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "MESH_PROVIDER"
-      - id: "b"
-        text: "MESHERY_HOST"
-      - id: "c"
-        text: "PROVIDER"
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "d"
-        text: "AUTH_PROVIDER"
+      - id: "false"
+        text: "False"
   - id: "q21"
     text: "According to Meshery's component statefulness classification, what is the persistence description for **Meshery Providers**?"
     type: "single-answer"
@@ -676,4 +672,14 @@ questions:
       - id: "d"
         text: "Function (e.g., /api/system, /api/mesh, /api/perf)."
         is_correct: true
+  - id: "q49"
+    text: "True or False: A Meshery Server deployment can be configured to only allow use of a pre-selected Provider."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        is_correct: true
+        text: "True"
+      - id: "false"
+        text: "False"
 ---
