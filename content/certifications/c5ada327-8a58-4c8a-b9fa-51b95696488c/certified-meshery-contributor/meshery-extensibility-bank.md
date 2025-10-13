@@ -224,7 +224,7 @@ questions:
         text: "It will double-count performance metrics"
   - id: "q17"
     text: "In architecture, adapters are extension points in Meshery. Which components directly interact with adapters?"
-    type: "single-answers"
+    type: "single-answer"
     marks: 2
     options:
       - id: "a"
