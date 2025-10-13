@@ -57,6 +57,7 @@ questions:
         text: "SampleApplication"
       - id: "c"
         text: "Monitor"
+        is_correct: true
       - id: "d"
         text: "Validate"
   - id: "q5"
