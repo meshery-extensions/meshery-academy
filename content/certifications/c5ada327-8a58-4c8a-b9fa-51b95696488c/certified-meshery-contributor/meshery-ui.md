@@ -52,25 +52,25 @@ questions:
   
   - id: "q4"
     text: "Meshery UI uses a schema-driven approach for components and forms."
-    type: "true-false"
+    type: "single-answer"
     marks: 2
     options:
       - id: "true"
-        text: "true"
+        text: "True"
         is_correct: true
       - id: "false"
-        text: "false"
+        text: "False"
 
   - id: "q5"
     text: "All dashboard widgets must include a thumbnail image."
-    type: "true-false"
+    type: "single-answer"
     marks: 2
     options:
       - id: "true"
-        text: "true"
+        text: "True"
         is_correct: true
       - id: "false"
-        text: "false"
+        text: "False"
       
   - id: "q6"
     text: "What is the preferred layout used in Meshery UI?"
