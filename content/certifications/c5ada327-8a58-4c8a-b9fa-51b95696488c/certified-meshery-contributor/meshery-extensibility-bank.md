@@ -122,7 +122,7 @@ questions:
       - id: "a"
         text: "Serving the Meshery UI from the adapter container."
       - id: "b"
-        text: "Implementing all business logic for the service mesh."
+        text: "Implementing all business logic for the infrastructure under management."
       - id: "c"
         text: "Running the gRPC adapter service and calling the functions of handlers injected by the adapter code."
         is_correct: true
