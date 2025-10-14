@@ -15,42 +15,46 @@ certificate:
     issuing_authorities:
       - name: "Meshery Authors"
         role: "Maintainers"
-        signature_url: "https://github.com/leecalcote/talks/blob/master/img/five-avatar-circle.png"
+        signature_url: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.svg"
 
 
 # Table of content covered in the test
 # Each domain can have a weightage (percentage) and subdomains (items)
 # Weightage should sum up to 100 across all domains ( not strictly enforced, but recommended )
 competencies:
-  - title: "Contributing to Meshery Server"
+  - title: "Contributing to Meshery Server (20%)"
     percentage: 20 # Weightage of this domain in the test
     items: 
-       -  "Error Handling and Logging Enhancements"
-       -  "Schema-Driven API Extensions"
+       -  "Creating well-written, self-documenting errors and new error codes."
+       -  "Use of MeshKit for eventing (Notification Center) and log handling."
+       -  "Practical schema-driven development."
 
-  - title: "Contributing to Meshery CLI"
+  - title: "Contributing to Meshery CLI (20%)"
     percentage: 20
     items:
-      - "Command Development"
-      - "Error Handling"
+      - "Knowledgable of user-centered command design principles."
+      - "Approach to end-to-end testing (BATS)."
+      - "Various command categories and their purposes and knowledge of Cobra (Go)."
 
-  - title: "Contributing to Meshery UI"
+  - title: "Contributing to Meshery UI (20%)"
     percentage: 20
     items:
-      - "Schema-Driven UI Components"
-      - "Visualization and Metrics Integration"
+      - "Working with schema-driven UI components (RJSF)"
+      - "Familiarity with Sistent Design System"
+      - "End-to-end testing with Playwright"
+      - "Understanding of Meshery's state management (Redux)"
 
-  - title: "Contributing to Meshery Models"
+  - title: "Contributing to Meshery Models (20%)"
     percentage: 20
     items:
-      - "Subdomain 1"
-      - "Subdomain 2"
+      - "Working knowledge of models as units of packaging for logical objects that defines the structure and behavior of elements under management."
+      - "Ability to define new models using its key concepts: Components, Relationships, and Connections."
 
-  - title: "Understanding Meshery Extensibility"
+  - title: "Understanding Meshery Extensibility (20%)"
     percentage: 20
     items:
-      - "Extension Points: Adapters, Providers, and APIs."
-      - "Communication protocols used, the role of different components, and how to extend Meshery's functionality."
+      - "Extension Points: Adapters, Providers, UI and Server Plugins, and APIs."
+      - "How to extend Meshery's functionality safely and effectively; best practices and patterns for building and maintaining extensions."
 
 # List of resource that are recommended to complete before taking the test
 # Not strictly enforced, but recommended
