@@ -1,4 +1,4 @@
-
+![Meshery-Logo](.github/assets/images/meshery-logo-dark-text-side.svg)
 # Meshery Academy
 
  Meshery Academy is the official content repository for the **Meshery** learning platform. It hosts Meshery-focused learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
