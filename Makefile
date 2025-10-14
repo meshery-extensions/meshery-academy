@@ -38,7 +38,7 @@ site: check-go
 ## Empty build cache and run on your local machine.
 clean: 
 	hugo --cleanDestinationDir
-	make site
+	site
 
 ## ------------------------------------------------------------
 ----MAINTENANCE: Show help for available targets
