@@ -45,7 +45,7 @@ questions:
       - id: "c"
         text: "incorrect answer example"
       - id: "d"
-        text: "incoorrect answer example"
+        text: "incorrect answer example"
   -
 ---
 The Meshery CLI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
@@ -59,3 +59,24 @@ This exam focuses on software engineers and their ability to contribute to the M
 This exam does not cover Meshery CLI usage. For information on using Meshery CLI, please refer to the following resources:
 
 - [Meshery CLI Commands](https://docs.meshery.io/reference/mesheryctl/commands) - Overview of Meshery CLI commands and their usage.
+
+
+The Meshery Server examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
+
+---
+
+This exam focuses on software engineers and their ability to contribute to the Meshery Server codebase. The exam covers a variety of topics, including:
+
+
+
+- [Contributing to Meshery Server](https://docs.meshery.io/project/contributing/contributing-server) - Design principles and code conventions.
+
+- [Contributing to Meshery Server Events](https://docs.meshery.io/project/contributing/contributing-server-events) - How to contribute to Meshery Server Events.
+
+- [How to write MeshKit Compatible Errors](https://docs.meshery.io/project/contributing/contributing-error) - How to write MeshKit compatible errors.
+
+- [Build & Release (CI)](https://docs.meshery.io/project/contributing/build-and-release) - How to contribute to Meshery Command Line Interface end-to-end testing with BATS.
+
+
+
+This exam does not cover Meshery Server usage, but focuses on Meshery Server contribution. 
