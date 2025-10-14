@@ -11,7 +11,6 @@ questions:
     text: "Meshery Models are described as the 'unit of packaging' designed to define managed infrastructure. Which capability is explicitly assigned using Models?" 
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "Exclusively defining YAML manifests for execution."
@@ -26,7 +25,6 @@ questions:
     text: "Which Meshery CLI command subcommand is used to initiate the scaffolding of a folder structure for model creation?" 
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "mesheryctl model generate"
@@ -41,7 +39,6 @@ questions:
     text: "By default, when using the Meshery CLI to scaffold a new model structure, what is the default output format for the generated files?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "yaml"
@@ -56,7 +53,6 @@ questions:
     text: "Which of the following CLI commands is responsible for transforming local model files into an OCI-compliant package?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "mesheryctl model export oci"
@@ -81,7 +77,6 @@ questions:
     text: "Which metadata key, when set to 'true', identifies a component as a Non-Semantic Component primarily used for visual documentation rather than representing deployable infrastructure?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "isCustomResource"
@@ -96,7 +91,6 @@ questions:
     text: "Meshery Components support rich visual customization, defined within their metadata. Which property is used to specify the basic geometric outline of the component icon (e.g., 'round-rectangle')?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "logoURL"
@@ -111,7 +105,6 @@ questions:
     text: "Which attributes are essential for uniquely identifying a specific Meshery Component definition?"
     type: "multiple-answers"             
     marks: 3
-    instructions: "More then one answer can be correct"
     options:
       - id: "a"
         text: "kind (The genre of component, e.g., Pod)"
@@ -158,7 +151,6 @@ questions:
     text: "Which properties must be consistent in casing (e.g., all lowercase or specific casing) when matching relationship targets to ensure accurate selection?"
     type: "multiple-answers"             
     marks: 3
-    instructions: "More then one answer can be correct"
     options:
       - id: "a"
         text: "kind"
@@ -175,7 +167,6 @@ questions:
     text: "In a Relationship selector definition, if the 'version' property is omitted, how is this absence interpreted during matching?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "It explicitly restricts matching to version 1.0.0."
@@ -190,7 +181,6 @@ questions:
     text: "What are the two primary fields used within a relationship selector definition to specify how data modification occurs during a component association (i.e., modifying the target component)?"
     type: "multiple-answers"             
     marks: 3
-    instructions: "More then one answer can be correct"
     options:
       - id: "a"
         text: "mutatedRef"
@@ -206,7 +196,6 @@ questions:
     text: "What policy framework does Meshery use while evaluating relationships?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "Common Expression Language (CEL)"
@@ -221,7 +210,6 @@ questions:
     text: "What high-level classification type is assigned to a component capability related to executing operational actions, such as initiating log streaming or starting a performance test?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "view"
@@ -236,7 +224,6 @@ questions:
     text: "Which capability kind is used to categorize operations related to changing the configuration of an entity?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "view"
@@ -251,7 +238,6 @@ questions:
     text: "Which individual capability allows users to configure workload-specific settings of a component?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "Performance Test"
@@ -266,7 +252,6 @@ questions:
     text: "Which sets of capabilities primarily focus on UI interaction and visual rendering of components?"
     type: "multiple-answers"             
     marks: 3
-    instructions: "More then one answer can be correct"
     options:
       - id: "a"
         text: "Styling"
@@ -293,7 +278,6 @@ questions:
     text: "What experimental subcommand is used to retrieve detailed information about a relationship by querying against fields like `kind`, `model`, `type`, and `subType`?"
     type: "single-answer"                     
     marks: 2                        
-    instructions: "Only one option is correct"
     options:                       
       - id: "a"
         text: "mesheryctl exp relationship get"
@@ -308,37 +292,31 @@ questions:
     text: "Which flag can optionally be used with `mesheryctl model generate` to prevent the newly generated model definition from being automatically registered with Meshery Server?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer starting with '--'"
     correct_answer: "--register"
   - id: "q23"                       
     text: "Which primary Meshery CLI command category is dedicated to managing the fundamental building blocks used to represent and define the infrastructure under management?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer"
     correct_answer: "component"
   - id: "q24"                       
     text: "Which Meshery CLI command category is responsible for managing the state and contents of Meshery’s internal registry of capabilities, typically interacting with spreadsheets or generating model definitions?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer"
     correct_answer: "registry"
   - id: "q25"                       
     text: "What capability kind is used for components that allow users to view defined relationships or the underlying JSON Schema definition?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer"
     correct_answer: "view"
   - id: "q26"                       
     text: "What capability kind is used for components that allow users to modify the configuration of an entity?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer"
     correct_answer: "mutate"
   - id: "q27"                       
     text: "What capability kind is used for components that allow users to execute operational actions, such as initiating log streaming or starting a performance test?"
     type: "short-answer"                
     marks: 2
-    instructions: "Single word answer"
     correct_answer: "action"
   - id: "q28"
     text: "You can push or pull a model image to or from an OCI-compatible image repository using mesheryctl."
@@ -540,25 +518,25 @@ questions:
       - id: "false"
         text: "False"
   - id: "q42"
-    text: "Which model category indicates that the model represents cloud native infrastructure?"
-    type: "single-answer"
-    marks: 2
-    instructions: "Only one option is correct"
+    text: "Model metadata includes which of the following identifying properties?"
+    type: "multiple-answers"
+    marks: 3
     options:
       - id: "a"
-        text: "Orchestration and Management"
+        text: "name"
         is_correct: true
       - id: "b"
-        text: "Provisioning"
+        text: "version"
+        is_correct: true
       - id: "c"
-        text: "Observability and Analysis"
+        text: "kind"
       - id: "d"
-        text: "Security and Compliance"
+        text: "displayName"
+        is_correct: true
   - id: "q43"
     text: "Which relationship type is used to represent parent-child component structures in a design?"
     type: "single-answer"
     marks: 2
-    instructions: "Only one option is correct"
     options:
       - id: "a"
         text: "Hierarchical"
@@ -570,7 +548,7 @@ questions:
       - id: "d"
         text: "Network"
   - id: "q44"
-    text: "Component definitions include a JSON Schema that validates the configuration of component instances."
+    text: "Component definitions include a JSON Schema that validates the configuration of the component."
     type: "single-answer"
     marks: 2
     options:
@@ -583,7 +561,6 @@ questions:
     text: "Which of the following are valid model metadata properties?"
     type: "multiple-answers"
     marks: 3
-    instructions: "More than one answer can be correct"
     options:
       - id: "a"
         text: "displayName"
@@ -595,12 +572,11 @@ questions:
         text: "subCategory"
         is_correct: true
       - id: "d"
-        text: "primaryColor"
+        text: "range"
   - id: "q46"
     text: "What is the primary purpose of defining selectors in a Meshery Relationship?"
     type: "single-answer"
     marks: 2
-    instructions: "Only one option is correct"
     options:
       - id: "a"
         text: "To specify styling properties for components"
@@ -612,7 +588,7 @@ questions:
       - id: "d"
         text: "To set the deployment order of components"
   - id: "q47"
-    text: "Multiple versions of the same component can coexist within a single Meshery deployment."
+    text: "The Meshery Server registry maintains a versioned catalog of component definitions, allowing different versions of the same component to be registered simultaneously."
     type: "single-answer"
     marks: 2
     options:
@@ -622,10 +598,9 @@ questions:
       - id: "false"
         text: "False"
   - id: "q48"
-    text: "What happens when you import a model that contains components conflicting with existing registered components?"
+    text: "What happens when you import a model that contains components with existing registered components?"
     type: "single-answer"
     marks: 2
-    instructions: "Only one option is correct"
     options:
       - id: "a"
         text: "The import fails completely"
@@ -647,21 +622,19 @@ questions:
       - id: "false"
         text: "False"
   - id: "q50"
-    text: "Which capabilities are automatically assigned to all components by default?"
-    type: "multiple-answers"
-    marks: 3
-    instructions: "More than one answer can be correct"
+    text: "Which relationship type is used to represent network connections and communication pathways between components?"
+    type: "single-answer"
+    marks: 2
     options:
       - id: "a"
-        text: "JSON Schema"
-        is_correct: true
+        text: "Hierarchical"
       - id: "b"
-        text: "Styling"
+        text: "Edge"
         is_correct: true
       - id: "c"
-        text: "Performance Test"
+        text: "Sibling"
       - id: "d"
-        text: "Workload Configuration"
+        text: "Binding"
 
 ---
 The Meshery Models examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
