@@ -2,6 +2,8 @@
 title: "Meshery Models Contributor Exam"
 type: "test"
 layout: "test"
+max_attempts: 3
+time_limit: 25
 pass_percentage: 70
 questions:                     
   - id: "q1"                       
@@ -132,7 +134,7 @@ questions:
       - id: "false"
         text: "False"
   - id: "q10"                       
-    text: "Meshery Relationships primarily function to explain the connection and interaction rules between components to aid visualization and comprehension."
+    text: "Meshery Relationships function to explain the connection and interaction rules between components to aid visualization, comprehension, and to affect the configuration of associated components."
     type: "single-answer"            
     marks: 1
     options:
@@ -325,5 +327,207 @@ questions:
     marks: 2
     instructions: "Single word answer"
     correct_answer: "view"
+  - id: "q26"                       
+    text: "What capability kind is used for components that allow users to modify the configuration of an entity?"
+    type: "short-answer"                
+    marks: 2
+    instructions: "Single word answer"
+    correct_answer: "mutate"
+  - id: "q27"                       
+    text: "What capability kind is used for components that allow users to execute operational actions, such as initiating log streaming or starting a performance test?"
+    type: "short-answer"                
+    marks: 2
+    instructions: "Single word answer"
+    correct_answer: "action"
+  - id: "q28"
+    text: "You can push or pull a model image to or from an OCI-compatible image repository using mesheryctl."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q29"
+    text: "Which Meshery CLI command is used to publish a built model package to a remote OCI-compliant registry?"
+    type: "single-answer"                
+    marks: 2
+  - id: "q30"
+    text: "Understanding of the vernacular of Meshery’s internal object model and discusses the difference between them. Which of the following is NOT one of these terms?"
+    type: "multiple-answers"
+    marks: 2
+    options:
+      - id: "a"
+        text: "Schema"
+        is_correct: true
+      - id: "b"
+        text: "Definition"
+        is_correct: true
+      - id: "c"
+        text: "Declaration"
+        is_correct: true
+      - id: "d"
+        text: "Instance"
+        is_correct: true
+      - id: "e"
+        text: "Template"
+      - id: "f"
+        text: "Blueprint"
+  - id: "q31"
+    text: "Which of the following is NOT a valid relationship type in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "Hierarchical"
+      - id: "b"
+        text: "Associative"
+      - id: "c"
+        text: "Causal"
+        is_correct: true
+      - id: "d"
+        text: "Dependency"
+  - id: "q32"
+    text: "Which of the following is NOT a valid relationship sub-type in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "One-to-One"
+      - id: "b"
+        text: "One-to-Many"
+      - id: "c"   
+        text: "Many-to-Many"
+      - id: "d"
+        text: "Many-to-One"
+        is_correct: true
+  - id: "q33"
+    text: "Which of the following is NOT a valid patch strategy in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "JSONPatch"
+      - id: "b"
+        text: "MergePatch"
+      - id: "c"   
+        text: "StrategicMergePatch"
+      - id: "d"
+        text: "XMLPatch"
+        is_correct: true
+  - id: "q34"
+    text: "Which of the following is NOT a valid mutator reference in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "JSONPatch"
+      - id: "b"
+        text: "MergePatch"
+      - id: "c"
+        text: "StrategicMergePatch"
+      - id: "d"
+        text: "XMLPatch"
+        is_correct: true
+  - id: "q34"
+    text: "An NGINX container configured as a Kubernetes Pod with port 443 and SSL termination represents which of the following Meshery entities?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "Schema"
+      - id: "b"
+        text: "Definition"
+      - id: "c"   
+        text: "Declaration"
+        is_correct: true
+      - id: "d"
+        text: "Instance"
+  - id: "q35"
+    text: "Which of the following is NOT a valid component metadata property in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "isCustomResource"
+      - id: "b"
+        text: "isNamespaced"
+      - id: "c"   
+        text: "isAnnotation"
+      - id: "d"
+        text: "isModelAnnotation"
+      - id: "e"
+        text: "isVisualComponent"
+        is_correct: true
+  - id: "q36"
+    text: "Which of the following is NOT a valid component style override property in Meshery Models?"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "primaryColor"
+      - id: "b"
+        text: "secondaryColor"
+      - id: "c"   
+        text: "shape"
+      - id: "d"
+        text: "logoURL"
+      - id: "e"
+        text: "fontStyle"
+        is_correct: true
+  - id: "q37"
+    text: "Models can be created from scratch or imported using either the Meshery UI or the Meshery CLI."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q38"                       
+    text: "What are the two primary file formats used for defining Meshery Models, Components, and Relationships?"
+    type: "multiple-answers"                
+    marks: 2
+    options:
+      - id: "a"
+        text: "JSON"
+        is_correct: true
+      - id: "b"
+        text: "YAML"
+        is_correct: true
+      - id: "c"
+        text: "XML"
+      - id: "d"
+        text: "TOML"
+  - id: "q39"
+    text: "Meshery Models can be versioned and managed using standard version control systems like Git."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q40"
+    text: "Meshery Models can be imported from which of the following sources?"
+    type: "multiple-answers"
+    marks: 2
+    options:
+      - id: "a"
+        text: "Local directory on your file system as YAML/JSON files"
+        is_correct: true
+      - id: "b"
+        text: "Git Repository"
+        is_correct: true
+      - id: "c"
+        text: "OCI-compliant image registry"
+        is_correct: true
+      - id: "d"
+        text: "CSV files"
+        is_correct: true
+
 ---
 The Meshery Models examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.

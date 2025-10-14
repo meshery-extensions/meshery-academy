@@ -4,6 +4,8 @@ type: "test"
 layout: "test"
 weight: 2
 pass_percentage: 70
+max_attempts: 3
+time_limit: 25
 questions:
   - id: "q1"
     text: "Which command is used to start Meshery?"
