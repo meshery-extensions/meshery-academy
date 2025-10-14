@@ -275,7 +275,7 @@ questions:
       - id: "false"
         text: "False"
   - id: "q21"                       
-    text: "What experimental subcommand is used to retrieve detailed information about a relationship by querying against fields like `kind`, `model`, `type`, and `subType`?"
+    text: "What subcommand is used to retrieve detailed information about a relationship by querying against fields like `kind`, `model`, `type`, and `subType`?"
     type: "single-answer"                     
     marks: 2                        
     options:                       
@@ -299,15 +299,15 @@ questions:
     marks: 2
     correct_answer: "component"
   - id: "q24"                       
-    text: "Which Meshery CLI command category is responsible for managing the state and contents of Meshery’s internal registry of capabilities, typically interacting with spreadsheets or generating model definitions?"
+    text: "Which Meshery CLI command category is responsible for managing the state and contents of Meshery’s internal database of capabilities, typically interacting with spreadsheets or generating model definitions?"
     type: "short-answer"                
     marks: 2
     correct_answer: "registry"
-  - id: "q25"                       
-    text: "What capability kind is used for components that allow users to view defined relationships or the underlying JSON Schema definition?"
-    type: "short-answer"                
-    marks: 2
-    correct_answer: "view"
+  # - id: "q25"                       
+  #   text: "What capability kind is used for components that allow users to view defined relationships or the underlying JSON Schema definition?"
+  #   type: "short-answer"                
+  #   marks: 2
+  #   correct_answer: "view"
   - id: "q26"                       
     text: "What capability kind is used for components that allow users to modify the configuration of an entity?"
     type: "short-answer"                

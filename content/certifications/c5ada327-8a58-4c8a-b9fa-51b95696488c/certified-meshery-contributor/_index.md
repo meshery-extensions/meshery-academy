@@ -2,7 +2,7 @@
 type: "certification"
 id: "a2852b8b-4c68-4897-8e5a-5b5c1a470b17"
 title: "Certified Meshery Contributor"
-description: "The Certified Meshery Contributor focuses on validating open source contributions to Meshery, bridging user proficiency and advanced operational/architectural skills. It recognizes individuals who actively enhance the Meshery ecosystem through code, documentation, or community efforts."
+description: "The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility. Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. These exams validate the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization."
 banner: "meshery-light-icon.svg"
 weight: 1
 tags: [meshery, open source, contributor]
@@ -11,9 +11,9 @@ categories: "platform"
 
 certificate:
     title: "Certified Meshery Contributor"
-    description: "The Certified Meshery Contributor focuses on validating open source contributions to Meshery, bridging user proficiency and advanced operational/architectural skills. It recognizes individuals who actively enhance the Meshery ecosystem through code, documentation, or community efforts."
+    description: "The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility. Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. These exams validate the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization."
     issuing_authorities:
-      - name: "Meshery"
+      - name: "Meshery Authors"
         role: "Maintainers"
         signature_url: "https://github.com/leecalcote/talks/blob/master/img/five-avatar-circle.png"
 
@@ -22,25 +22,35 @@ certificate:
 # Each domain can have a weightage (percentage) and subdomains (items)
 # Weightage should sum up to 100 across all domains ( not strictly enforced, but recommended )
 competencies:
-  - title: "Domain 1"
-    percentage: 10 # Weightage of this domain in the test
+  - title: "Contributing to Meshery Server"
+    percentage: 20 # Weightage of this domain in the test
     items: 
-       -  "Subdomain 1"
-       -  "Subdomain 2"
+       -  "Error Handling and Logging Enhancements"
+       -  "Schema-Driven API Extensions"
 
-  - title: "Domain 2"
-    percentage: 30
+  - title: "Contributing to Meshery CLI"
+    percentage: 20
+    items:
+      - "Command Development"
+      - "Error Handling"
+
+  - title: "Contributing to Meshery UI"
+    percentage: 20
+    items:
+      - "Schema-Driven UI Components"
+      - "Visualization and Metrics Integration"
+
+  - title: "Contributing to Meshery Models"
+    percentage: 20
     items:
       - "Subdomain 1"
       - "Subdomain 2"
 
-  - title: "Domain 3"
-    percentage: 60
+  - title: "Understanding Meshery Extensibility"
+    percentage: 20
     items:
-      - "Subdomain 1"
-      - "Subdomain 2"
-
-
+      - "Extension Points: Adapters, Providers, and APIs."
+      - "Communication protocols used, the role of different components, and how to extend Meshery's functionality."
 
 # List of resource that are recommended to complete before taking the test
 # Not strictly enforced, but recommended
@@ -101,44 +111,44 @@ prerequisite_knowledge:
 
 # List of additional resources for further reading 
 related_resources:
-  - title: Working with Meshery Docs
+  - title: "Self-paced Training: Working with Meshery Docs"
     link: https://www.youtube.com/embed/7wRbbOSwrtI
-    title: Working with Meshery Docs
+    title: "Self-paced Training: Working with Meshery Docs (slides)"
     link: https://docs.google.com/presentation/d/1kQIzSa4f-pOH8cM4SwEdbFZGI_SXVyyhc9zUZPB7bsI/edit?usp=sharing
-  - title: End-to-end Testing in Meshery CLI
+  - title: "Self-paced Training: End-to-end Testing in Meshery CLI"
     link: https://www.youtube.com/embed/mRQAvR9-P1o
-    title: End-to-end Testing in Meshery CLI
+    title: "Self-paced Training: End-to-end Testing in Meshery CLI (slides)"
     link: https://docs.google.com/presentation/d/1OhUhqIZVPdnjD7eO1ppeXVvTa-P2lIcdCXHncTOX_XE/edit?usp=sharing
-  - title: Meshery CI and CD
+  - title: "Self-paced Training: Meshery CI/CD (recording)"
     link: https://www.youtube.com/embed/dlr_nzJV16Q
-    title: Meshery CI and CD
+    title: "Self-paced Training: Meshery CI/CD (slides)"
     link: https://docs.google.com/presentation/d/1hUDhFeYP7dtCQhOEw2U_wQ-G718Y2e5iU3drMDOdIws/edit?usp=sharing
-  - title: Meshery CLI
+  - title: "Self-paced Training: Meshery CLI (recording)"
     link: https://www.youtube.com/embed/aNR_1h1Pisg
-    title: Meshery CLI
+    title: "Self-paced Training: Meshery CLI (slides)"
     link: https://docs.google.com/presentation/d/1lRop7DAAMUBmuFdzZK25LdQrkLG08eVsXEaDrauP3S8/edit?usp=sharing
-  - title: End-to-end Testing in Meshery UI using Playwright
+  - title: "Self-paced Training: End-to-end Testing in Meshery UI using Playwright (recording)"
     link: https://www.youtube.com/embed/9d0n37eTSkI
-    title: End-to-end Testing in Meshery UI using Playwright
+    title: "Self-paced Training: End-to-end Testing in Meshery UI using Playwright (slides)"
     link: https://docs.google.com/presentation/d/1Vcq48Y0nLZsrKKFNYBJ5fm9bIcb2m6ZnYxq2azn6nlM/edit?slide=id.g35936fe4c88_0_0#slide=id.g35936fe4c88_0_0
-  - title: Meshery UI
+  - title: "Self-paced Training: Meshery UI (recording)"
     link: https://www.youtube.com/embed/ia7kvnHCurs
-    title: Meshery UI
+    title: "Self-paced Training: Meshery UI (slides)"
     link: https://docs.google.com/presentation/d/1MRDs28YmzrO1t5QNz7WTp50ukCz6fB2p3awZz63HJmA/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
-  - title: Meshery Server
+  - title: "Self-paced Training: Meshery Server (recording)"
     link: https://www.youtube.com/embed/9iRRd4RJOXE
-    title: Meshery Server
+    title: "Self-paced Training: Meshery Server (slides)"
     link: https://docs.google.com/presentation/d/1X0kAAAwHaZ6VHfE8VifWSW5nOdid7GC9L0zcZFP9dac/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
-  - title: Meshery Models
+  - title: "Self-paced Training: Meshery Models (recording)"
     link: https://www.youtube.com/embed/K2gmdIlGXNo
-    title: Meshery Models
+  - title: "Self-paced Training: Meshery Models (slides)"
     link: https://docs.google.com/presentation/d/1XSnDpXeloE9c7FOHGy2l82YbykHl49njUN1RgFoe_ac/edit?usp=sharing
 
 # Additional attributes to list in "Details to Know" section
 additional_attributes: 
   - title: "Retake Policy"
     description: "Up to three retakes allowed per exam"
-  # - title: "Labs"
-  #   description: "Hands-on labs included"
+  - title: "Composite Scoring"
+    description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
