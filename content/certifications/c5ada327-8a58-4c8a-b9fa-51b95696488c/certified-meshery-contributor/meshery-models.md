@@ -4,7 +4,7 @@ type: "test"
 layout: "test"
 max_attempts: 3
 time_limit: 25
-number_of_questions: 50
+number_of_questions: 25
 pass_percentage: 70
 questions:                     
   - id: "q1"                       
