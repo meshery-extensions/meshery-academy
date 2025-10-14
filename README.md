@@ -1,3 +1,5 @@
+![Meshery Logo](./.github/readme/images/mershery-icon.png)
+
 # Meshery Academy
 
  Meshery Academy is the official content repository for the **Meshery** learning platform. It hosts Meshery-focused learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
@@ -104,8 +106,6 @@ content/learning-paths/1e2a8e46-937c-47ea-ab43-5716e3bcab2e/
 
 In your markdown file, reference the image using standard Markdown syntax:
 
-![Meshery Logo](./.github/readme/images/mershery-icon.png)
-
 ### How to Add a Video
 
 Embed videos in a visually distinct card using:
@@ -176,3 +176,4 @@ We welcome contributions to improve:
 - Community Slack: <https://slack.meshery.io/>
 
 Happy Learning!
+
