@@ -8,6 +8,7 @@ weight: 1
 tags: [meshery, open source, contributor]
 level: "beginner"
 categories: "platform"
+expiration_date: "2 years"
 
 certificate:
     title: "Certified Meshery Contributor"
@@ -22,21 +23,21 @@ certificate:
 # Each domain can have a weightage (percentage) and subdomains (items)
 # Weightage should sum up to 100 across all domains ( not strictly enforced, but recommended )
 competencies:
-  - title: "Contributing to Meshery Server (20%)"
+  - title: "Contributing to Meshery Server"
     percentage: 20 # Weightage of this domain in the test
     items: 
        -  "Creating well-written, self-documenting errors and new error codes."
        -  "Use of MeshKit for eventing (Notification Center) and log handling."
        -  "Practical schema-driven development."
 
-  - title: "Contributing to Meshery CLI (20%)"
+  - title: "Contributing to Meshery CLI"
     percentage: 20
     items:
       - "Knowledgable of user-centered command design principles."
       - "Approach to end-to-end testing (BATS)."
       - "Various command categories and their purposes and knowledge of Cobra (Go)."
 
-  - title: "Contributing to Meshery UI (20%)"
+  - title: "Contributing to Meshery UI"
     percentage: 20
     items:
       - "Working with schema-driven UI components (RJSF)"
@@ -44,13 +45,13 @@ competencies:
       - "End-to-end testing with Playwright"
       - "Understanding of Meshery's state management (Redux)"
 
-  - title: "Contributing to Meshery Models (20%)"
+  - title: "Contributing to Meshery Models"
     percentage: 20
     items:
       - "Working knowledge of models as units of packaging for logical objects that defines the structure and behavior of elements under management."
       - "Ability to define new models using its key concepts: Components, Relationships, and Connections."
 
-  - title: "Understanding Meshery Extensibility (20%)"
+  - title: "Understanding Meshery Extensibility"
     percentage: 20
     items:
       - "Extension Points: Adapters, Providers, UI and Server Plugins, and APIs."
@@ -59,58 +60,87 @@ competencies:
 # List of resource that are recommended to complete before taking the test
 # Not strictly enforced, but recommended
 prerequisite_knowledge:
-  - title: "Build & Release (CI)"
-    link: "/project/contributing/build-and-release"
-  - title: "Contributing to Meshery Adapters"
-    link: "/project/contributing/contributing-adapters"
-  - title: "Contributing to Meshery CLI End-to-End Tests"
-    link: "/project/contributing/contributing-cli-tests"
-  - title: "Contributing to Meshery CLI"
-    link: "/project/contributing/contributing-cli"
-  - title: "Contributing to Meshery Docker Extension"
-    link: "/project/contributing/contributing-docker-extension"
-  - title: "Meshery Documentation Structure and Organization"
-    link: "/project/contributing/contributing-docs-structure"
-  - title: "Contributing to Meshery Docs"
-    link: "/project/contributing/contributing-docs"
-  - title: "How to write MeshKit compatible errors"
-    link: "/project/contributing/contributing-error"
-  - title: "Contributing to Meshery using git"
-    link: "/project/contributing/contributing-gitflow"
-  - title: "Meshery CLI Contributing Guidelines"
-    link: "/project/contributing/contributing-cli-guide"
-  - title: "Contributing to Model Components"
-    link: "/project/contributing/contributing-components"
-  - title: "Contributing to Model Relationships"
-    link: "/project/contributing/contributing-relationships"
-  - title: "Contributing to Models Quick Start"
-    link: "/project/contributing/contributing-models-quick-start"
-  - title: "Contributing to Models"
-    link: "/project/contributing/contributing-models"
-  - title: "Contributing to Meshery Policies"
-    link: "/project/contributing/contributing-policies"
-  - title: "Contributing to Meshery Schemas"
-    link: "/project/contributing/contributing-schemas"
-  - title: "Contributing to Meshery Server Events"
-    link: "/project/contributing/contributing-server-events"
-  - title: "Contributing to Meshery UI - Notification Center"
-    link: "/project/contributing/contributing-ui-notification-center"
-  - title: "Schema-Driven UI Development in Meshery"
-    link: "/project/contributing/contributing-ui-schemas"
-  - title: "Contributing to Meshery UI - Sistent"
-    link: "/project/contributing/contributing-ui-sistent"
-  - title: "Contributing to Meshery UI End-to-End Tests"
-    link: "/project/contributing/contributing-ui-tests"
-  - title: "Contributing to Meshery UI - Dashboard Widgets"
-    link: "/project/contributing/contributing-ui-widgets"
-  - title: "Contributing to Meshery UI"
-    link: "/project/contributing/contributing-ui"
-  - title: "Contributing to Meshery Server"
-    link: "/project/contributing/contributing-server"
-  - title: "Setting up Meshery Development Environment on Windows"
-    link: "/project/contributing/meshery-windows"
-  - title: "End-to-End Test Status"
-    link: "/project/contributing/test-status"
+
+  - title: "Meshery CLI"
+    children:
+      - title: "Contributing to Meshery CLI End-to-End Tests"
+        link: "https://docs.meshery.io/project/contributing/contributing-cli-tests"
+      - title: "Contributing to Meshery CLI"
+        link: "https://docs.meshery.io/project/contributing/contributing-cli"
+      - title: "Meshery CLI Contributing Guidelines"
+        link: "https://docs.meshery.io/project/contributing/contributing-cli-guide"
+
+  - title: "Meshery Server"
+    children:
+    - title: "How to write MeshKit compatible errors"
+      link: "https://docs.meshery.io/project/contributing/contributing-error"
+    - title: "Contributing to Meshery Server Events"
+      link: "https://docs.meshery.io/project/contributing/contributing-server-events"
+    - title: "Contributing to Meshery Server"
+      link: "https://docs.meshery.io/project/contributing/contributing-server"
+    - title: "Schema-driven Development"
+      link: "https://docs.meshery.io/project/contributing/contributing-schemas"
+    - title: "Build & Release (CI)"
+      link: "https://docs.meshery.io/project/contributing/build-and-release"
+
+  - title: "Meshery Models"
+    children:
+    - title: "Contributing to Meshery Models"
+      link: "https://docs.meshery.io/project/contributing/contributing-models"
+    - title: "Contributing to Model Components"
+      link: "https://docs.meshery.io/project/contributing/contributing-components"
+    - title: "Contributing to Model Relationships"
+      link: "https://docs.meshery.io/project/contributing/contributing-relationships"
+    - title: "Contributing to Models Quick Start"
+      link: "https://docs.meshery.io/project/contributing/contributing-models-quick-start"
+    - title: "Contributing to Meshery Policies"
+      link: "https://docs.meshery.io/project/contributing/contributing-policies"
+  
+  - title: "Meshery UI"
+    children:
+    - title: "Contributing to Meshery UI"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui"
+    - title: "Contributing to Meshery UI - Notification Center"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui-notification-center"
+    - title: "Schema-Driven UI Development in Meshery"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui-schemas"
+    - title: "Contributing to Meshery UI - Sistent"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui-sistent"
+    - title: "Contributing to Meshery UI End-to-End Tests"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui-tests"
+    - title: "Contributing to Meshery UI - Dashboard Widgets"
+      link: "https://docs.meshery.io/project/contributing/contributing-ui-widgets"
+
+
+  - title: "Meshery Extensibility"
+    children:
+      - title: "Contributing to Meshery Adapters"
+        link: "https://docs.meshery.io/project/contributing/contributing-adapters"
+      - title: "Meshery UI Extensibility"
+        link: "https://docs.meshery.io/extensibility/ui"
+      - title: "Authorization Extensibility"
+        link: "https://docs.meshery.io/extensibility/authorization"
+      - title: "Using Meshery APIs"
+        link: "https://docs.meshery.io/extensibility/api"
+      - title: "Local and Remote Providers"
+        link: "https://docs.meshery.io/extensibility/providers"
+
+  - title: "[Optional] Meshery Docs"
+    children:
+    - title: "Contributing to Meshery Docs"
+      link: "https://docs.meshery.io/project/contributing/contributing-docs"
+    - title: "Meshery Documentation Structure and Organization"
+      link: "https://docs.meshery.io/project/contributing/contributing-docs-structure"
+
+  - title: "[Optional] General"
+    children:
+    - title: "End-to-End Test Status"
+      link: "https://docs.meshery.io/project/contributing/test-status"
+    - title: "Contributing to Meshery using git"
+      link: "https://docs.meshery.io/project/contributing/contributing-gitflow"
+    - title: "Setting up Meshery Development Environment on Windows"
+      link: "https://docs.meshery.io/project/contributing/meshery-windows"
+
 
 
 # List of additional resources for further reading 
@@ -152,7 +182,9 @@ related_resources:
 additional_attributes: 
   - title: "Retake Policy"
     description: "Up to three retakes allowed per exam"
+    value: "3"
   - title: "Composite Scoring"
+    value: "Average of all five domains"
     description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
