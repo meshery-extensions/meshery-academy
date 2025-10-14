@@ -4,7 +4,8 @@ type: "test"
 layout: "test"
 pass_percentage: 70
 max_attempts: 3
-time_limit: 25
+time_limit: 30
+number_of_questions: 25
 questions:
   - id: "q1"
     text: "Meshery Server is primarily written in which of the following languages?"
