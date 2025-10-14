@@ -4,8 +4,8 @@ type: "test"
 layout: "test"
 pass_percentage: 70
 max_attempts: 3
-time_limit: 30
-number_of_questions: 20
+time_limit: 45
+number_of_questions: 25
 questions:
   - id: "q1"
     text: "What is the primary communication protocol used by Meshery Server to interface with Meshery Adapters?"
@@ -693,33 +693,34 @@ questions:
       - id: "b"
         text: "To add custom footer links in Meshery UI."
       - id: "c"
-      -  text: "To add custom sidebar widgets in Meshery UI."
-      -  id: "d"
-        text: "To add custom modals in Meshery UI."
-  - id: "q51"
-    text: "Which of the following is a mandatory REST endpoint that a Remote Provider must implement?"
-    type: "single-answer"
-    marks: 2
-    options:
-      - id: "a"
-        text: "/status"
-      - id: "b"
-        text: "/capabilities"
-        is_correct: true
       - id: "c"
-        text: "/health"
+        text: "To add custom sidebar widgets in Meshery UI."
       - id: "d"
-        text: "/metrics"
-  - id: "q52"
-  - text: "Every Meshery server is capable of registering itself with the remote provider, considering that remote provider supports this feature as a capability"
-    type: "single-answer"
-    marks: 2
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+        text: "To add custom modals in Meshery UI."
+  # - id: "q51"
+  #   text: "Which of the following is a mandatory REST endpoint that a Remote Provider must implement?"
+  #   type: "single-answer"
+  #   marks: 2
+  #   options:
+  #     - id: "a"
+  #       text: "/status"
+  #     - id: "b"
+  #       text: "/capabilities"
+  #       is_correct: true
+  #     - id: "c"
+  #       text: "/health"
+  #     - id: "d"
+  #       text: "/metrics"
+  # - id: "q52"
+  # - text: "Every Meshery server is capable of registering itself with the remote provider, considering that remote provider supports this feature as a capability"
+  #   type: "single-answer"
+  #   marks: 2
+  #   options:
+  #     - id: "true"
+  #       text: "True"
+  #       is_correct: true
+  #     - id: "false"
+  #       text: "False"
   
 ---
 The Meshery Extensibility examination verifies contributor understanding of one of Meshery's core architectural frameworks and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
