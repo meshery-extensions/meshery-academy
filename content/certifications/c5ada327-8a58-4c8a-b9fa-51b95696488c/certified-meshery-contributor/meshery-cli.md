@@ -1047,7 +1047,7 @@ questions:
 ---
 The Meshery CLI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
 
-This exam focuses on software engineers and their ability to contribute to the Meshery CLI codebase. The exam covers a variety of topics, including:
+<!-- This exam focuses on software engineers and their ability to contribute to the Meshery CLI codebase. The exam covers a variety of topics, including:
 
 - [Meshery CLI Contributing Guidelines](https://docs.meshery.io/project/contributing/contributing-cli-guide) - Design principles and code conventions.
 - [Contributing to Meshery CLI](https://docs.meshery.io/project/contributing/contributing-cli) - How to contribute to Meshery Command Line Interface.
@@ -1055,4 +1055,4 @@ This exam focuses on software engineers and their ability to contribute to the M
 
 This exam does not cover Meshery CLI usage. For information on using Meshery CLI, please refer to the following resources:
 
-- [Meshery CLI Commands](https://docs.meshery.io/reference/mesheryctl/commands) - Overview of Meshery CLI commands and their usage.
+- [Meshery CLI Commands](https://docs.meshery.io/reference/mesheryctl/commands) - Overview of Meshery CLI commands and their usage. -->
