@@ -4,7 +4,7 @@ type: "test"
 layout: "test"
 max_attempts: 3
 time_limit: 25
-number_of_questions: 20
+number_of_questions: 50
 pass_percentage: 70
 questions:                     
   - id: "q1"                       
@@ -529,6 +529,134 @@ questions:
       - id: "d"
         text: "CSV files"
         is_correct: true
+  - id: "q41"
+    text: "Meshery can automatically generate component definitions from Kubernetes Custom Resource Definitions (CRDs)."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q42"
+    text: "Which model category indicates that the model represents cloud native infrastructure?"
+    type: "single-answer"
+    marks: 2
+    instructions: "Only one option is correct"
+    options:
+      - id: "a"
+        text: "Orchestration and Management"
+        is_correct: true
+      - id: "b"
+        text: "Provisioning"
+      - id: "c"
+        text: "Observability and Analysis"
+      - id: "d"
+        text: "Security and Compliance"
+  - id: "q43"
+    text: "A Meshery Relationship defines the nature of interaction between two or more interconnected components."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q44"
+    text: "Component definitions include a JSON Schema that validates the configuration of component instances."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q45"
+    text: "Which of the following are valid model metadata properties?"
+    type: "multiple-answers"
+    marks: 3
+    instructions: "More than one answer can be correct"
+    options:
+      - id: "a"
+        text: "displayName"
+        is_correct: true
+      - id: "b"
+        text: "category"
+        is_correct: true
+      - id: "c"
+        text: "subCategory"
+        is_correct: true
+      - id: "d"
+        text: "primaryColor"
+  - id: "q46"
+    text: "What is the primary purpose of defining selectors in a Meshery Relationship?"
+    type: "single-answer"
+    marks: 2
+    instructions: "Only one option is correct"
+    options:
+      - id: "a"
+        text: "To specify styling properties for components"
+      - id: "b"
+        text: "To identify which components should participate in the relationship"
+        is_correct: true
+      - id: "c"
+        text: "To define the color scheme of the relationship visualization"
+      - id: "d"
+        text: "To set the deployment order of components"
+  - id: "q47"
+    text: "Multiple versions of the same component can coexist within a single Meshery deployment."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q48"
+    text: "What happens when you import a model that contains components conflicting with existing registered components?"
+    type: "single-answer"
+    marks: 2
+    instructions: "Only one option is correct"
+    options:
+      - id: "a"
+        text: "The import fails completely"
+      - id: "b"
+        text: "New version of the component is created alongside existing ones"
+        is_correct: true
+      - id: "c"
+        text: "Existing components are automatically deleted"
+      - id: "d"
+        text: "A merge operation combines both definitions"
+  - id: "q49"
+    text: "In a relationship definition, both 'from' and 'to' selectors must be defined to establish a valid relationship between components."
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+        is_correct: true
+      - id: "false"
+        text: "False"
+  - id: "q50"
+    text: "Which capabilities are automatically assigned to all components by default?"
+    type: "multiple-answers"
+    marks: 3
+    instructions: "More than one answer can be correct"
+    options:
+      - id: "a"
+        text: "JSON Schema"
+        is_correct: true
+      - id: "b"
+        text: "Styling"
+        is_correct: true
+      - id: "c"
+        text: "Performance Test"
+      - id: "d"
+        text: "Workload Configuration"
 
 ---
 The Meshery Models examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
