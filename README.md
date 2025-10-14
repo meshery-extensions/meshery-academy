@@ -92,7 +92,7 @@ content/learning-paths/1e2a8e46-937c-47ea-ab43-5716e3bcab2e/
 ```
 In your markdown file, reference the image using standard Markdown syntax:
 
-![Meshery Logo](https://avatars.githubusercontent.com/u/52376019?s=200)
+![Meshery Logo](./.github/readme/images/mershery-icon.png)
 
 ### How to Add a Video
 Embed videos in a visually distinct card using:
