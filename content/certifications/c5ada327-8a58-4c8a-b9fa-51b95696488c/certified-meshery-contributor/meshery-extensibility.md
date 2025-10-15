@@ -337,7 +337,7 @@ questions:
         text: "The Meshery Operator's state."
   - id: "q25"
     text: "What is the primary benefit of a Remote Provider offering **out-of-tree support** for Meshery extensions?"
-    type: "multiple-answer"
+    type: "multiple-answers"
     marks: 3
     options:
       - id: "a"
@@ -422,7 +422,7 @@ questions:
         text: "It is saved to a local file and automatically reloaded."
   - id: "q31"
     text: "In order to collaborate in real-time, users must be logged into the same Meshery Server."
-    type: "single-answers"
+    type: "single-answer"
     marks: 3
     options:
       - id: "a"
