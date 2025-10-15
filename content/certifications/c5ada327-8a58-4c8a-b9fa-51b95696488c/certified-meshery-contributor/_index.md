@@ -164,7 +164,7 @@ related_resources:
     children:
       - title: "Recorded Training Session"
         link: https://www.youtube.com/embed/dlr_nzJV16Q
-    - title: "Training Session Slides"
+      - title: "Training Session Slides"
         link: https://docs.google.com/presentation/d/1hUDhFeYP7dtCQhOEw2U_wQ-G718Y2e5iU3drMDOdIws/edit?usp=sharing
 
   - title: "Self-paced Training: Meshery UI"
@@ -175,7 +175,7 @@ related_resources:
         link: https://docs.google.com/presentation/d/1Vcq48Y0nLZsrKKFNYBJ5fm9bIcb2m6ZnYxq2azn6nlM/edit?slide=id.g35936fe4c88_0_0#slide=id.g35936fe4c88_0_0
       - title: "Contributing to Meshery UI (recording)"
         link: https://www.youtube.com/embed/ia7kvnHCurs
-    - title: "Contributing to Meshery UI (slides)"
+      - title: "Contributing to Meshery UI (slides)"
         link: https://docs.google.com/presentation/d/1MRDs28YmzrO1t5QNz7WTp50ukCz6fB2p3awZz63HJmA/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
   
   
