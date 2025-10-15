@@ -6,7 +6,7 @@ weight: 2
 pass_percentage: 70
 max_attempts: 3
 time_limit: 30
-number_questions: 25
+number_of_questions: 25
 questions:
   - id: "q1"
     text: "According to the contributing guidelines, what is the primary Go library used for creating commands and flags in mesheryctl?"
