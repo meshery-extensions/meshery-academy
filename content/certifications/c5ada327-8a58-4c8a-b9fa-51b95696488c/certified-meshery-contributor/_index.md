@@ -12,10 +12,11 @@ expiration_date: "2 years"
 
 certificate:
     title: "Certified Meshery Contributor"
-    description: |
-      "The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility. 
+    description: >
+      The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.
+      
+      Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. These exams validate the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
     
-      Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. These exams validate the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization."
     issuing_authorities:
       - name: "Meshery Authors"
         role: "Maintainers"
@@ -163,7 +164,7 @@ related_resources:
     children:
       - title: "Recorded Training Session"
         link: https://www.youtube.com/embed/dlr_nzJV16Q
-        title: "Training Session Slides"
+    - title: "Training Session Slides"
         link: https://docs.google.com/presentation/d/1hUDhFeYP7dtCQhOEw2U_wQ-G718Y2e5iU3drMDOdIws/edit?usp=sharing
 
   - title: "Self-paced Training: Meshery UI"
@@ -174,7 +175,7 @@ related_resources:
         link: https://docs.google.com/presentation/d/1Vcq48Y0nLZsrKKFNYBJ5fm9bIcb2m6ZnYxq2azn6nlM/edit?slide=id.g35936fe4c88_0_0#slide=id.g35936fe4c88_0_0
       - title: "Contributing to Meshery UI (recording)"
         link: https://www.youtube.com/embed/ia7kvnHCurs
-        title: "Contributing to Meshery UI (slides)"
+    - title: "Contributing to Meshery UI (slides)"
         link: https://docs.google.com/presentation/d/1MRDs28YmzrO1t5QNz7WTp50ukCz6fB2p3awZz63HJmA/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
   
   
@@ -182,7 +183,7 @@ related_resources:
     children:
     - title: "Contributing to Meshery Server (recording)"
       link: https://www.youtube.com/embed/9iRRd4RJOXE
-      title: "Contributing to Meshery Server (slides)"
+    - title: "Contributing to Meshery Server (slides)"
       link: https://docs.google.com/presentation/d/1X0kAAAwHaZ6VHfE8VifWSW5nOdid7GC9L0zcZFP9dac/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
   
   - title: "Self-paced Training: Meshery Server"
