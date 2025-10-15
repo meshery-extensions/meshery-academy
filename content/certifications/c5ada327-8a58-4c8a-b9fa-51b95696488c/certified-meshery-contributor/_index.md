@@ -144,42 +144,60 @@ prerequisite_knowledge:
     - title: "Setting up Meshery Development Environment on Windows"
       link: "https://docs.meshery.io/project/contributing/meshery-windows"
 
-
-
 # List of additional resources for further reading 
 related_resources:
-  - title: "Self-paced Training: Working with Meshery Docs"
-    link: https://www.youtube.com/embed/7wRbbOSwrtI
-    title: "Self-paced Training: Working with Meshery Docs (slides)"
-    link: https://docs.google.com/presentation/d/1kQIzSa4f-pOH8cM4SwEdbFZGI_SXVyyhc9zUZPB7bsI/edit?usp=sharing
-  - title: "Self-paced Training: End-to-end Testing in Meshery CLI"
-    link: https://www.youtube.com/embed/mRQAvR9-P1o
-    title: "Self-paced Training: End-to-end Testing in Meshery CLI (slides)"
-    link: https://docs.google.com/presentation/d/1OhUhqIZVPdnjD7eO1ppeXVvTa-P2lIcdCXHncTOX_XE/edit?usp=sharing
-  - title: "Self-paced Training: Meshery CI/CD (recording)"
-    link: https://www.youtube.com/embed/dlr_nzJV16Q
-    title: "Self-paced Training: Meshery CI/CD (slides)"
-    link: https://docs.google.com/presentation/d/1hUDhFeYP7dtCQhOEw2U_wQ-G718Y2e5iU3drMDOdIws/edit?usp=sharing
-  - title: "Self-paced Training: Meshery CLI (recording)"
-    link: https://www.youtube.com/embed/aNR_1h1Pisg
-    title: "Self-paced Training: Meshery CLI (slides)"
-    link: https://docs.google.com/presentation/d/1lRop7DAAMUBmuFdzZK25LdQrkLG08eVsXEaDrauP3S8/edit?usp=sharing
-  - title: "Self-paced Training: End-to-end Testing in Meshery UI using Playwright (recording)"
-    link: https://www.youtube.com/embed/9d0n37eTSkI
-    title: "Self-paced Training: End-to-end Testing in Meshery UI using Playwright (slides)"
-    link: https://docs.google.com/presentation/d/1Vcq48Y0nLZsrKKFNYBJ5fm9bIcb2m6ZnYxq2azn6nlM/edit?slide=id.g35936fe4c88_0_0#slide=id.g35936fe4c88_0_0
-  - title: "Self-paced Training: Meshery UI (recording)"
-    link: https://www.youtube.com/embed/ia7kvnHCurs
-    title: "Self-paced Training: Meshery UI (slides)"
-    link: https://docs.google.com/presentation/d/1MRDs28YmzrO1t5QNz7WTp50ukCz6fB2p3awZz63HJmA/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
-  - title: "Self-paced Training: Meshery Server (recording)"
-    link: https://www.youtube.com/embed/9iRRd4RJOXE
-    title: "Self-paced Training: Meshery Server (slides)"
-    link: https://docs.google.com/presentation/d/1X0kAAAwHaZ6VHfE8VifWSW5nOdid7GC9L0zcZFP9dac/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
-  - title: "Self-paced Training: Meshery Models (recording)"
-    link: https://www.youtube.com/embed/K2gmdIlGXNo
-  - title: "Self-paced Training: Meshery Models (slides)"
-    link: https://docs.google.com/presentation/d/1XSnDpXeloE9c7FOHGy2l82YbykHl49njUN1RgFoe_ac/edit?usp=sharing
+  - title: "Self-paced Training: Meshery CLI"
+    children:
+      - title: "End-to-end Testing in Meshery CLI (recording)"
+        link: https://www.youtube.com/embed/mRQAvR9-P1o
+      - title: "End-to-end Testing in Meshery CLI (slides)"
+        link: https://docs.google.com/presentation/d/1OhUhqIZVPdnjD7eO1ppeXVvTa-P2lIcdCXHncTOX_XE/edit?usp=sharing
+      - title: "Contributing to Meshery CLI (recording)"
+        link: https://www.youtube.com/embed/aNR_1h1Pisg
+      - title: "Contributing to Meshery CLI (slides)"
+        link: https://docs.google.com/presentation/d/1lRop7DAAMUBmuFdzZK25LdQrkLG08eVsXEaDrauP3S8/edit?usp=sharing
+      - title: "Reference: Meshery CLI Commands"
+        link: "https://docs.meshery.io/reference/cli/commands"
+
+  - title: "Self-paced Training: Meshery CI/CD"
+    children:
+      - title: "Recorded Training Session"
+        link: https://www.youtube.com/embed/dlr_nzJV16Q
+        title: "Training Session Slides"
+        link: https://docs.google.com/presentation/d/1hUDhFeYP7dtCQhOEw2U_wQ-G718Y2e5iU3drMDOdIws/edit?usp=sharing
+
+  - title: "Self-paced Training: Meshery UI"
+    children:
+      - title: "End-to-end Testing in Meshery UI using Playwright (recording)"
+        link: https://www.youtube.com/embed/9d0n37eTSkI
+      - title: "End-to-end Testing in Meshery UI using Playwright (slides)"
+        link: https://docs.google.com/presentation/d/1Vcq48Y0nLZsrKKFNYBJ5fm9bIcb2m6ZnYxq2azn6nlM/edit?slide=id.g35936fe4c88_0_0#slide=id.g35936fe4c88_0_0
+      - title: "Contributing to Meshery UI (recording)"
+        link: https://www.youtube.com/embed/ia7kvnHCurs
+        title: "Contributing to Meshery UI (slides)"
+        link: https://docs.google.com/presentation/d/1MRDs28YmzrO1t5QNz7WTp50ukCz6fB2p3awZz63HJmA/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
+  
+  
+  - title: "Self-paced Training: Meshery Server"
+    children:
+    - title: "Contributing to Meshery Server (recording)"
+      link: https://www.youtube.com/embed/9iRRd4RJOXE
+      title: "Contributing to Meshery Server (slides)"
+      link: https://docs.google.com/presentation/d/1X0kAAAwHaZ6VHfE8VifWSW5nOdid7GC9L0zcZFP9dac/edit?slide=id.g34811bf5022_0_3#slide=id.g34811bf5022_0_3
+  
+  - title: "Self-paced Training: Meshery Server"
+    children:
+    - title: "Working with Meshery Models (recording)"
+      link: https://www.youtube.com/embed/K2gmdIlGXNo
+    - title: "Working with Meshery Models (slides)"
+      link: https://docs.google.com/presentation/d/1XSnDpXeloE9c7FOHGy2l82YbykHl49njUN1RgFoe_ac/edit?usp=sharing
+
+  - title: "[Optional] Self-paced Training: Meshery Docs"
+    children:
+    - title: "Working with Meshery Docs (recording)"
+      link: https://www.youtube.com/embed/7wRbbOSwrtI
+    - title: "Working with Meshery Docs (slides)"
+      link: https://docs.google.com/presentation/d/1kQIzSa4f-pOH8cM4SwEdbFZGI_SXVyyhc9zUZPB7bsI/edit?usp=sharing
 
 # Additional attributes to list in "Details to Know" section
 additional_attributes: 
