@@ -16,9 +16,9 @@ expiration_date: "2 years"
 certificate:
     title: "Certified Meshery Contributor"
     description: >
-      <p>The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.</p>
+      The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.
       
-      <p>Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. This certification validates the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.</p>
+      Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. This certification validates the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
     
     issuing_authorities:
       - name: "Meshery Authors"
