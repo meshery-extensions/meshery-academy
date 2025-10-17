@@ -9,9 +9,9 @@ title: Academy
 ---
 *Below this line, this reminder won't appear when published.*
 
-- [Certifications](https://cloud.layer5.io/academy/certifications)
-- [Challenges](https://cloud.layer5.io/academy/challenges)
-- [Learning Paths](https://cloud.layer5.io/academy/learning-paths)  
+- [Certifications](/academy/certifications)
+- [Challenges](academy/challenges)
+- [Learning Paths](/academy/learning-paths)  
 
 ### Welcome to your Academy's content development environment
 
