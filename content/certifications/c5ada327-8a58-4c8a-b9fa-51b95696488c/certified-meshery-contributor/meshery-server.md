@@ -1145,7 +1145,7 @@ questions:
 ---
 The Meshery Server examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
 
-This exam focuses on software engineers and their ability to contribute to the Meshery Server codebase. The exam covers a variety of topics, including:
+This exam focuses on the candidate's ability to contribute to the Meshery Server codebase. The exam covers a variety of topics, including:
 
 - [Contributing to Meshery Server](https://docs.meshery.io/project/contributing/contributing-server)
 - [Contributing to Meshery Server Events](https://docs.meshery.io/project/contributing/contributing-server-events)
