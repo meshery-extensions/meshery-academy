@@ -15,17 +15,17 @@ expiration_date: "2 years"
 
 certificate:
     title: "Certified Meshery Contributor"
-    description: >
-      <p>The Certified Meshery Contributor (MCC) certification validates technical proficiency in contributing to the open source project, Meshery, through hands-on, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural components: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.</p>
-      
-      <p>Developers, engineers, and community members with intermediate coding skills with Go, React, and JSON schemas, who have experience contributing to Meshery's codebase. This certification validates the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.</p>
+    description: |
+      The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural domains: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.
+
+      The target audience for this exam is developers with intermediate coding skills with Go, React, and OpenAPI schemas, who have experience contributing to Meshery's codebase. These exams validate the individuals's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
     
     issuing_authorities:
       - name: "Meshery Authors"
         role: "Maintainers"
         signature_url: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.svg"
 
-
+`
 # Table of content covered in the test
 # Each domain can have a weightage (percentage) and subdomains (items)
 # Weightage should sum up to 100 across all domains ( not strictly enforced, but recommended )
