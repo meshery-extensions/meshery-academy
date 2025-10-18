@@ -521,22 +521,20 @@ questions:
   #       text: "actions/checkout"
   #     - id: "d"
   #       text: "github/dco-validator"
-  #
-  # q38 Non of these method exists on the event builder
-  # - id: "q38"
-  #   text: "Which method on the event builder is used to specify the component that generated the event?"
-  #   type: "single-answer"
-  #   marks: 1
-  #   options:
-  #     - id: "a"
-  #       text: ".FromComponent()"
-  #     - id: "b"
-  #       text: ".WithSystemID()"
-  #       is_correct: true
-  #     - id: "c"
-  #       text: ".WithComponent()"
-  #     - id: "d"
-  #       text: ".SetComponent()"
+  - id: "q38"
+    text: "Which method on the event builder can be used to specify the system on which the event was generated?"
+    type: "single-answer"
+    marks: 1
+    options:
+      - id: "a"
+        text: ".FromComponent()"
+      - id: "b"
+        text: ".FromSystem()"
+        is_correct: true
+      - id: "c"
+        text: ".WithComponent()"
+      - id: "d"
+        text: ".SetComponent()"
   - id: "q39"
     text: "Which of the following is NOT a valid severity level for a MeshKit error?"
     type: "single-answer"
