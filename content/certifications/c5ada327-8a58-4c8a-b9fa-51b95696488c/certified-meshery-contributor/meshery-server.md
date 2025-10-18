@@ -192,7 +192,7 @@ questions:
       - id: "c"
         text: "meshkit.Error{...}"
       - id: "d"
-        text: "meshkit.New(code, severity, shortDesc, longDesc, probableCause, suggestedRemedy)"
+        text: "errors.New(code, severity, shortDesc, longDesc, probableCause, suggestedRemedy)"
         is_correct: true
   - id: "q14"
     text: "Where can a contributor find the list of existing MeshKit error codes to avoid duplication?"
@@ -237,7 +237,7 @@ questions:
       - id: "d"
         text: "A manual trigger by a maintainer."
   - id: "q17"
-    text: "Which tool is used to automate the creation of the Meshery CLI release artifacts like binaries and changelogs?"
+    text: "Which tool is used to automate the creation of the Meshery CLI release artifacts like binaries?"
     type: "single-answer"
     marks: 1
     options:
@@ -344,7 +344,7 @@ questions:
       - id: "d"
         text: "A random number for uniqueness."
   - id: "q25"
-    text: "What is the purpose of the `DOCKER_HUB_USERNAME` and `DOCKER_HUB_TOKEN` secrets in the GitHub Actions workflow?"
+    text: "What is the purpose of the `DOCKER_USERNAME` and `DOCKER_PASSWORD` secrets in the GitHub Actions workflow?"
     type: "single-answer"
     marks: 1
     options:
@@ -522,14 +522,14 @@ questions:
   #     - id: "d"
   #       text: "github/dco-validator"
   - id: "q38"
-    text: "Which method on the event builder is used to specify the component that generated the event?"
+    text: "Which method on the event builder can be used to specify the system on which the event was generated?"
     type: "single-answer"
     marks: 1
     options:
       - id: "a"
         text: ".FromComponent()"
       - id: "b"
-        text: ".WithSystemID()"
+        text: ".FromSystem()"
         is_correct: true
       - id: "c"
         text: ".WithComponent()"
@@ -579,7 +579,7 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "Meshery"
+        text: "Layer5"
         is_correct: true
       - id: "b"
         text: "LDAP"

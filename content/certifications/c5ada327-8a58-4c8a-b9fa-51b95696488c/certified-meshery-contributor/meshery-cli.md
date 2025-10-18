@@ -167,7 +167,7 @@ questions:
       - id: "a"
         text: "go build ."
       - id: "b"
-        text: "make mesheryctl"
+        text: "make"
         is_correct: true
       - id: "c"
         text: "make install-cli"
@@ -282,7 +282,7 @@ questions:
       - id: "d"
         text: "Wait for a maintainer to approve the file"
   - id: "q21"
-    text: "What is BATS, the framework used for mesheryctl end-to-end tests?"
+    text: "What is BATS used for mesheryctl end-to-end tests?"
     type: "single-answer"
     marks: 2
     options:
@@ -291,7 +291,7 @@ questions:
       - id: "b"
         text: "A JavaScript test runner"
       - id: "c"
-        text: "A Bash Automated Testing System"
+        text: "A Bash testing framework"
         is_correct: true
       - id: "d"
         text: "A Python-based integration test suite"
@@ -335,7 +335,7 @@ questions:
       - id: "c"
         text: "make test-cli"
       - id: "d"
-        text: "make test-cli-e2e"
+        text: "make e2e"
         is_correct: true
   - id: "q25"
     text: "How is a test case defined in a BATS test file?"
@@ -345,7 +345,7 @@ questions:
       - id: "a"
         text: "Using the test keyword"
       - id: "b"
-        text: "With the @test annotation followed by a description"
+        text: "With the @test annotation followed by a description and a test block inside {...}"
         is_correct: true
       - id: "c"
         text: "Inside a function test_case() { ... } block"
