@@ -581,7 +581,7 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "Meshery"
+        text: "Layer5"
         is_correct: true
       - id: "b"
         text: "LDAP"
