@@ -13,7 +13,6 @@ tags: [meshery, open source, contributor]
 level: "beginner"
 categories: "platform"
 expiration_date: "2 years"
-validity: "2 years"
 
 certificate:
     title: "Certified Meshery Contributor"
@@ -133,27 +132,24 @@ prerequisite_knowledge:
       - title: "Local and Remote Providers"
         link: "https://docs.meshery.io/extensibility/providers"
 
-  - title: "[Supplemental] Meshery Docs"
+  - title: "[Optional] Meshery Docs"
     children:
     - title: "Contributing to Meshery Docs"
       link: "https://docs.meshery.io/project/contributing/contributing-docs"
     - title: "Meshery Documentation Structure and Organization"
       link: "https://docs.meshery.io/project/contributing/contributing-docs-structure"
 
-  # - title: "[Supplemental] General"
-  #   children:
-  #   - title: "End-to-End Test Status"
-  #     link: "https://docs.meshery.io/project/contributing/test-status"
-  #   - title: "Contributing to Meshery using git"
-  #     link: "https://docs.meshery.io/project/contributing/contributing-gitflow"
-  #   - title: "Setting up Meshery Development Environment on Windows"
-  #     link: "https://docs.meshery.io/project/contributing/meshery-windows"
+  - title: "[Optional] General"
+    children:
+    - title: "End-to-End Test Status"
+      link: "https://docs.meshery.io/project/contributing/test-status"
+    - title: "Contributing to Meshery using git"
+      link: "https://docs.meshery.io/project/contributing/contributing-gitflow"
+    - title: "Setting up Meshery Development Environment on Windows"
+      link: "https://docs.meshery.io/project/contributing/meshery-windows"
 
 # List of additional resources for further reading 
 related_resources:
-  - title: "Meshery Certification Program Tracks"
-    link: "https://kanvas.new/extension/meshmap?catalog-design=c2141477-379b-432e-b47e-1c89600235a5"
-    
   - title: "Self-paced Training: Meshery CLI"
     children:
       - title: "End-to-end Testing in Meshery CLI (recording)"
@@ -197,7 +193,7 @@ related_resources:
     - title: "Working with Meshery Models (slides)"
       link: https://docs.google.com/presentation/d/1XSnDpXeloE9c7FOHGy2l82YbykHl49njUN1RgFoe_ac/edit?usp=sharing
 
-  - title: "Supplemental: Self-paced Training: Meshery Docs"
+  - title: "Supplemental: Optional] Self-paced Training: Meshery Docs"
     children:
     - title: "Working with Meshery Docs (recording)"
       link: https://www.youtube.com/embed/7wRbbOSwrtI
@@ -209,8 +205,8 @@ additional_attributes:
   - title: "Retake Policy"
     description: "Up to three retakes allowed per exam"
     value: "3"
-  - title: "Scoring"
-    value: "Composite"
+  - title: "Composite Scoring"
+    value: "Average of all five domains"
     description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
