@@ -3,23 +3,17 @@ type: "certification"
 id: "a2852b8b-4c68-4897-8e5a-5b5c1a470b17"
 title: "Certified Meshery Contributor"
 description: |
-  The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural domains: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility. 
-
-  The target audience for this exam is developers with intermediate coding skills with Go, React, and OpenAPI schemas, who have experience contributing to Meshery's codebase. This certification validates an individual's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
+  The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written assessments. 
 
 banner: "meshery-light-icon.svg"
 weight: 1
 tags: [meshery, open source, contributor]
 level: "beginner"
 categories: "platform"
-expiration_date: "2 years"
 
 certificate:
     title: "Certified Meshery Contributor"
-    description: |
-      The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural domains: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility. 
-
-      The target audience for this exam is developers with intermediate coding skills with Go, React, and OpenAPI schemas, who have experience contributing to Meshery's codebase. This certification validates an individual's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
+    expires_in: 24 # in months
 
     issuing_authorities:
       - name: "Meshery Authors"
@@ -210,3 +204,6 @@ additional_attributes:
     description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
+The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural domains: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.
+
+The target audience for this exam is developers with intermediate coding skills with Go, React, and OpenAPI schemas, who have experience contributing to Meshery's codebase. This certification validates an individual's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
