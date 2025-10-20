@@ -66,14 +66,10 @@ questions:
         text: "mesheryctl/pkg/utils/root.go"
   - id: "q5"
     text: "True or False: Command names in mesheryctl should be verbs representing actions."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+   
   - id: "q6"
     text: "When adding a new command, which file must be updated to include the new command under its parent?"
     type: "single-answer"
@@ -217,14 +213,10 @@ questions:
         text: "The DCO check is done automatically without any action"
   - id: "q16"
     text: "True or False: It is required to create an issue before submitting a pull request for a new mesheryctl command."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+   
   - id: "q17"
     text: "When creating a new command, a new Go file should be created under which directory?"
     type: "single-answer"
@@ -452,14 +444,10 @@ questions:
         text: "It is the only way to define a command's logic."
   - id: "q33"
     text: "True or False: All new commands should be added directly to root.go."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "True"
-      - id: "false"
-        text: "False"
-        is_correct: true
+    answer: false
+   
   - id: "q34"
     text: "The output of mesheryctl commands should be designed to be:"
     type: "single-answer"
@@ -713,14 +701,10 @@ questions:
         text: "To manage user configuration files."
   - id: "q52"
     text: "True or False: The mesheryctl contributing guide recommends using fmt.Println for all user-facing output."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "True"
-      - id: "false"
-        text: "False"
-        is_correct: true
+    answer: false
+
   - id: "q53"
     text: "When a user provides an invalid flag to a mesheryctl command, what is the expected behavior?"
     type: "single-answer"
@@ -894,14 +878,10 @@ questions:
         text: "In a separate BASH script."
   - id: "q65"
     text: "True or False: All contributions to mesheryctl must be backward compatible."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+
   - id: "q66"
     text: "Before submitting a PR, it is recommended to run which of the following make commands locally?"
     type: "multiple-answers"

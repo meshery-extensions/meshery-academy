@@ -280,14 +280,10 @@ questions:
         text: "To write unit tests for the API."
   - id: "q20"
     text: "True or False: Schemas in Meshery are primarily used for back-end data validation and have no impact on the user interface."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-      - id: "b"
-        text: "False"
-        is_correct: true
+    answer: false
+
   - id: "q21"
     text: "The ``make error`` command is used to:"
     type: "single-answer"
@@ -1103,14 +1099,10 @@ questions:
         is_correct: true
   - id: "q80"
     text: "True or False: Meshery can be deployed as a Docker container."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "true"
-        is_correct: true
-      - id: "false"
-        text: "false"
+    answer: true
+
   - id: "q81"
     text: "Which database is used by Meshery Server for storing state and configuration?"
     type: "single-answer"

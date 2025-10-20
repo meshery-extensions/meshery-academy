@@ -38,14 +38,10 @@ questions:
         text: "MQTT"
   - id: "q3"
     text: "True or False: Meshery Server can manage multiple Meshery Adapters simultaneously."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "true"
-        is_correct: true
-      - id: "false"
-        text: "false"
+    answer: true
+  
   - id: "q4"
     text: "Which configuration file format is commonly used by Meshery Server?"
     type: "single-answer"
@@ -136,14 +132,10 @@ questions:
         is_correct: true
   - id: "q10"
     text: "True or False: Meshery can be deployed as a Docker container."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "true"
-        is_correct: true
-      - id: "false"
-        text: "false"
+    answer: true
+  
 ---
 The Meshery Server examination verifies 
 

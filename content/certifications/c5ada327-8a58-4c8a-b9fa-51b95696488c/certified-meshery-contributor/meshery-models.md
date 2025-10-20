@@ -65,14 +65,10 @@ questions:
         text: "mesheryctl registry publish"
   - id: "q5"                       
     text: "A Component, the fundamental building block of a Meshery Model, represents and defines the infrastructure under management."
-    type: "single-answer"            
+    type: "true-false"            
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+
   - id: "q6"                       
     text: "Which metadata key, when set to 'true', identifies a component as a Non-Semantic Component primarily used for visual documentation rather than representing deployable infrastructure?"
     type: "single-answer"                     
@@ -119,34 +115,22 @@ questions:
         is_correct: true
   - id: "q9"                       
     text: "If a contributor bundles their custom components and relationships into a custom model and imports it into their local Meshery deployment, the component definitions will be registered in the Meshery Server’s registry and available for use."
-    type: "single-answer"            
+    type: "true-false"            
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+ 
   - id: "q10"                       
     text: "Meshery Relationships function to explain the connection and interaction rules between components to aid visualization, comprehension, and to affect the configuration of associated components."
-    type: "single-answer"            
+    type: "true-false"            
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+    
   - id: "q11"                       
     text: "When defining a Hierarchical relationship, the 'from' field references the parent component, while the 'to' field references the child component."
-    type: "single-answer"            
+    type: "true-false"            
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-      - id: "false"
-        text: "False"
-        is_correct: true
+    answer: false
+
   - id: "q12"                       
     text: "Which properties must be consistent in casing (e.g., all lowercase or specific casing) when matching relationship targets to ensure accurate selection?"
     type: "multiple-answers"             
@@ -266,14 +250,10 @@ questions:
         is_correct: true
   - id: "q20"                       
     text: "A fully configured entity with detailed intentions based on a generic definition is known as a Declaration."
-    type: "single-answer"            
+    type: "true-false"            
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+
   - id: "q21"                       
     text: "What subcommand is used to retrieve detailed information about a relationship by querying against fields like `kind`, `model`, `type`, and `subType`?"
     type: "single-answer"                     
