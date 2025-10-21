@@ -1056,5 +1056,5 @@ This exam focuses on the candidate's ability to contribute to the Meshery CLI co
 
 This exam does not cover Meshery CLI usage. For information on using Meshery CLI, please refer to the following resources:
 
-- [Meshery CLI Installation Guide](https://docs.meshery.io/project/installation/mesheryctl)
+- [Meshery CLI Installation Guide](https://docs.meshery.io/installation/mesheryctl)
 - [Meshery CLI Commands](https://docs.meshery.io/reference/mesheryctl/commands)
