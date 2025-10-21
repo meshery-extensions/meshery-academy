@@ -919,7 +919,7 @@ questions:
       - id: "d"
         text: "make release"
   - id: "q67"
-    text: "In a BATS test, \`[ \"$status\" -eq 0 ]\` is a common way to assert what?"
+    text: "In a BATS test, `[ \"$status\" -eq 0 ]` is a common way to assert what?"
     type: "single-answer"
     marks: 2
     options:
@@ -940,7 +940,7 @@ questions:
       - id: "a"
         text: "By checking for the flag manually in the RunE function."
       - id: "b"
-        text: "By using cmd.MarkFlagRequired(\\\\\"flag-name\\\\\")."
+        text: "By using cmd.MarkFlagRequired(\"flag-name\")."
         is_correct: true
       - id: "c"
         text: "Cobra does not support required flags."
