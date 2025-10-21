@@ -919,7 +919,7 @@ questions:
       - id: "d"
         text: "make release"
   - id: "q67"
-    text: "In a BATS test, \\[ \\\\\"$status\\\\\" -eq 0 \\] is a common way to assert what?"
+    text: "In a BATS test, \`[ \"$status\" -eq 0 ]\` is a common way to assert what?"
     type: "single-answer"
     marks: 2
     options:
