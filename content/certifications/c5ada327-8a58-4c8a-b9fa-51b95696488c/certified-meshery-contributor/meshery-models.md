@@ -328,9 +328,20 @@ questions:
         is_correct: true
       - id: "false"
         text: "False"
-  - id: "q29"
-    text: "Which Meshery CLI command is used to publish a built model package to a remote OCI-compliant registry?"
-    type: "single-answer"                
+  - id: "q29"                       
+    text: "Which capability kind is used to categorize operations related to changing the configuration of an entity?"
+    type: "single-answer"                     
+    marks: 2                        
+    options:                       
+      - id: "a"
+        text: "view"
+      - id: "b" 
+        text: "mutate"
+        is_correct: true
+      - id: "c"
+        text: "action"
+      - id: "d"
+        text: "telemetry"
     marks: 2
   - id: "q30"
     text: "Understanding of the vernacular of Meshery’s internal object model and discusses the difference between them. Which of the following is NOT one of these terms?"
