@@ -280,14 +280,10 @@ questions:
         text: "To write unit tests for the API."
   - id: "q20"
     text: "True or False: Schemas in Meshery are primarily used for back-end data validation and have no impact on the user interface."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-      - id: "b"
-        text: "False"
-        is_correct: true
+    answer: false
+
   - id: "q21"
     text: "The ``make error`` command is used to:"
     type: "single-answer"
@@ -457,14 +453,10 @@ questions:
         text: "go install"
   - id: "q33"
     text: "True or False: Events are only tracked for actions performed through the Meshery UI."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-      - id: "b"
-        text: "False"
-        is_correct: true
+    answer: false
+    
   - id: "q34"
     text: "The 'Probable Cause' field in a MeshKit error should explain:"
     type: "single-answer"
@@ -551,14 +543,10 @@ questions:
         is_correct: true
   - id: "q40"
     text: "Pull requests involving changes to Meshery Server run a GitHub Action workflow to analyze error codes and add new error codes, if needed."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        is_correct: true
-      - id: "false"
-        text: "False"
+    answer: true
+  
   # - id: "q41"
   #   text: "What does the `make clean` command do?"
   #   type: "single-answer"
@@ -618,14 +606,10 @@ questions:
         text: "To automatically apply a fix."
   - id: "q45"
     text: "True or False: The build and release process generates binaries for Windows, macOS, and Linux."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-        is_correct: true
-      - id: "b"
-        text: "False"
+    answer: true
+  
   - id: "q46"
     text: "How are relationships between different models (e.g., a user has many connections) defined in Meshery's schema-driven approach?"
     type: "single-answer"
@@ -670,14 +654,10 @@ questions:
   #       is_correct: true
   - id: "q49"
     text: "True or False: It is acceptable to create a MeshKit error with only an error code and leave all other fields empty."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-      - id: "b"
-        text: "False"
-        is_correct: true
+    answer: false
+ 
   - id: "q50"
     text: "Which GitHub event triggers the `stable` release workflow?"
     type: "single-answer"
@@ -779,14 +759,10 @@ questions:
         text: "5000"
   - id: "q57"
     text: "True or False: Events are stored permanently in the Meshery database and are never deleted."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-        is_correct: true
-      - id: "b"
-        text: "False"
+    answer: true
+ 
   - id: "q58"
     text: "When logging an error, what is the recommended practice for handling MeshKit errors?"
     type: "single-answer"
@@ -958,14 +934,10 @@ questions:
         text: "It runs the Go unit tests."
   - id: "q70"
     text: "True or False: A contributor needs to manually update the component definition schemas when adding a new feature."
-    type: "single-answer"
+    type: "true-false"
     marks: 1
-    options:
-      - id: "a"
-        text: "True"
-        is_correct: true
-      - id: "b"
-        text: "False"
+    answer: true
+  
   - id: "q71"
     text: "Before submitting a pull request, contributors are encouraged to:"
     type: "multiple-answers"
@@ -1103,14 +1075,10 @@ questions:
         is_correct: true
   - id: "q80"
     text: "True or False: Meshery can be deployed as a Docker container."
-    type: "single-answer"
+    type: "true-false"
     marks: 2
-    options:
-      - id: "true"
-        text: "true"
-        is_correct: true
-      - id: "false"
-        text: "false"
+    answer: true
+
   - id: "q81"
     text: "Which database is used by Meshery Server for storing state and configuration?"
     type: "single-answer"

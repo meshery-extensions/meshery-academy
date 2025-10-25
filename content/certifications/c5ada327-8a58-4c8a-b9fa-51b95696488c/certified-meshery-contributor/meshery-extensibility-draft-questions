@@ -75,14 +75,10 @@ questions:
 
 - id: "q5"
   text: "True or False: Extensions in Meshery are strictly limited to core platform modifications and cannot provide integrations with external tools or services."
-  type: "single-answer"
+  type: "true-false"
   marks: 1
-  options:
-  - id: "true"
-    text: "True"
-  - id: "false"
-    text: "False"
-    is_correct: true
+  answer: false
+
 
 - id: "q6"
   text: "If a user desires to bundle their custom component definition(s) while keeping them private, what must they import into their Meshery deployment?"
