@@ -1,5 +1,5 @@
 ---
-[Meshery Models Contributor Exam"
+title: "Meshery Models Contributor Exam"
 type: "test"
 layout: "test"
 max_attempts: 3
