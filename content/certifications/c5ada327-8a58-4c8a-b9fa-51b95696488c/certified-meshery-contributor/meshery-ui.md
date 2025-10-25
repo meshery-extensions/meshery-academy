@@ -1210,11 +1210,11 @@ questions:
 ---
 The Meshery UI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
 
-    - [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui)
-    - [Contributing to Meshery UI - Notification Center](https://docs.meshery.io/project/contributing/contributing-ui-notification-center)
-    - [Schema-Driven UI Development in Meshery](https://docs.meshery.io/project/contributing/contributing-ui-schemas)
-    - [Contributing to Meshery UI - Sistent](https://docs.meshery.io/project/contributing/contributing-ui-sistent)
-    - [Contributing to Meshery UI End-to-End Tests](https://docs.meshery.io/project/contributing/contributing-ui-tests)
-    - [Contributing to Meshery UI - Dashboard Widgets](https://docs.meshery.io/project/contributing/contributing-ui-widgets)
+- [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui)
+- [Contributing to Meshery UI - Notification Center](https://docs.meshery.io/project/contributing/contributing-ui-notification-center)
+- [Schema-Driven UI Development in Meshery](https://docs.meshery.io/project/contributing/contributing-ui-schemas)
+- [Contributing to Meshery UI - Sistent](https://docs.meshery.io/project/contributing/contributing-ui-sistent)
+- [Contributing to Meshery UI End-to-End Tests](https://docs.meshery.io/project/contributing/contributing-ui-tests)
+- [Contributing to Meshery UI - Dashboard Widgets](https://docs.meshery.io/project/contributing/contributing-ui-widgets)
 
 This exam does not cover Meshery UI usage, but focuses on Meshery UI contribution. For information on using Meshery UI, please refer to the [Meshery Documentation](https://docs.meshery.io).

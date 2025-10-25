@@ -1,5 +1,5 @@
 ---
-title: "Meshery Models Contributor Exam"
+[Meshery Models Contributor Exam"
 type: "test"
 layout: "test"
 max_attempts: 3
@@ -649,3 +649,11 @@ questions:
 
 ---
 The Meshery Models examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
+
+The exam covers a variety of topics, including:
+
+- [Contributing to Meshery Models](https://docs.meshery.io/project/contributing/contributing-models)
+- [Contributing to Model Components](https://docs.meshery.io/project/contributing/contributing-components)
+- [Contributing to Model Relationships](https://docs.meshery.io/project/contributing/contributing-relationships)
+- [Contributing to Models Quick Start](https://docs.meshery.io/project/contributing/contributing-models-quick-start)
+- [Contributing to Meshery Policies](https://docs.meshery.io/project/contributing/contributing-policies)
