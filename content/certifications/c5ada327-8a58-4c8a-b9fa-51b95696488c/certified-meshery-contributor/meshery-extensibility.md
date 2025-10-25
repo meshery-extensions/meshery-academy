@@ -724,3 +724,11 @@ questions:
   
 ---
 The Meshery Extensibility examination verifies contributor understanding of one of Meshery's core architectural frameworks and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
+
+The exam covers a variety of topics, including:
+
+- [Contributing to Meshery Adapters](https://docs.meshery.io/project/contributing/contributing-adapters)
+- [Meshery UI Extensibility](https://docs.meshery.io/extensibility/ui)
+- [Authorization Extensibility](https://docs.meshery.io/extensibility/authorization)
+- [Using Meshery APIs](https://docs.meshery.io/extensibility/api)
+- [Local and Remote Providers](https://docs.meshery.io/extensibility/providers)
