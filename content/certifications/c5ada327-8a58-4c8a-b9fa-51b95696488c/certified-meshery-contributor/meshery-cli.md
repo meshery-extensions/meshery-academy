@@ -37,7 +37,7 @@ questions:
       - id: "d"
         text: "snake_case"
   - id: "q3"
-    text: "Which library is used in mesheryctl for handling configuration management?"
+    text: "Which library is used in mesheryctl for handling reading configuration files from disk?"
     type: "single-answer"
     marks: 2
     options:
@@ -58,14 +58,14 @@ questions:
       - id: "a"
         text: "mesheryctl/main.go"
       - id: "b"
-        text: "mesheryctl/cmd/root.go"
+        text: "mesheryctl/commands/root.go"
       - id: "c"
         text: "mesheryctl/internal/cli/root.go"
         is_correct: true
       - id: "d"
         text: "mesheryctl/pkg/utils/root.go"
   - id: "q5"
-    text: "True or False: Command names in mesheryctl should be verbs representing actions."
+    text: "True or False: In mesheryctl, commands are nouns and subcommands are verbs representing actions on those nouns."
     type: "single-answer"
     marks: 2
     options:
@@ -90,7 +90,7 @@ questions:
         text: "A new config.yaml file"
   - id: "q7"
     text: "What is the correct convention for naming flags in mesheryctl?"
-    type: "single-answer"
+    type: "multiple-answers"
     marks: 2
     options:
       - id: "a"
@@ -101,7 +101,8 @@ questions:
         text: "Use lowercase and separate words with hyphens"
         is_correct: true
       - id: "d"
-        text: "Use single letters only"
+        text: "Support both shorthand (one or two letters) and long-form (full word spelled out) for each flag."
+        is_correct: true
   - id: "q8"
     text: "Which of the following are design principles for mesheryctl's user experience, according to the guide?"
     type: "multiple-answers"
@@ -111,9 +112,9 @@ questions:
         text: "Keep it simple"
         is_correct: true
       - id: "b"
-        text: "Provide verbose-only output"
+        text: "Provide strongly opinionated behavior and responses"
       - id: "c"
-        text: "Make it beautiful"
+        text: "Deliver consistent UX"
         is_correct: true
       - id: "d"
         text: "Require multiple confirmation steps for all actions"
@@ -123,11 +124,11 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "Avoided entirely"
+        text: "Used on when an error code is shown"
       - id: "b"
         text: "Used for every line of output"
       - id: "c"
-        text: "Judicious and consistent"
+        text: "Avoided entirely"
         is_correct: true
       - id: "d"
         text: "Random to make it interesting"
@@ -141,7 +142,7 @@ questions:
       - id: "b"
         text: "Print the full stack trace to the user"
       - id: "c"
-        text: "Provide a helpful error message and a link to documentation if possible"
+        text: "Provide a helpful error message and a link to documentation, if possible"
         is_correct: true
       - id: "d"
         text: "Log the error to a remote server without informing the user"
@@ -155,7 +156,7 @@ questions:
       - id: "b"
         text: "make mesheryctl"
       - id: "c"
-        text: "make setup-cli-dev"
+        text: "cd mesheryctl; make"
         is_correct: true
       - id: "d"
         text: "make build-cli"
@@ -179,13 +180,13 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "In the system's /usr/local/bin directory"
+        text: "In your system's `/usr/local/bin` directory"
       - id: "b"
         text: "In the /build directory of the Meshery repository"
       - id: "c"
-        text: "In the user's home directory"
+        text: "In your home directory"
       - id: "d"
-        text: "In the bin/mesheryctl directory inside your Meshery folder"
+        text: "In the `mesheryctl` directory inside your `meshery` fork"
         is_correct: true
   - id: "q14"
     text: "What is the purpose of the Developer Certificate of Origin (DCO) sign-off?"
@@ -193,14 +194,14 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "To assign copyright of the code to Layer5"
+        text: "To overwrite any prior copyright of the code being submitted"
       - id: "b"
         text: "To certify that the contributor has the right to submit their contribution"
         is_correct: true
       - id: "c"
         text: "To run automated code formatting checks"
       - id: "d"
-        text: "To subscribe the contributor to a newsletter"
+        text: "To subscribe the contributor to the project newsletter"
   - id: "q15"
     text: "How do you sign-off your commits for the DCO check?"
     type: "single-answer"
@@ -216,7 +217,7 @@ questions:
       - id: "d"
         text: "The DCO check is done automatically without any action"
   - id: "q16"
-    text: "True or False: It is required to create an issue before submitting a pull request for a new mesheryctl command."
+    text: "True or False: Proper contribution procedure includes creating a GitHub issue before submitting a pull request."
     type: "single-answer"
     marks: 2
     options:
@@ -226,21 +227,17 @@ questions:
       - id: "false"
         text: "False"
   - id: "q17"
-    text: "When creating a new command, a new Go file should be created under which directory?"
+    text: "When creating a new mesheryctl command, a formal design specification is required."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "mesheryctl/cmd/"
-      - id: "b"
-        text: "mesheryctl/pkg/"
-      - id: "c"
-        text: "mesheryctl/internal/cli/"
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "d"
-        text: "mesheryctl/docs/"
+      - id: "false"
+        text: "False"
   - id: "q18"
-    text: "The Long property of a Cobra command is used for:"
+    text: "The `Long` property of a Cobra command is used for:"
     type: "single-answer"
     marks: 2
     options:
@@ -254,44 +251,40 @@ questions:
       - id: "d"
         text: "An example of how to use the command."
   - id: "q19"
-    text: "Which property of a Cobra command is used to provide usage examples?"
+    text: "True/False: The Meshery CLI reference documentation is auto-generated from information found in each command's Golang file."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "Usage"
-      - id: "b"
-        text: "Long"
-      - id: "c"
-        text: "Example"
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "d"
-        text: "Short"
+      - id: "false"
+        text: "False"
   - id: "q20"
     text: "What should you do after creating the Go file for your new command?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "Immediately submit a pull request"
+        text: "Immediately submit a pull request and await review"
       - id: "b"
         text: "Register the new command with its parent command"
         is_correct: true
       - id: "c"
         text: "Delete the root.go file"
       - id: "d"
-        text: "Wait for a maintainer to approve the file"
+        text: "Write at least 50 unit tests"
   - id: "q21"
     text: "What is BATS used for mesheryctl end-to-end tests?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "A Go testing library"
+        text: "A Go unit test library"
       - id: "b"
         text: "A JavaScript test runner"
       - id: "c"
-        text: "A Bash testing framework"
+        text: "A Bash-based testing framework"
         is_correct: true
       - id: "d"
         text: "A Python-based integration test suite"
@@ -310,30 +303,26 @@ questions:
       - id: "d"
         text: "To compile the mesheryctl binary"
   - id: "q23"
-    text: "In which directory are the mesheryctl end-to-end test files located?"
+    text: "mesheryctl end-to-end test files located outside of the `meshery/mesherctl` directory structure."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "mesheryctl/tests/unit"
-      - id: "b"
-        text: "mesheryctl/tests/e2e"
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "mesheryctl/e2e"
-      - id: "d"
-        text: "mesheryctl/cmd/tests"
   - id: "q24"
     text: "What is the command to run the mesheryctl end-to-end tests?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "make test"
+        text: "bats start"
       - id: "b"
-        text: "make test-e2e"
+        text: "mesheryctl system test"
       - id: "c"
-        text: "make test-cli"
+        text: "golangci-lint --check"
       - id: "d"
         text: "make e2e"
         is_correct: true
@@ -343,30 +332,30 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "Using the test keyword"
+        text: "Using a UUID"
       - id: "b"
         text: "With the @test annotation followed by a description and a test block inside {...}"
         is_correct: true
       - id: "c"
-        text: "Inside a function test_case() { ... } block"
+        text: "By defining the truthy assertion in regex"
       - id: "d"
-        text: "By creating a file with a _test.bats suffix"
+        text: "By creating a test file with `bash_` prepended to the filename"
   - id: "q26"
     text: "What is the file extension for BATS test files?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: ".sh"
+        text: ".e2e-sh"
       - id: "b"
         text: ".bash"
       - id: "c"
         text: ".bats"
         is_correct: true
       - id: "d"
-        text: ".test"
+        text: ".int-test"
   - id: "q27"
-    text: "What is the purpose of the setup() function in a BATS file?"
+    text: "What is the purpose of the `setup()` function in a BATS file?"
     type: "single-answer"
     marks: 2
     options:
@@ -380,7 +369,7 @@ questions:
       - id: "d"
         text: "It is an alias for the @test annotation."
   - id: "q28"
-    text: "What is the purpose of the teardown() function in a BATS file?"
+    text: "What is the purpose of the `teardown()` function in a BATS file?"
     type: "single-answer"
     marks: 2
     options:
@@ -562,11 +551,11 @@ questions:
         text: "Screenshots or recordings of the new functionality."
         is_correct: true
   - id: "q41"
-    text: "In BATS, how do you check the exit code of the last command run?"
+    text: "mesheryctl can be installed on Linux, macOS, or Windows systems using methods like bash, Homebrew, or Scoop."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
+      - id: "true"
         text: "Using the $status variable."
         is_correct: true
       - id: "b"
@@ -600,33 +589,25 @@ questions:
         text: "False"
         is_correct: true
   - id: "q44"
-    text: "If a BATS test for a command needs a running Meshery instance, where should the logic to start Meshery be placed?"
+    text: "`mesheryctl system context` allows users to switch between mesheryctl config files."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "Inside every single @test block."
-      - id: "b"
-        text: "In the setup() function to run before each test."
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "In the teardown() function."
-      - id: "d"
-        text: "The tests cannot interact with a running Meshery instance."
   - id: "q45"
-    text: "What is the purpose of the common.bash file in the tests/e2e directory?"
+    text: "mesheryctl is a client of the Meshery Server REST API."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "It contains all the test cases."
-      - id: "b"
-        text: "It is the main entry point for running tests."
-      - id: "c"
-        text: "It contains helper functions and variables shared across multiple test files."
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "d"
-        text: "It is an example test file that should not be modified."
+      - id: "false"
+        text: "False"
   - id: "q46"
     text: "When writing a BATS test, how would you check if the output of a command contains a specific string like 'Success'?"
     type: "single-answer"
@@ -656,19 +637,15 @@ questions:
       - id: "d"
         text: "A new Makefile target."
   - id: "q48"
-    text: "The skip command in BATS is used to:"
+    text: "All mesheryctl commands require a valid user token."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "End the test suite immediately."
-      - id: "b"
-        text: "Skip the rest of the current test case."
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "Ignore a failing assertion."
-      - id: "d"
-        text: "Delete the test file."
   - id: "q49"
     text: "What is a key difference between unit tests and the BATS end-to-end tests for mesheryctl?"
     type: "single-answer"
@@ -677,7 +654,7 @@ questions:
       - id: "a"
         text: "There is no difference; they test the same things."
       - id: "b"
-        text: "Unit tests are written in Go and test functions, while BATS tests execute the compiled CLI binary."
+        text: "Unit tests are written in Go using test functions, while BATS tests execute the compiled CLI binary."
         is_correct: true
       - id: "c"
         text: "Unit tests are manual, while BATS tests are automated."
@@ -712,7 +689,7 @@ questions:
       - id: "d"
         text: "To manage user configuration files."
   - id: "q52"
-    text: "True or False: The mesheryctl contributing guide recommends using fmt.Println for all user-facing output."
+    text: "True or False: The mesheryctl contributing guide recommends not supporting silent answers via flags for any interactive prompts given to users, so that users cannot programmatically script over mesheryctl commands."
     type: "single-answer"
     marks: 2
     options:
@@ -731,17 +708,17 @@ questions:
       - id: "b"
         text: "The command should crash with a panic."
       - id: "c"
-        text: "Cobra should automatically reject the flag and show a helpful error."
+        text: "The command should automatically reject the flag and show a helpful error."
         is_correct: true
       - id: "d"
-        text: "The command should ask the user to re-enter the flag."
+        text: "The command should pause execution and await user input to re-enter the flag."
   - id: "q54"
-    text: "Which of these file paths represents the correct location for a new command mesheryctl exp newthing?"
+    text: "Which of these file paths represents the correct location for a new command `mesheryctl exp newthing`?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "mesheryctl/internal/cli/exp/newthing.go"
+        text: "mesheryctl/internal/cli/experimental/newthing.go"
       - id: "b"
         text: "mesheryctl/internal/cli/newthing.go"
         is_correct: true
@@ -760,25 +737,25 @@ questions:
         text: "cmd.SilenceUsage = true"
         is_correct: true
       - id: "c"
-        text: "cmd.NoHelp = true"
+        text: "cmd.NoHelpAtAll = true"
       - id: "d"
         text: "cmd.ErrorsFollowUsage = false"
   - id: "q56"
-    text: "What is the recommended way to handle multi-line descriptions in a Cobra command's Long field?"
+    text: "What is the recommended way to handle multi-line descriptions in a mesheryctl command's `Long` field?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "Use a single line with \\n characters."
+        text: "Use a single line with `&nbsp;` characters."
       - id: "b"
         text: "Use a raw string literal with backticks (`)."
         is_correct: true
       - id: "c"
-        text: "Concatenate multiple strings together."
+        text: "Golang `string` to concatenate multiple strings together."
       - id: "d"
-        text: "Store the description in a separate .txt file."
+        text: "URI to a separate .txt file where the long description is stored."
   - id: "q57"
-    text: "Before running make test-cli-e2e, what must you ensure is available in your environment?"
+    text: "Before running `make test-cli-e2e`, what must you ensure is available in your environment?"
     type: "single-answer"
     marks: 2
     options:
@@ -788,7 +765,7 @@ questions:
       - id: "b"
         text: "A running Kubernetes cluster."
       - id: "c"
-        text: "A valid Meshery Cloud token."
+        text: "A valid Remote Provider token."
       - id: "d"
         text: "The Go debugger."
   - id: "q58"
@@ -797,14 +774,14 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "The Go package structure."
+        text: "The CPU architecture for mesheryctl builds."
       - id: "b"
         text: "The mesheryctl command and subcommand structure."
         is_correct: true
       - id: "c"
-        text: "The GitHub repository structure."
+        text: "Meshery Server GraphQL API structure."
       - id: "d"
-        text: "The Meshery API endpoints."
+        text: "Idiomatic server-side Javascript structure"
   - id: "q59"
     text: "Which two files are commonly sourced in BATS tests for mesheryctl to provide helper functions?"
     type: "multiple-answers"
@@ -832,40 +809,31 @@ questions:
         text: "The line number where the failure occurred."
         is_correct: true
       - id: "c"
-        text: "The output of the command that failed."
-        is_correct: true
+        text: "Base64 encoded output of the command that failed."
       - id: "d"
         text: "An automatic suggestion on how to fix the code."
   - id: "q61"
-    text: "Which command would you use to add a persistent flag to the root command that is available to all subcommands?"
+    text: "The global `--config` flag does not allow you to override the default location of the configuration file."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "rootCmd.Flags().StringVar(...)"
-      - id: "b"
-        text: "rootCmd.PersistentFlags().StringVar(...)"
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "rootCmd.LocalFlags().StringVar(...)"
-      - id: "d"
-        text: "rootCmd.GlobalFlags().StringVar(...)"
   - id: "q62"
-    text: "If you want to add a flag that only applies to a specific subcommand, not its children, you should use:"
+    text: "The configuration file for mesheryctl is located at `~/.meshery/config.yaml` by default and contains information about your Meshery installation, such as the current release channel, Meshery version, your SSH keys, SSL certificates, and GitHub username."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "subCmd.PersistentFlags()"
-      - id: "b"
-        text: "subCmd.Flags()"
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "rootCmd.Flags()"
-      - id: "d"
-        text: "subCmd.InheritedFlags()"
   - id: "q63"
-    text: "The purpose of the PreRunE function in a Cobra command is to:"
+    text: "The purpose of the PreRunE function in a mesheryctl command is to:"
     type: "single-answer"
     marks: 2
     options:
@@ -879,22 +847,32 @@ questions:
       - id: "d"
         text: "Execute only when the command is run with the --verbose flag."
   - id: "q64"
-    text: "If a command needs to interact with the Meshery server, where should the API client logic be located?"
+    text: "If a command needs to interact with Meshery Server, where should the API client logic for handling failures be located?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
         text: "Directly inside the command's RunE function."
       - id: "b"
-        text: "In a shared utility or package to promote code reuse."
+        text: "In a shared utility/package to promote code reuse."
         is_correct: true
       - id: "c"
         text: "In the main.go file."
       - id: "d"
         text: "In a separate BASH script."
   - id: "q65"
-    text: "True or False: All contributions to mesheryctl must be backward compatible."
+    text: "True or False: In no circumstance is it acceptable to break backwards compatibility in mesheryctl commands."
     type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
+        is_correct: true
+  - id: "q66"
+    text: "Before submitting a PR, it is recommended to locally build, test your changes, define test scenarios, and document their outcome."
+    type: "singe-answer"
     marks: 2
     options:
       - id: "true"
@@ -902,29 +880,13 @@ questions:
         is_correct: true
       - id: "false"
         text: "False"
-  - id: "q66"
-    text: "Before submitting a PR, it is recommended to run which of the following make commands locally?"
-    type: "multiple-answers"
-    marks: 2
-    options:
-      - id: "a"
-        text: "make lint"
-        is_correct: true
-      - id: "b"
-        text: "make mesheryctl"
-        is_correct: true
-      - id: "c"
-        text: "make test-cli-e2e"
-        is_correct: true
-      - id: "d"
-        text: "make release"
   - id: "q67"
     text: "In a BATS test, `[ \"$status\" -eq 0 ]` is a common way to assert what?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "That the last command produced no output."
+        text: "That the last command produced no human-readable output."
       - id: "b"
         text: "That the last command executed successfully."
         is_correct: true
@@ -947,7 +909,7 @@ questions:
       - id: "d"
         text: "By adding (required) to the flag description."
   - id: "q69"
-    text: "What is the role of the GitHub Actions CI when you submit a mesheryctl pull request?"
+    text: "What is the role of the GitHub Actions workflows when you submit a mesheryctl pull request?"
     type: "single-answer"
     marks: 2
     options:
@@ -957,30 +919,30 @@ questions:
         text: "To run checks like building, linting, and end-to-end tests."
         is_correct: true
       - id: "c"
-        text: "To assign a reviewer to the pull request."
+        text: "To email maintainers, asking for review of the pull request."
       - id: "d"
-        text: "To deploy the changes to production."
+        text: "To deploy the changes to the production cluster."
   - id: "q70"
     text: "The output of the BATS test runner is formatted in:"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "JSON format"
+        text: "TOML format"
       - id: "b"
         text: "XML format"
       - id: "c"
         text: "Test Anything Protocol (TAP) format"
         is_correct: true
       - id: "d"
-        text: "Plain text format"
+        text: "Plain-text format"
   - id: "q71"
     text: "If you need to get input from the user interactively in a command, you should:"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "Read directly from standard input."
+        text: "Read directly from standard input with case-sensitivity enabled."
       - id: "b"
         text: "Use a dedicated library like Survey for a better user experience."
         is_correct: true
@@ -1008,12 +970,12 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "It defines the project's code of conduct."
+        text: "It defines Meshery's code of conduct and Community Insights."
       - id: "b"
-        text: "It contains the configuration for the continuous integration pipeline."
+        text: "It contains instructions for continuous integration pipeline."
         is_correct: true
       - id: "c"
-        text: "It lists the project maintainers."
+        text: "It contains a list of project maintainers."
       - id: "d"
         text: "It is the template for creating new issues."
   - id: "q74"
@@ -1031,7 +993,7 @@ questions:
       - id: "d"
         text: "Delete the test case."
   - id: "q75"
-    text: "What is the final step for a contributor after pushing their branch and creating a pull request?"
+    text: "What is the next step for a contributor after pushing their branch and creating a pull request?"
     type: "single-answer"
     marks: 2
     options:
@@ -1040,11 +1002,20 @@ questions:
       - id: "b"
         text: "Close the original issue."
       - id: "c"
-        text: "Wait for community and maintainer review, and address any feedback."
+        text: "Ensure the PR description explains changes made, whil awaiting for another contributor or maintainer to offer a review."
         is_correct: true
       - id: "d"
         text: "Delete their fork of the repository."
-    
+#  - id: "q76"
+#    text: "mesheryctl contributors must consider compatibility with Linux, macOS, and Windows while writing code for any command."
+#    type: "single-answer"
+#    marks: 2
+#    options:
+#      - id: "true"
+#        text: "True"
+#        is_correct: true
+#      - id: "false"
+#        text: "False"
 ---
 The Meshery CLI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
 
