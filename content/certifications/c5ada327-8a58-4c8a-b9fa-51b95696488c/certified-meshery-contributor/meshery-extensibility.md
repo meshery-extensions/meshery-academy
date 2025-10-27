@@ -62,7 +62,7 @@ questions:
         text: "Monitor"
         is_correct: true
       - id: "d"
-        text: "Validate"
+        text: "Invalidate"
   - id: "q5"
     text: "What is the primary function of the MeshKit library in the context of Meshery Adapter development?"
     type: "single-answer"
@@ -78,21 +78,18 @@ questions:
       - id: "d"
         text: "Generating the Kubernetes manifests for infrastructure deployment."
   - id: "q6"
-    text: "Meshery Adapters extend Meshery's management capabilities in which of the following areas?"
-    type: "multiple-answers"
+    text: "Meshery Adapters can extend Meshery's management capabilities in which of the following area(s)?"
+    type: "single-answer"
     marks: 3
     options:
       - id: "a"
         text: "Lifecycle Management"
-        is_correct: true
       - id: "b"
         text: "Configuration Management"
-        is_correct: true
       - id: "c"
         text: "Performance Management"
-        is_correct: true
       - id: "d"
-        text: "Identity Management"
+        text: "All of the above"
         is_correct: true
   - id: "q7"
     text: "All Meshery Adapters must be written in Golang because it is the language used by Meshery Server."
@@ -140,7 +137,7 @@ questions:
       - id: "a"
         text: "Unit Tests using YAML configuration."
       - id: "b"
-        text: "Integration Tests using a Helm chart."
+        text: "Integration Tests using kustomize."
       - id: "c"
         text: "End-to-End Tests using a Meshery design."
         is_correct: true
@@ -161,43 +158,39 @@ questions:
       - id: "d"
         text: "A Jekyll documentation file."
   - id: "q12"
-    text: "The default Meshery deployment configuration includes one instance of every Meshery Adapter, regardless of its stability status (alpha, beta, stable)."
+    text: "The default Meshery Server deployment configuration includes one instance of every Meshery Adapter, regardless of its stability status (alpha, beta, stable)."
     type: "single-answer"
     marks: 2
     options:
       - id: "true"
-        text: "true"
+        text: "True"
       - id: "false"
+        text: "False"
         is_correct: true
-        text: "false"
   - id: "q13"
-    text: "In the Meshery Adapter Library package dependency hierarchy, which two main packages are at the top and can be used by any other package?"
+    text: "In a Remote Provider-connected session, how are Meshery Server events managed?"
     type: "single-answer"
     marks: 2
     options:
       - id: "a"
-        text: "logger/ and utils/"
+        text: "All events are sent directly to the Meshery Broker."
       - id: "b"
-        text: "tracing/ and errors/"
-      - id: "c"
-        text: "config/ and meshes/ (containing the adapter service proto definition)"
+        text: "Events are stored locally and can be published to the Remote Provider."
         is_correct: true
+      - id: "c"
+        text: "Events are never persisted and are discarded immediately."
       - id: "d"
-        text: "handlers/ and operations/"
+        text: "The Remote Provider rejects all events."
   - id: "q14"
-    text: "Adapters that provide an infrastructure-specific interface to increase the depth of control over a particular technology are generally categorized under which Meshery extension point type?"
+    text: "A Meshery extension point is a designated area in its architecture where contributors / system integrators can add functionality to customize and extend the platform's capabilities, such as integrating with different cloud native tools, adding new load generators, or customizing the user interface"
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "Providers"
-      - id: "b"
-        text: "Load Generators"
-      - id: "c"
-        text: "Lifecycle Adapters"
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "d"
-        text: "Models"
+      - id: "false"
+        text: "False"
   - id: "q15"
     text: "What initiates the typical communication connection from Meshery Server to a Meshery Adapter to gather information or invoke an operation?"
     type: "single-answer"
@@ -213,19 +206,19 @@ questions:
       - id: "d"
         text: "A system check upon the uploading of a new kubeconfig file."
   - id: "q16"
-    text: "What is a pitfall when two adapter instances of the same type are registered under the same name without proper configuration?"
+    text: "What is a pitfall when two adapter instances of the same type are registered under the same name, using different network ports?"
     type: "single-answer"
     marks: 3
     options:
       - id: "a"
-        text: "Meshery Server will fail to initialize due to a conflict in required adapter configurations."
+        text: "Meshery Server will fail to communicate with either adapter."
       - id: "b"
-        text: "It may cause ambiguity for users, as both adapters appear identical while using separate callback interfaces on dedicated ports."
+        text: "Ambiguity for users, as both adapters appear identical in name, while using separate lines of communication on their respectively dedicated port number."
         is_correct: true
       - id: "c"
-        text: "Adapters will merge their capabilities"
+        text: "Adapters will merge their capabilities as registered in Meshery Server."
       - id: "d"
-        text: "It will double-count performance metrics"
+        text: "This is not a supported configuration."
   - id: "q17"
     text: "In architectural terms, Meshery Adapters plugin as an extension. Which component directly interact with a Meshery Adapter once it has been plugged in?"
     type: "single-answer"
@@ -270,7 +263,7 @@ questions:
         text: "Injection of out-of-tree UI components and backend capabilities."
         is_correct: true
   - id: "q20"
-    text: "A single Meshery Server deployment can support the use of the Local Provider and any number of Remote Providers simultaneously."
+    text: "A single Meshery Server deployment supports use of the Local Provider and any number of Remote Providers simultaneously."
     type: "single-answer"
     marks: 2
     options:
@@ -308,7 +301,7 @@ questions:
       - id: "d"
         text: "Operator mode"
   - id: "q23"
-    text: "Which of the following is an exclusive characteristic of the **Local Provider** and NOT a Remote Provider feature?"
+    text: "Which of the following is an exclusive characteristic of the **Local Provider** and NOT a Remote Provider?"
     type: "single-answer"
     marks: 2
     options:
@@ -316,11 +309,11 @@ questions:
         text: "No user authentication."
         is_correct: true
       - id: "b"
-        text: "Stores server events locally in a database."
+        text: "Store server events in a database."
       - id: "c"
-        text: "Can return performance test results."
+        text: "Supports storing and retrieving performance test results."
       - id: "d"
-        text: "Interfaces through a Go interface."
+        text: "Only works on Kubernetes-based deployments and not Docker-based deployments of Meshery."
   - id: "q24"
     text: "Meshery Server uses a mechanism to proxy all requests to remote provider endpoints. These endpoints are dynamically determined and identified in which specific provider response?"
     type: "single-answer"
@@ -473,19 +466,15 @@ questions:
       - id: "false"
         text: "False"
   - id: "q35"
-    text: "In a Remote Provider-connected session, how are Meshery Server events managed?"
+    text: "Meshery Adapters do not utilize Protocol Buffers (protobuf) files for defining the structure of messages exchanged between Meshery and the adapters."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "All events are sent directly to the Meshery Broker."
-      - id: "b"
-        text: "Events are stored locally and can be published to the Remote Provider."
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "Events are never persisted and are discarded immediately."
-      - id: "d"
-        text: "The Remote Provider acts as the primary event broker."
   - id: "q36"
     text: "The Local Provider is best suited for which use case?"
     type: "single-answer"
