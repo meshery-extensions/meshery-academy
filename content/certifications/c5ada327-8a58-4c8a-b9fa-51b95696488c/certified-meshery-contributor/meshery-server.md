@@ -8,14 +8,14 @@ time_limit: 30
 number_of_questions: 25
 questions:
   - id: "q1"
-    text: "What is the primary command to set up the Meshery development environment after cloning the repository?"
+    text: "What is the primary command to build and run Meshery Server?"
     type: "single-answer"
     marks: 1
     options:
       - id: "a"
-        text: "make run"
-      - id: "b"
         text: "make setup"
+      - id: "b"
+        text: "make server"
         is_correct: true
       - id: "c"
         text: "make build"
@@ -41,14 +41,14 @@ questions:
     marks: 1
     options:
       - id: "a"
-        text: "--sign"
-      - id: "b"
-        text: "-s"
+        text: "`--signoff` or `-s`"
         is_correct: true
+      - id: "b"
+        text: "`-s` or `--signature`"
       - id: "c"
         text: "--dco"
       - id: "d"
-        text: "-m"
+        text: "`-m` or `--message`"
   - id: "q4"
     text: "Meshery Server supports which types of APIs?"
     type: "multiple-answers"
@@ -59,6 +59,7 @@ questions:
         is_correct: true
       - id: "b"
         text: "gRPC"
+        is_correct: true
       - id: "c"
         text: "GraphQL"
         is_correct: true
@@ -147,7 +148,7 @@ questions:
       - id: "b"
         text: "It is automatically inferred from the event category."
       - id: "c"
-        text: "By passing a `severity` integer to the `NewEvent.Build()` method."
+        text: "By passing a `log-level` integer to the `NewEvent.Recreate()` method."
       - id: "d"
         text: "The severity field is no longer used."
   - id: "q11"
@@ -195,19 +196,15 @@ questions:
         text: "errors.New(code, severity, shortDesc, longDesc, probableCause, suggestedRemedy)"
         is_correct: true
   - id: "q14"
-    text: "Where can a contributor find the list of existing MeshKit error codes to avoid duplication?"
+    text: "Meshery Server log level can be configured at runtime by changing the env variable `LOG_LEVEL`. The default setting for the `LOG_LEVEL` is 4 (Info)."
     type: "single-answer"
     marks: 1
     options:
-      - id: "a"
-        text: "In the Meshery documentation website."
-      - id: "b"
-        text: "In the `meshkit/errors/codes.go` file."
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "c"
-        text: "In a Google Sheet linked in the contributing guide."
-      - id: "d"
-        text: "By running `make list-errors`."
+      - id: "false"
+        text: "False"
   - id: "q15"
     text: "What is the primary CI/CD platform used for Meshery's build and release process?"
     type: "single-answer"
@@ -279,7 +276,7 @@ questions:
       - id: "d"
         text: "To write unit tests for the API."
   - id: "q20"
-    text: "True or False: Schemas in Meshery are primarily used for back-end data validation and have no impact on the user interface."
+    text: "True or False: Schemas in Meshery are primarily used for backend data validation and implication on Meshery UI or its user experience."
     type: "single-answer"
     marks: 1
     options:
@@ -289,31 +286,27 @@ questions:
         text: "False"
         is_correct: true
   - id: "q21"
-    text: "The ``make error`` command is used to:"
+    text: "The `make error` command is used to:"
     type: "single-answer"
     marks: 1
     options:
       - id: "a"
-        text: "Run the battery of Meshery Server error handling tests."
+        text: "Run a battery of Meshery Server error handling tests."
       - id: "b"
         text: "Analyze Meshery Server code for missing or duplicate error codes."
         is_correct: true
       - id: "c"
         text: "Build and run Meshery Server in error mode."
   - id: "q22"
-    text: "Which `make` command should be used to run all the tests for Meshery Server?"
+    text: "The Meshery project has a single `make` target."
     type: "single-answer"
     marks: 1
     options:
-      - id: "a"
-        text: "make run-tests"
-      - id: "b"
-        text: "make test"
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
         is_correct: true
-      - id: "c"
-        text: "make ci"
-      - id: "d"
-        text: "make validate"
   - id: "q23"
     text: "What information can be added to a Meshery event using the `.WithMetadata()` method?"
     type: "multiple-answers"
