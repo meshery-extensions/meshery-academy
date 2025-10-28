@@ -8,19 +8,21 @@ number_of_questions: 25
 pass_percentage: 70
 questions:                     
   - id: "q1"                       
-    text: "Meshery Models are described as the 'unit of packaging' designed to define managed infrastructure. Which capability is explicitly assigned using Models?" 
-    type: "single-answer"                     
+    text: "Meshery Models are described as the 'unit of packaging' designed to describe which of the following managed entities:" 
+    type: "multiple-answers"
     marks: 2                        
     options:                       
       - id: "a"
-        text: "Exclusively defining YAML manifests for execution."
+        text: "Siblings"
       - id: "b" 
-        text: "Defining managed infrastructure, relationships, and specifics on how to manage them."
+        text: "Relationships"
         is_correct: true
       - id: "c"
-        text: "Providing runtime logs and metrics directly from the adapter."
+        text: "Components"
+        is_correct: true
       - id: "d"
-        text: "Listing the available Meshery system contexts only."
+        text: "Connections"
+        is_correct: true
   - id: "q2"                       
     text: "Which Meshery CLI command subcommand is used to initiate the scaffolding of a folder structure for model creation?" 
     type: "single-answer"                     
@@ -36,17 +38,17 @@ questions:
         text: "mesheryctl model init"
         is_correct: true
   - id: "q3"                       
-    text: "By default, when using the Meshery CLI to scaffold a new model structure, what is the default output format for the generated files?"
+    text: "When importing model into Meshery Server, which of the following formats are supported?"
     type: "single-answer"                     
     marks: 2                        
     options:                       
       - id: "a"
-        text: "yaml"
+        text: "yaml, json, csv, google sheet, oci"
+        is_correct: true        
       - id: "b" 
-        text: "json"
-        is_correct: true
+        text: "toml, cue"
       - id: "c"
-        text: "cue"
+        text: "js, jsx, ts, tsx"
       - id: "d"
         text: "mdx"
   - id: "q4"                       
@@ -74,7 +76,7 @@ questions:
       - id: "false"
         text: "False"
   - id: "q6"                       
-    text: "Which metadata key, when set to 'true', identifies a component as a Non-Semantic Component primarily used for visual documentation rather than representing deployable infrastructure?"
+    text: "Which metadata key, when set to 'true', identifies a component as a non-semantic component used for visual representation and deployable infrastructure?"
     type: "single-answer"                     
     marks: 2                        
     options:                       
@@ -138,15 +140,15 @@ questions:
       - id: "false"
         text: "False"
   - id: "q11"                       
-    text: "When defining a Hierarchical relationship, the 'from' field references the parent component, while the 'to' field references the child component."
+    text: "When defining a Hierarchical relationship, the purpose of the 'from' field and the 'to' field is to identify the parent and child components."
     type: "single-answer"            
     marks: 1
     options:
       - id: "true"
         text: "True"
+        is_correct: true
       - id: "false"
         text: "False"
-        is_correct: true
   - id: "q12"                       
     text: "Which properties must be consistent in casing (e.g., all lowercase or specific casing) when matching relationship targets to ensure accurate selection?"
     type: "multiple-answers"             
@@ -300,8 +302,18 @@ questions:
     correct_answer: "component"
   - id: "q24"                       
     text: "Which Meshery CLI command category is responsible for managing the state and contents of Meshery’s internal database of capabilities, typically interacting with spreadsheets or generating model definitions?"
-    type: "short-answer"                
+    type: "single-answer"                
     marks: 2
+    options:
+      - id: "a"
+        text: "mesheryctl registry"
+        is_correct: true
+      - id: "b" 
+        text: "mesheryctl model"
+      - id: "c"
+        text: "mesheryctl component"
+      - id: "d"
+        text: "mesheryctl relationship"
     correct_answer: "registry"
   # - id: "q25"                       
   #   text: "What capability kind is used for components that allow users to view defined relationships or the underlying JSON Schema definition?"
@@ -590,16 +602,16 @@ questions:
     marks: 2
     options:
       - id: "a"
-        text: "To specify styling properties for components"
+        text: "To specify styling properties for components."
       - id: "b"
-        text: "To identify which components should participate in the relationship"
+        text: "To identify which components should participate in the relationship."
         is_correct: true
       - id: "c"
-        text: "To define the color scheme of the relationship visualization"
+        text: "To define the color scheme of the relationship visualization."
       - id: "d"
-        text: "To set the deployment order of components"
+        text: "To set the deployment order of components."
   - id: "q47"
-    text: "The Meshery Server registry maintains a versioned catalog of component definitions, allowing different versions of the same component to be registered simultaneously."
+    text: "The Meshery Server registry maintains a catalog of component definitions, allowing different versions of the same component under the same model to be registered simultaneously."
     type: "single-answer"
     marks: 2
     options:
@@ -609,19 +621,15 @@ questions:
       - id: "false"
         text: "False"
   - id: "q48"
-    text: "What happens when you import a model that contains components with existing registered components?"
+    text: "The Meshery Server registry maintains a catalog of component definitions, allowing the same version of the same component under the same model to be registered simultaneously so long as the registrants are different."
     type: "single-answer"
     marks: 2
     options:
-      - id: "a"
-        text: "The import fails completely"
-      - id: "b"
-        text: "New version of the component is created alongside existing ones"
+      - id: "true"
+        text: "True"
         is_correct: true
-      - id: "c"
-        text: "Existing components are automatically deleted"
-      - id: "d"
-        text: "A merge operation combines both definitions"
+      - id: "false"
+        text: "False"
   - id: "q49"
     text: "In a relationship definition, both 'from' and 'to' selectors must be defined to establish a valid relationship between components."
     type: "single-answer"
@@ -652,8 +660,11 @@ The Meshery Models examination verifies contributor understanding of one of Mesh
 
 The exam covers a variety of topics, including:
 
+- [Contributing to Models Quick Start](https://docs.meshery.io/project/contributing/contributing-models-quick-start)
 - [Contributing to Meshery Models](https://docs.meshery.io/project/contributing/contributing-models)
 - [Contributing to Model Components](https://docs.meshery.io/project/contributing/contributing-components)
 - [Contributing to Model Relationships](https://docs.meshery.io/project/contributing/contributing-relationships)
-- [Contributing to Models Quick Start](https://docs.meshery.io/project/contributing/contributing-models-quick-start)
 - [Contributing to Meshery Policies](https://docs.meshery.io/project/contributing/contributing-policies)
+  
+Supplemental topics:
+- [Concepts of Meshery Models](https://docs.meshery.io/concepts/logical/models)
