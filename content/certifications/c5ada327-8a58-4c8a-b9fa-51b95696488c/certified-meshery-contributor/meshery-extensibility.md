@@ -710,7 +710,22 @@ questions:
   #       is_correct: true
   #     - id: "false"
   #       text: "False"
-  
+  # - id: "q53"
+  #  text: "Which database system must a Remote Provider use?"
+  #  type: "single-answer"
+  #  marks: 1
+  #  options:
+  #    - id: "a"
+  #      text: "PostgreSQL"
+  #    - id: "b"
+  #      text: "MySQL"
+  #    - id: "c"
+  #      text: "SQLite"
+  #    - id: "d"
+  #      text: "MongoDB"  
+  #    - id: "e"
+  #      text: "Any kind they want"  
+  #      is_correct: true
 ---
 The Meshery Extensibility examination verifies contributor understanding of one of Meshery's core architectural frameworks and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
 
