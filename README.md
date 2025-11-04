@@ -23,6 +23,7 @@
 
 - [meshery/meshery](https://github.com/meshery/meshery) – Meshery core project
 - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
+- [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
 - [layer5io/academy-theme](https://github.com/layer5io/academy-theme) – provides styles, Hugo shortcodes, and layouts
 - [layer5io/academy-build](https://github.com/layer5io/academy-build) – build pipeline that aggregates this and other academies for publishing
   
@@ -35,7 +36,7 @@
 
 1. **Install prerequisites**
 
-- [Go](https://go.dev/dl/) ≥ 1.20
+- [Go](https://go.dev/dl/) ≥ 1.26
 - [Hugo Extended](https://gohugo.io/getting-started/installing/) ≥ 0.158 (required for `hugo.Sites` in offline search index; CI uses 0.158)
 
 2. **Fetch and tidy dependencies**
