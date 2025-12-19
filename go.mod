@@ -1,6 +1,6 @@
 module github.com/meshery-extensions/meshery-academy
 
-go 1.24.5
+go 1.25.0
 
 // Uncomment line below when testing changes to the academy theme
 // replace github.com/layer5io/academy-theme v0.1.9 => ../academy-theme
