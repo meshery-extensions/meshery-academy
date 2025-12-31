@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout site
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Hugo Extended
         uses: peaceiris/actions-hugo@v3
@@ -43,7 +43,7 @@ jobs:
 
       - name: Publish to layer5 academy
         id: academy
-        uses: layer5io/academy-build@v0.1.6
+        uses: layer5io/academy-build@v0
         with:
           orgId: ${{ github.event.inputs.orgId || secrets.ACADEMY_ORG_ID }}
           token: ${{ github.event.inputs.token || secrets.ACADEMY_TOKEN }}
