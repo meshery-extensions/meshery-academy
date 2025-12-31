@@ -1,15 +1,22 @@
-### May 21st, 2025
+### June 4th, 2025
 
 ### **Attendees**: 
 
-* Lee Calcote, Yash Sharma,   
-* Mahadevan K. S., Pratik “too lazy” Pal, Liben Hailu, Fahd Ashour, Alok Dangre  
-* Oscar Gonzalez, Yogendar Singh, Rohan Sen, Aditi Mehta, Ranit Mukherjee  
-* Siddhant Pragyan Sinha, Zihan Kuang, Amit Amrutiyaaqk Chandra Pal  
-* Aadarsh Shekhar ,Vinay Cheripally, Leul Adnew  
-* Ijeoma Eti, Carmel Djegui  
-* Ashok gupta, Varad Gupta  
-* Rohan Sen
+* V*ivek Vishal,*   
+* Madina Amankeldinova, Lee Calcote, Varad Gupta, Aabid Sofi  
+* Nikita B  
+* Faheem Mushtaq  
+* Mahadevan K S  
+* Rafayel Juwe  
+* Yujun Liu  
+* Yu Luo  
+* Nitin Shukla  
+* Pranjal Kole  
+* Oyefule Oluwatayo  
+* Priyansh Sao  
+* Liben Hailu  
+* Oscar Gonzalez  
+* Huzaif Mushtaq
 
 **Standing Agenda: Component Sync:**
 
@@ -28,26 +35,33 @@
 | 4 | [Contributing to Meshery CLI](https://docs.meshery.io/project/contributing/contributing-cli) | Golang, Cobra | Matthieu Evrin,Aadhitya | [April 30th](https://discuss.layer5.io/t/development-meeting-contributing-to-meshery-cli-april-30-2025/6927) |
 | 5 | [End-to-end Testing in Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui-tests#:~:text=To%20automate%20functional%20integration%20and,not%20break%20the%20existing%20functionality.) | Playwright | Ian Whitney | [May 8th](https://discuss.layer5.io/t/contributor-training-session-e2e-testing-in-meshery-ui-may-8th-2025/6948) |
 | 6 | [Contributing to Meshery UI](https://docs.meshery.io/project/contributing/contributing-ui) | React, Sistent, CASL, Schema-driven for UI | Amit Amrutiya | [May 15th](https://discuss.layer5.io/t/contributor-training-session-meshery-ui-may-15th-2025/6949/2) |
-| 7 | [Contributing to Meshery Server](https://docs.meshery.io/project/contributing/contributing-server) | Golang, Gorilla, OpenAPI Schema | Shlok Mishra | May 29th |
+| 7 | [Contributing to Meshery Server](https://docs.meshery.io/project/contributing/contributing-server) | Golang, Gorilla, OpenAPI Schema | Shlok Mishra | [May 29th](https://discuss.layer5.io/t/contributor-training-session-meshery-server-may-29th-2025/6986) |
 | 8 | [Contributing to Meshery Models](https://docs.meshery.io/project/contributing/contributing-models) | All cloud native tech | Lee Calcote |  |
+
+**Announcements:**
+
+* 
 
 **Topics:**
 
+* \[Nikita B\] update go module name in master meshery repository [meshery\#14917](https://github.com/meshery/meshery/pull/14917) ;  
 * *\[your name here\] \- your topic here*  
-* \[Vinay Cherripally\]   
-*  fix for mesheryctl system switch edge-version to fail \#[14707](https://github.com/meshery/meshery/pull/14707)  
-*  updated the server url for component search \#[14755](https://github.com/meshery/meshery/pull/14755)  
-* \[Fahd Ashour\]  \[UI\] Implement reusable YamlEditor component for editing YAML content \#[14705](https://github.com/meshery/meshery/pull/14705)  
-* \[Alok Dangre\]  Fix: changed the select all icon \#[14753](https://github.com/meshery/meshery/pull/14753)  
-* \[Aditya Chaudhary\]  fix(database): implement proper count-based sorting for system tables. \#[14732](https://github.com/meshery/meshery/pull/14732)  
-* \[Varad Gupta\]  
-* \[Yash Sharma\] \- Adding Meshery to Civo and DigitalOcean marketplace update  
-* \[Nikita B\]   
-* \[Mahadevan K.S.\] Add \`npm link\` instructions to Sistent site and docs [\#6448](https://github.com/layer5io/layer5/pull/6448), [\#1047](https://github.com/layer5io/sistent/pull/1047)  
-* \[Faheem Mushtaq\]  
-* \[Aabid Sofi\]  
-* \[Gourav Choudhary\]  
-* \[Zihan Kuang\]   
-  * Docs: Refactor and Enhance Organization and User Management Documentation [\#573](https://github.com/layer5io/docs/pull/573)  
-  * Org Deletion: Ensure Cascade Deletion of Associated Workspaces, Designs, User Memberships, and Teams [\#3515](https://github.com/layer5io/meshery-cloud/issues/3515)  
-* \[your name here\] \- your topic here
+* \[Pranjal Kole\]  
+*  ui: replace husky install with husky [meshery\#14914](https://github.com/meshery/meshery/pull/14914)  
+*  [workflows: fix e2e-test workflow \#14912](https://github.com/meshery/meshery/pull/14912)  
+* \[Vinay Cheripally\]  e2e tests for component view \#[14888](https://github.com/meshery/meshery/pull/14888)  
+* \[Félicien Diouf\] \[Models\]\[UX\]: Add ArgoCD Application Set component icons (\#10292) \#14859  
+* \[Rahul Rudra\]  UI:Capitalize labels, adjust font size and color \#[14858](https://github.com/meshery/meshery/pull/14858)  
+* *\[your name here\] \- your topic here*  
+* \[Aabid Sofi\] \- enhance events filtering  
+* *\[your name here\] \- your topic here*  
+* \[Varad Gupta\] – Shapes BG in Integration Sheet, Docs, Fix References  
+* \[Faheem Mushtaq\]   
+  	\- fix:invalid time , \-UI: Save History for Kanvas, fix:import sistent/sistent  
+* \[Madina Amankeldinova\]   
+- E2E test for Meshery Dashboard [\#14565](https://github.com/meshery/meshery/issues/14565#event-17831234185)  
+* \[Mahadevan K.S.\]  
+  * \[Call for Volunteers\] Create Community Handbook for [meshery.io](http://meshery.io) [\#2176](https://github.com/meshery/meshery.io/issues/2176)  
+* \[Vivek Vishal\] \[docs\] change related designs ref to meshery.io catalog \#[14911](https://github.com/meshery/meshery/pull/14911)  
+* \[Zihan Kuang\]  
+* *\[your name here\] \- your topic here*
