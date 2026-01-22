@@ -68,6 +68,8 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --buildDrafts \
+            --buildFuture \
             --baseURL "${PR_BASE_URL}"          
           
       - name: Deploy PR Preview
