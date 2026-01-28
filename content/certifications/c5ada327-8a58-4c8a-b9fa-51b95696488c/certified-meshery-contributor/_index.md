@@ -158,7 +158,7 @@ related_resources:
       - title: "Contributing to Meshery CLI (slides)"
         link: https://docs.google.com/presentation/d/1lRop7DAAMUBmuFdzZK25LdQrkLG08eVsXEaDrauP3S8/edit?usp=sharing
       - title: "Reference: Meshery CLI Commands"
-        link: "https://docs.meshery.io/reference/cli/commands"
+        link: "https://docs.meshery.io/reference/mesheryctl"
 
   - title: "Self-paced Training: Meshery UI"
     children:
