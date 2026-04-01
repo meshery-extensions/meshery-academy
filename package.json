@@ -21,7 +21,7 @@
     "build": "npm run _build -- ",
     "check:links:all": "HTMLTEST_ARGS= npm run _check:links",
     "check:links": "npm run _check:links",
-    "clean": "rm -Rf public/* resources",
+    "clean": "rm -rf public/* resources",
     "local": "npm run _local -- npm run",
     "make:public": "git init -b main public",
     "precheck:links:all": "npm run build",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
-    "hugo-extended": "0.157.0",
+    "hugo-extended": "^0.158.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
