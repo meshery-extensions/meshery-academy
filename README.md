@@ -36,7 +36,7 @@
 1. **Install prerequisites**
 
 - [Go](https://go.dev/dl/) ≥ 1.20
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) ≥ 0.147
+- [Hugo Extended](https://gohugo.io/getting-started/installing/) ≥ 0.158 (required for `hugo.Sites` in offline search index; CI uses 0.158)
 
 2. **Fetch and tidy dependencies**
 

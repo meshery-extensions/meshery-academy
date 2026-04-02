@@ -354,7 +354,6 @@ questions:
         text: "action"
       - id: "d"
         text: "telemetry"
-    marks: 2
   - id: "q30"
     text: "Understanding of the vernacular of Meshery’s internal object model and discusses the difference between them. Which of the following is NOT one of these terms?"
     type: "multiple-answers"
