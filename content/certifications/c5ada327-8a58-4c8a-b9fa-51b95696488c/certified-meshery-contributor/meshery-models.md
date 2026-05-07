@@ -431,7 +431,7 @@ questions:
       - id: "d"
         text: "XMLPatch"
         is_correct: true
-  - id: "q34"
+  - id: "q34b"
     text: "An NGINX container configured as a Kubernetes Pod with port 443 and SSL termination represents which of the following Meshery entities?"
     type: "single-answer"
     marks: 2

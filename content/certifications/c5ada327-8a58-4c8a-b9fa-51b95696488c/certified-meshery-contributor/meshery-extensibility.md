@@ -682,7 +682,6 @@ questions:
       - id: "b"
         text: "To add custom footer links in Meshery UI."
       - id: "c"
-      - id: "c"
         text: "To add custom sidebar widgets in Meshery UI."
       - id: "d"
         text: "To add custom modals in Meshery UI."
