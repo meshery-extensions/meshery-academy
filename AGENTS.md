@@ -47,19 +47,20 @@ Exams are designed to assess learner proficiency on specific topics. Each exam s
 exam:
     title: "Exam Title"
     description: "Brief description of the exam."
-    duration: "60 minutes"
-    passing_score: 70
+    timeLimit: 60
+    passPercentage: 70
+    maxAttempts: 3
+    numberOfQuestions: 25
     questions:
-        - type: "multiple-choice"
-            question: "What is Meshery?"
-            options:
-                - "Collaborative Cloud Native Manager"
-                - "Container Orchestrator"
-                - "CI/CD Tool"
-            answer: "Collaborative Cloud Native Manager"
-        - type: "true-false"
-            question: "Meshery supports Helm."
-            answer: true
+        - id: "q1"
+          type: "multiple-choice"
+          question: "Question text"
+          options:
+              - id: "a"
+                text: "Option A"
+                isCorrect: true
+              - id: "b"
+                text: "Option B"
 ```
 
 ### Learning Paths
@@ -95,19 +96,24 @@ course:
     title: "Course Title"
     description: "Course overview."
     modules:
-        - title: "Module 1"
-            lessons:
-                - title: "Lesson 1"
-                    content_type: "video"
-                    resource: "lesson1.mp4"
-                - title: "Lesson 2"
-                    content_type: "article"
-                    resource: "lesson2.md"
-        - title: "Module 2"
-            lessons:
-                - title: "Lesson 3"
-                    content_type: "quiz"
-                    resource: "quiz1.yaml"
+        - id: "module-1"
+          title: "Module 1"
+          lessons:
+              - id: "lesson-1"
+                title: "Lesson 1"
+                content_type: "video"
+                resource: "lesson1.mp4"
+              - id: "lesson-2"
+                title: "Lesson 2"
+                content_type: "article"
+                resource: "lesson2.md"
+        - id: "module-2"
+          title: "Module 2"
+          lessons:
+              - id: "lesson-3"
+                title: "Lesson 3"
+                content_type: "quiz"
+                resource: "quiz1.yaml"
 ```
 
 ### Certifications

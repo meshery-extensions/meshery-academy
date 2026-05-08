@@ -109,7 +109,8 @@ content/
 ```
 - Create your folder structure following the hierarchy.
 - Add your exam as Markdown (.md) files inside the exam directory, for e.g. in `certified-meshery-contributor` directory.
-- Each `_index.md` and `exam` file should begin with Hugo front-matter specifying title, description, weight, pass_percentage, max_attempts, time_limit, number_of_questions and questions.
+- Each `_index.md` and `exam` file should begin with Hugo frontmatter specifying title, description, weight, `passPercentage`, `maxAttempts`, `timeLimit`, `numberOfQuestions`, and `questions`.
+- Give every question a stable `id`, and give every option within a question a stable `id`. These author-facing IDs may be short values like `q1`, `a`, or `true`, but question IDs must be unique within one assessment and option IDs must be unique within one question. The Academy theme converts them into stable UUIDs in the generated JSON consumed by Meshery Cloud.
 
 ```yaml
 ---
@@ -117,16 +118,25 @@ title: "Meshery xxxx Contributor Exam"
 type: "test"
 layout: "test"
 weight: 2
-pass_percentage: 70
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
 questions:
-    ...
+  - id: "q1"
+    text: "Meshery manages cloud native infrastructure."
+    type: "true-false"
+    marks: 1
+    options:
+      - id: "true"
+        text: "True"
+        isCorrect: true
+      - id: "false"
+        text: "False"
 
 ---
 ```
-- Ensure that each `exam` contains question pool as multiple of `number_of_questions`. For e.g., if the exam has `number_of_questions` is 25, the question pool could be 50 or 75 or so on.
+- Ensure that each `exam` contains question pool as multiple of `numberOfQuestions`. For e.g., if the exam has `numberOfQuestions` is 25, the question pool could be 50 or 75 or so on.
 
 ## Managing Assets: Images, Videos, and Embedded Designs
 
