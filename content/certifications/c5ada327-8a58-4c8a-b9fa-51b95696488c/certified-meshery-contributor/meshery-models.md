@@ -354,7 +354,6 @@ questions:
         text: "action"
       - id: "d"
         text: "telemetry"
-    marks: 2
   - id: "q30"
     text: "Understanding of the vernacular of Meshery’s internal object model and discusses the difference between them. Which of the following is NOT one of these terms?"
     type: "multiple-answers"
@@ -432,7 +431,7 @@ questions:
       - id: "d"
         text: "XMLPatch"
         is_correct: true
-  - id: "q34"
+  - id: "q34b"
     text: "An NGINX container configured as a Kubernetes Pod with port 443 and SSL termination represents which of the following Meshery entities?"
     type: "single-answer"
     marks: 2

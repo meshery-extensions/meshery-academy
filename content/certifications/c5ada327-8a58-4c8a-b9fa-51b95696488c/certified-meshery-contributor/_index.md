@@ -13,12 +13,12 @@ categories: "platform"
 
 certificate:
     title: "Certified Meshery Contributor"
-    expires_in: 24 # in months
+    expiresIn: 24 # in months
 
-    issuing_authorities:
+    issuingAuthorities:
       - name: "Meshery Authors"
         role: "Maintainers"
-        signature_url: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.png"
+        signatureUrl: "https://raw.githubusercontent.com/meshery-extensions/meshery-academy/6843c0074f73932274864aa68773ab605fd69ef3/static/c5ada327-8a58-4c8a-b9fa-51b95696488c/images/meshery-authors.png"
 
 # Table of content covered in the test
 # Each domain can have a weightage (percentage) and subdomains (items)
