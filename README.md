@@ -212,7 +212,7 @@ The Meshery team will then integrate the content into the central [Academy build
 
 We welcome contributions to improve:
 
-- Content accuracy and clarity
+-  Content accuracy and clarity
 - Additional learning paths, challenges, or certifications
 - Shortcodes, layouts, and formatting
 
