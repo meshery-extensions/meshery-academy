@@ -223,9 +223,9 @@ We welcome contributions to improve:
 
 ## Resources
 
-- Academy  Documentation: <https://docs.layer5.io/cloud/academy>
+- Academy Documentation: <https://docs.layer5.io/cloud/academy>
 - Content Creation Guide: <https://docs.layer5.io/cloud/academy/creating-content>
-- Community Slack: <https://slack.meshery.io/>
+- Community  Slack: <https://slack.meshery.io/>
 
 Happy Learning!
 
