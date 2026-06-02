@@ -60,7 +60,7 @@ competencies:
 
 # List of resource that are recommended to complete before taking the test
 # Not strictly enforced, but recommended
-prerequisite_knowledge:
+prerequisiteKnowledge:
 
   - title: "Meshery CLI"
     children:
@@ -143,7 +143,7 @@ prerequisite_knowledge:
   #     link: "https://docs.meshery.io/project/contributing/meshery-windows"
 
 # List of additional resources for further reading 
-related_resources:
+relatedResources:
   - title: "Meshery Certification Program Tracks"
     link: "https://kanvas.new/extension/meshmap?catalog-design=c2141477-379b-432e-b47e-1c89600235a5"
     
@@ -198,7 +198,7 @@ related_resources:
       link: https://docs.google.com/presentation/d/1kQIzSa4f-pOH8cM4SwEdbFZGI_SXVyyhc9zUZPB7bsI/edit?usp=sharing
 
 # Additional attributes to list in "Details to Know" section
-additional_attributes: 
+additionalAttributes: 
   - title: "Retake Policy"
     description: "Up to three retakes allowed per exam"
     value: "3"

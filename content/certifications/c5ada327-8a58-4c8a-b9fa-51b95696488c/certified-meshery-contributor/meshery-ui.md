@@ -2,10 +2,10 @@
 title: "Meshery UI Contributor Exam"
 type: "test"
 layout: "test"
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
-pass_percentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
+passPercentage: 70
 questions:
   - id: "q1"
     text: "Meshery UI is primarily written in which of the following languages?"
@@ -16,7 +16,7 @@ questions:
         text: "WebAssembly"
       - id: "b"
         text: "Javascript"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "NodeJS"
       - id: "d"
@@ -29,7 +29,7 @@ questions:
     options:
       - id: "a"
         text: "true"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "false"
 
@@ -40,18 +40,18 @@ questions:
     options:
       - id: "a"
         text: "NextJS"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "ReactJS"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Vue.js"
       - id: "d"
         text: "Material UI"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "BillboardJS"
-        is_correct: true
+        isCorrect: true
 
   - id: "q4"
     text: "Meshery UI uses a schema-driven approach for components and forms."
@@ -60,7 +60,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
 
@@ -71,7 +71,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
 
@@ -88,7 +88,7 @@ questions:
         text: "material-grid"
       - id: "d"
         text: "flexbox"
-        is_correct: true
+        isCorrect: true
 
   - id: "q7"
     text: "Meshery Server has the following types of extension points:"
@@ -97,18 +97,18 @@ questions:
     options:
       - id: "a"
         text: "Adapters"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Load Generators"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "WebAssembly plugin"
       - id: "d"
         text: "Catalog"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Models"
-        is_correct: true
+        isCorrect: true
 
   - id: "q8"
     text: "Which of the following is NOT a component of Meshery's architecture?"
@@ -123,7 +123,7 @@ questions:
         text: "Meshery UI"
       - id: "d"
         text: "MeshKit"
-        is_correct: true
+        isCorrect: true
 
   - id: "q9"
     text: "Through its Models, Meshery supports which of the following integrations?"
@@ -132,16 +132,16 @@ questions:
     options:
       - id: "a"
         text: "Istio"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Grafana"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "GitHub"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Prometheus"
-        is_correct: true
+        isCorrect: true
 
   - id: "q10"
     text: "What command runs all Playwright tests for Meshery UI?"
@@ -150,7 +150,7 @@ questions:
     options:
       - id: "a"
         text: "make test-ui"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "npx playwright test"
       - id: "c"
@@ -167,7 +167,7 @@ questions:
         text: "Node 18 LTS"
       - id: "b"
         text: "Node 20 LTS"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Node 16 LTS"
       - id: "d"
@@ -182,7 +182,7 @@ questions:
         text: "make ui-build"
       - id: "b"
         text: "make ui-setup"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "make server"
       - id: "d"
@@ -197,7 +197,7 @@ questions:
         text: "MobX"
       - id: "b"
         text: "Redux Toolkit and RTK Query"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Zustand"
       - id: "d"
@@ -214,7 +214,7 @@ questions:
         text: "Selenium"
       - id: "c"
         text: "Playwright"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Jest"
 
@@ -229,7 +229,7 @@ questions:
         text: "Ant Design"
       - id: "c"
         text: "Sistent"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Chakra UI"
 
@@ -242,7 +242,7 @@ questions:
         text: "formik"
       - id: "b"
         text: "react-jsonschema-form"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "react-hook-form"
       - id: "d"
@@ -255,7 +255,7 @@ questions:
     options:
       - id: "a"
         text: "3000"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "9081"
       - id: "c"
@@ -274,7 +274,7 @@ questions:
         text: "Chart.js"
       - id: "c"
         text: "Billboard.js"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Recharts"
 
@@ -285,18 +285,18 @@ questions:
     options:
       - id: "a"
         text: "Metadata Specific Formatter"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Dynamic Formatter"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Static Formatter"
       - id: "d"
         text: "Error Formatter"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Array Renderer"
-        is_correct: true
+        isCorrect: true
 
   - id: "q20"
     text: "In which repository are Meshery schema definitions located?"
@@ -307,7 +307,7 @@ questions:
         text: "meshery/meshery"
       - id: "b"
         text: "meshery/schemas"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "layer5io/sistent"
       - id: "d"
@@ -322,7 +322,7 @@ questions:
         text: "npm run build"
       - id: "b"
         text: "make generate-types"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "make ui-setup"
       - id: "d"
@@ -337,7 +337,7 @@ questions:
         text: "npm install @meshery/schema"
       - id: "b"
         text: "npm install <path-to-schemas-repo>"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "yarn add schemas"
       - id: "d"
@@ -352,7 +352,7 @@ questions:
         text: "A state management library"
       - id: "b"
         text: "A design system built on Material UI"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A testing framework"
       - id: "d"
@@ -367,7 +367,7 @@ questions:
         text: "import {Button} from '@material-ui/core'"
       - id: "b"
         text: "import {Button} from '@sistent/sistent'"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "import Button from 'sistent'"
       - id: "d"
@@ -382,7 +382,7 @@ questions:
         text: "useContext"
       - id: "b"
         text: "useTheme"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "useStyles"
       - id: "d"
@@ -397,7 +397,7 @@ questions:
         text: "Using try-catch blocks only"
       - id: "b"
         text: "Using RTK Query error handling with toast notifications"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Ignoring errors and letting users refresh"
       - id: "d"
@@ -410,7 +410,7 @@ questions:
     options:
       - id: "a"
         text: "Using PropTypes"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using TypeScript interfaces only"
       - id: "c"
@@ -425,19 +425,19 @@ questions:
     options:
       - id: "a"
         text: "Dashboard"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Designs"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Environments"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Settings"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Performance"
-        is_correct: true
+        isCorrect: true
 
   - id: "q29"
     text: "What is the primary purpose of the Pattern Engine in Meshery UI?"
@@ -448,7 +448,7 @@ questions:
         text: "To create visual patterns for UI components"
       - id: "b"
         text: "To manage deployment of designs"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To generate CSS patterns"
       - id: "d"
@@ -463,7 +463,7 @@ questions:
         text: "WCAG 2.0 AA"
       - id: "b"
         text: "WCAG 2.1 AA"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Section 508"
       - id: "d"
@@ -478,7 +478,7 @@ questions:
         text: "Using callbacks"
       - id: "b"
         text: "Using async/await with RTK Query"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using promises only"
       - id: "d"
@@ -491,19 +491,19 @@ questions:
     options:
       - id: "a"
         text: "Code splitting"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Lazy loading"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Memoization"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Image optimization"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Bundle analysis"
-        is_correct: true
+        isCorrect: true
 
   - id: "q33"
     text: "What is the role of the Provider component in Meshery UI architecture?"
@@ -514,7 +514,7 @@ questions:
         text: "To provide data to components"
       - id: "b"
         text: "To manage authentication and integration with external systems"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To provide styling"
       - id: "d"
@@ -527,7 +527,7 @@ questions:
     options:
       - id: "a"
         text: "make ui"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "npm start"
       - id: "c"
@@ -544,7 +544,7 @@ questions:
         text: "To send emails"
       - id: "b"
         text: "To display system events, errors, and status updates"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To manage user notifications preferences"
       - id: "d"
@@ -557,16 +557,16 @@ questions:
     options:
       - id: "a"
         text: "meshsync"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "performance"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "system"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "user"
-        is_correct: true
+        isCorrect: true
 
   - id: "q37"
     text: "What is the correct way to handle environment variables in Meshery UI?"
@@ -577,7 +577,7 @@ questions:
         text: "Direct access via process.env"
       - id: "b"
         text: "Using NEXT_PUBLIC_ prefix for client-side variables"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using .env files only"
       - id: "d"
@@ -592,7 +592,7 @@ questions:
         text: "useQuery"
       - id: "b"
         text: "useGetQuery"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "useFetch"
       - id: "d"
@@ -607,7 +607,7 @@ questions:
         text: "Always use Redux for all state"
       - id: "b"
         text: "Use useState for local state, Redux for global state"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Only use class components with this.state"
       - id: "d"
@@ -622,7 +622,7 @@ questions:
         text: "Using componentDidMount only"
       - id: "b"
         text: "Using useEffect hook"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Directly in render method"
       - id: "d"
@@ -635,7 +635,7 @@ questions:
     options:
       - id: "a"
         text: "Using react-i18next"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using next-i18next only"
       - id: "c"
@@ -650,19 +650,19 @@ questions:
     options:
       - id: "a"
         text: "Use functional components with hooks"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Implement proper error boundaries"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Use TypeScript for type safety"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Follow single responsibility principle"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Use meaningful component names"
-        is_correct: true
+        isCorrect: true
 
   - id: "q43"
     text: "What is the recommended approach for handling form validation in Meshery UI?"
@@ -673,7 +673,7 @@ questions:
         text: "Custom validation functions only"
       - id: "b"
         text: "JSON Schema validation with react-jsonschema-form"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "HTML5 validation only"
       - id: "d"
@@ -686,16 +686,16 @@ questions:
     options:
       - id: "a"
         text: "Unit tests with Jest"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Integration tests with React Testing Library"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "E2E tests with Playwright"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Visual regression tests"
-        is_correct: true
+        isCorrect: true
 
   - id: "q45"
     text: "What is the purpose of the Extensions API in Meshery UI?"
@@ -706,7 +706,7 @@ questions:
         text: "To extend browser functionality"
       - id: "b"
         text: "To enable third-party integrations and custom functionality"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To manage file extensions"
       - id: "d"
@@ -719,16 +719,16 @@ questions:
     options:
       - id: "a"
         text: "OAuth2"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "LDAP"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Local provider"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Token-based authentication"
-        is_correct: true
+        isCorrect: true
 
   - id: "q47"
     text: "What is the correct way to handle theme switching in Meshery UI?"
@@ -739,7 +739,7 @@ questions:
         text: "Using CSS variables only"
       - id: "b"
         text: "Using Sistent's ThemeProvider and useTheme hook"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using localStorage directly"
       - id: "d"
@@ -752,19 +752,19 @@ questions:
     options:
       - id: "a"
         text: "Bug fixes"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Feature development"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Documentation improvements"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "UI/UX enhancements"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Test coverage improvements"
-        is_correct: true
+        isCorrect: true
 
   - id: "q49"
     text: "What is the correct way to handle API calls in Meshery UI components?"
@@ -775,7 +775,7 @@ questions:
         text: "Direct fetch calls in useEffect"
       - id: "b"
         text: "Using RTK Query hooks"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using axios directly in render"
       - id: "d"
@@ -790,7 +790,7 @@ questions:
         text: "make lint"
       - id: "b"
         text: "npm run lint"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "make ui-lint"
       - id: "d"
@@ -803,16 +803,16 @@ questions:
     options:
       - id: "a"
         text: "Using React.memo for pure components"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using useMemo for expensive calculations"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using useCallback for function props"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Avoiding unnecessary re-renders"
-        is_correct: true
+        isCorrect: true
 
   - id: "q52"
     text: "What is the correct way to handle form submissions in Meshery UI?"
@@ -821,7 +821,7 @@ questions:
     options:
       - id: "a"
         text: "Using onSubmit with preventDefault()"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using onClick on submit button only"
       - id: "c"
@@ -836,16 +836,16 @@ questions:
     options:
       - id: "a"
         text: "Using ternary operators for simple conditions"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using logical && for conditional display"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using early returns in render functions"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using if-else statements before return"
-        is_correct: true
+        isCorrect: true
 
   - id: "q54"
     text: "What is the correct way to handle component cleanup in Meshery UI?"
@@ -856,7 +856,7 @@ questions:
         text: "No cleanup needed"
       - id: "b"
         text: "Using useEffect cleanup function"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using componentWillUnmount only"
       - id: "d"
@@ -869,16 +869,16 @@ questions:
     options:
       - id: "a"
         text: "Custom hooks"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Higher-order components (HOCs)"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Render props pattern"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Utility functions"
-        is_correct: true
+        isCorrect: true
 
   - id: "q56"
     text: "What is the correct way to handle dynamic imports in Meshery UI?"
@@ -889,7 +889,7 @@ questions:
         text: "Using require() statements"
       - id: "b"
         text: "Using React.lazy() and Suspense"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using static imports only"
       - id: "d"
@@ -902,16 +902,16 @@ questions:
     options:
       - id: "a"
         text: "Using loading flags in component state"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using RTK Query loading states"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Implementing skeleton screens"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using Suspense for lazy-loaded components"
-        is_correct: true
+        isCorrect: true
 
   - id: "q58"
     text: "What is the recommended approach for handling component composition in Meshery UI?"
@@ -922,7 +922,7 @@ questions:
         text: "Deep inheritance hierarchies"
       - id: "b"
         text: "Composition over inheritance with props.children"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Mixing inheritance and composition"
       - id: "d"
@@ -935,16 +935,16 @@ questions:
     options:
       - id: "a"
         text: "Using React Developer Tools"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using Redux DevTools"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Console logging for debugging"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using browser debugger with breakpoints"
-        is_correct: true
+        isCorrect: true
 
   - id: "q60"
     text: "What is the correct way to handle ref forwarding in Meshery UI components?"
@@ -955,7 +955,7 @@ questions:
         text: "Direct ref passing"
       - id: "b"
         text: "Using React.forwardRef()"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using useRef in parent only"
       - id: "d"
@@ -970,7 +970,7 @@ questions:
         text: "styled-components"
       - id: "b"
         text: "Emotion with Material-UI's sx prop"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "CSS modules"
       - id: "d"
@@ -985,7 +985,7 @@ questions:
         text: "Pass props through multiple levels"
       - id: "b"
         text: "Use React Context or Redux for global state"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Use global variables"
       - id: "d"
@@ -998,16 +998,16 @@ questions:
     options:
       - id: "a"
         text: "Using Next.js file-based routing"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using dynamic routes with brackets"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using useRouter hook"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using programmatic navigation"
-        is_correct: true
+        isCorrect: true
 
   - id: "q64"
     text: "What is the correct way to handle component key props in Meshery UI lists?"
@@ -1018,7 +1018,7 @@ questions:
         text: "Using array index as key"
       - id: "b"
         text: "Using unique, stable identifiers as keys"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using Math.random() as key"
       - id: "d"
@@ -1031,16 +1031,16 @@ questions:
     options:
       - id: "a"
         text: "Using useEffect with proper dependencies"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Cleaning up subscriptions and timers"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Avoiding infinite loops"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using proper dependency arrays"
-        is_correct: true
+        isCorrect: true
 
   - id: "q66"
     text: "What is the recommended way to handle component testing in Meshery UI?"
@@ -1051,7 +1051,7 @@ questions:
         text: "Only manual testing"
       - id: "b"
         text: "Using Jest and React Testing Library"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using only Enzyme"
       - id: "d"
@@ -1064,16 +1064,16 @@ questions:
     options:
       - id: "a"
         text: "Feature-based folder structure"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Separating components, hooks, and utilities"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Co-locating related files"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using barrel exports for cleaner imports"
-        is_correct: true
+        isCorrect: true
 
   - id: "q68"
     text: "What is the correct way to handle component error boundaries in Meshery UI?"
@@ -1084,7 +1084,7 @@ questions:
         text: "Using try-catch in every component"
       - id: "b"
         text: "Using React Error Boundary components"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using window.onerror"
       - id: "d"
@@ -1097,16 +1097,16 @@ questions:
     options:
       - id: "a"
         text: "Using Material-UI breakpoints"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using responsive Grid components"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using CSS media queries"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using useMediaQuery hook"
-        is_correct: true
+        isCorrect: true
 
   - id: "q70"
     text: "What is the correct way to handle component props validation with TypeScript in Meshery UI?"
@@ -1117,7 +1117,7 @@ questions:
         text: "Using PropTypes only"
       - id: "b"
         text: "Using TypeScript interfaces and types"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using runtime validation only"
       - id: "d"
@@ -1130,16 +1130,16 @@ questions:
     options:
       - id: "a"
         text: "Using localStorage for user preferences"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using sessionStorage for temporary data"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using IndexedDB for large datasets"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Using cookies for authentication tokens"
-        is_correct: true
+        isCorrect: true
 
   - id: "q72"
     text: "What is the recommended approach for handling component naming conventions in Meshery UI?"
@@ -1150,7 +1150,7 @@ questions:
         text: "Using camelCase for all components"
       - id: "b"
         text: "Using PascalCase for component names"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using snake_case for components"
       - id: "d"
@@ -1163,16 +1163,16 @@ questions:
     options:
       - id: "a"
         text: "Creating generic, configurable components"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using composition patterns"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Implementing proper prop interfaces"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Following single responsibility principle"
-        is_correct: true
+        isCorrect: true
 
   - id: "q74"
     text: "What is the correct way to handle component lifecycle in functional components in Meshery UI?"
@@ -1183,7 +1183,7 @@ questions:
         text: "Using class component lifecycle methods"
       - id: "b"
         text: "Using useEffect hook for lifecycle events"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using setTimeout for lifecycle events"
       - id: "d"
@@ -1196,16 +1196,16 @@ questions:
     options:
       - id: "a"
         text: "Writing clear JSDoc comments"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Providing usage examples"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Documenting prop interfaces"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Creating Storybook stories"
-        is_correct: true
+        isCorrect: true
 
 ---
 The Meshery UI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.

@@ -3,10 +3,10 @@ title: "Meshery Server Contributor Exam"
 type: "test"
 layout: "test"
 draft: true
-pass_percentage: 70
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
 questions:
   - id: "q1"
     text: "Meshery Server is primarily written in which of the following languages?"
@@ -19,7 +19,7 @@ questions:
         text: "Rust"
       - id: "c"
         text: "Golang"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: WebAssembly
   - id: "q2"
@@ -29,7 +29,7 @@ questions:
     options:
       - id: "a"
         text: "gRPC"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "HTTP/2"
       - id: "c"
@@ -43,7 +43,7 @@ questions:
     options:
       - id: "true"
         text: "true"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "false"
   - id: "q4"
@@ -55,7 +55,7 @@ questions:
         text: "TOML"
       - id: "b"
         text: "YAML"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "INI"
       - id: "d"
@@ -69,7 +69,7 @@ questions:
         text: "Identity management"
       - id: "b"
         text: "Central orchestration and infrastructure lifecycle management"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Monitoring agent"
       - id: "d"
@@ -83,7 +83,7 @@ questions:
         text: "Yes"
       - id: "b"
         text: "No"
-        is_correct: true
+        isCorrect: true
   - id: "q7"
     text: "Meshery Server has the following types of extension points:"
     type: "multiple-answers"
@@ -91,18 +91,18 @@ questions:
     options:
       - id: "a"
         text: "Adapters"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Load Generators"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "WebAssembly plugin"
       - id: "d"
         text: "Catalog"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Models"
-        is_correct: true
+        isCorrect: true
   - id: "q8"
     text: "Which of the following is NOT a component of Meshery's architecture?"
     type: "single-answer"
@@ -116,7 +116,7 @@ questions:
         text: "Meshery UI"
       - id: "d"
         text: "MeshKit"
-        is_correct: true
+        isCorrect: true
   - id: "q9"
     text: "Through its Models, Meshery supports which of the following integrations?"
     type: "multiple-answers"
@@ -124,16 +124,16 @@ questions:
     options:
       - id: "a"
         text: "Istio"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Grafana"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "GitHub"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Prometheus"
-        is_correct: true
+        isCorrect: true
   - id: "q10"
     text: "True or False: Meshery can be deployed as a Docker container."
     type: "single-answer"
@@ -141,7 +141,7 @@ questions:
     options:
       - id: "true"
         text: "true"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "false"
 ---

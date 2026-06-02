@@ -3,10 +3,10 @@ title: "Meshery CLI (mesheryctl) Contributor Exam"
 type: "test"
 layout: "test"
 weight: 2
-pass_percentage: 70
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
 questions:
   - id: "q1"
     text: "According to the contributing guidelines, what is the primary Go library used for creating commands and flags in mesheryctl?"
@@ -15,7 +15,7 @@ questions:
     options:
       - id: "a"
         text: "Cobra"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Viper"
       - id: "c"
@@ -33,7 +33,7 @@ questions:
         text: "PascalCase"
       - id: "c"
         text: "lowercase and hyphen-separated"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "snake_case"
   - id: "q3"
@@ -45,7 +45,7 @@ questions:
         text: "Cobra"
       - id: "b"
         text: "Viper"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Go-yaml"
       - id: "d"
@@ -61,7 +61,7 @@ questions:
         text: "mesheryctl/commands/root.go"
       - id: "c"
         text: "mesheryctl/internal/cli/root.go"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl/pkg/utils/root.go"
   - id: "q5"
@@ -71,7 +71,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q6"
@@ -85,7 +85,7 @@ questions:
         text: "The root.go file"
       - id: "c"
         text: "The parent command's Go file"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A new config.yaml file"
   - id: "q7"
@@ -99,10 +99,10 @@ questions:
         text: "Use all uppercase with underscores"
       - id: "c"
         text: "Use lowercase and separate words with hyphens"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Support both shorthand (one or two letters) and long-form (full word spelled out) for each flag."
-        is_correct: true
+        isCorrect: true
   - id: "q8"
     text: "Which of the following are design principles for mesheryctl's user experience, according to the guide?"
     type: "multiple-answers"
@@ -110,12 +110,12 @@ questions:
     options:
       - id: "a"
         text: "Keep it simple"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Provide strongly opinionated behavior and responses"
       - id: "c"
         text: "Deliver consistent UX"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Require multiple confirmation steps for all actions"
   - id: "q9"
@@ -129,7 +129,7 @@ questions:
         text: "Used for every line of output"
       - id: "c"
         text: "Avoided entirely"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Random to make it interesting"
   - id: "q10"
@@ -143,7 +143,7 @@ questions:
         text: "Print the full stack trace to the user"
       - id: "c"
         text: "Provide a helpful error message and a link to documentation, if possible"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Log the error to a remote server without informing the user"
   - id: "q11"
@@ -157,7 +157,7 @@ questions:
         text: "make mesheryctl"
       - id: "c"
         text: "cd mesheryctl; make"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "make build-cli"
   - id: "q12"
@@ -169,7 +169,7 @@ questions:
         text: "go build ."
       - id: "b"
         text: "make"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "make install-cli"
       - id: "d"
@@ -187,7 +187,7 @@ questions:
         text: "In your home directory"
       - id: "d"
         text: "In the `mesheryctl` directory inside your `meshery` fork"
-        is_correct: true
+        isCorrect: true
   - id: "q14"
     text: "What is the purpose of the Developer Certificate of Origin (DCO) sign-off?"
     type: "single-answer"
@@ -197,7 +197,7 @@ questions:
         text: "To overwrite any prior copyright of the code being submitted"
       - id: "b"
         text: "To certify that the contributor has the right to submit their contribution"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To run automated code formatting checks"
       - id: "d"
@@ -211,7 +211,7 @@ questions:
         text: "By adding a comment in your pull request"
       - id: "b"
         text: "By using git commit -s or git commit --signoff"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "By sending an email to the project maintainers"
       - id: "d"
@@ -223,7 +223,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q17"
@@ -233,7 +233,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q18"
@@ -247,7 +247,7 @@ questions:
         text: "A short description shown in the 'help' command."
       - id: "c"
         text: "A long, detailed description of the command."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "An example of how to use the command."
   - id: "q19"
@@ -257,7 +257,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q20"
@@ -269,7 +269,7 @@ questions:
         text: "Immediately submit a pull request and await review"
       - id: "b"
         text: "Register the new command with its parent command"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Delete the root.go file"
       - id: "d"
@@ -285,7 +285,7 @@ questions:
         text: "A JavaScript test runner"
       - id: "c"
         text: "A Bash-based testing framework"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A Python-based integration test suite"
   - id: "q22"
@@ -299,7 +299,7 @@ questions:
         text: "To test individual functions in isolation (unit tests)"
       - id: "c"
         text: "To test the complete execution flow of mesheryctl commands"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "To compile the mesheryctl binary"
   - id: "q23"
@@ -311,7 +311,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q24"
     text: "What is the command to run the mesheryctl end-to-end tests?"
     type: "single-answer"
@@ -325,7 +325,7 @@ questions:
         text: "golangci-lint --check"
       - id: "d"
         text: "make e2e"
-        is_correct: true
+        isCorrect: true
   - id: "q25"
     text: "How is a test case defined in a BATS test file?"
     type: "single-answer"
@@ -335,7 +335,7 @@ questions:
         text: "Using a UUID"
       - id: "b"
         text: "With the @test annotation followed by a description and a test block inside {...}"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "By defining the truthy assertion in regex"
       - id: "d"
@@ -351,7 +351,7 @@ questions:
         text: ".bash"
       - id: "c"
         text: ".bats"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: ".int-test"
   - id: "q27"
@@ -363,7 +363,7 @@ questions:
         text: "It runs once at the beginning of the entire test suite."
       - id: "b"
         text: "It runs before each test case in the file."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It defines the main test logic."
       - id: "d"
@@ -375,7 +375,7 @@ questions:
     options:
       - id: "a"
         text: "It cleans up resources after each test case."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "It reports the final test results."
       - id: "c"
@@ -391,7 +391,7 @@ questions:
         text: "exec"
       - id: "b"
         text: "run"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "test"
       - id: "d"
@@ -405,7 +405,7 @@ questions:
         text: "Using the $STDOUT variable"
       - id: "b"
         text: "Using the $output variable"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Using the $BATS_OUTPUT variable"
       - id: "d"
@@ -417,12 +417,12 @@ questions:
     options:
       - id: "a"
         text: "Be consistent."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Prioritize adding as many flags as possible."
       - id: "c"
         text: "Keep it simple."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Assume the user is an expert."
   - id: "q32"
@@ -434,7 +434,7 @@ questions:
         text: "It executes faster."
       - id: "b"
         text: "It allows returning an error, which Cobra can then handle and display."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It allows for more arguments."
       - id: "d"
@@ -448,7 +448,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q34"
     text: "The output of mesheryctl commands should be designed to be:"
     type: "single-answer"
@@ -460,7 +460,7 @@ questions:
         text: "Easily readable by humans."
       - id: "c"
         text: "Both machine-parsable and human-readable, often using an output flag."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Only graphical."
   - id: "q35"
@@ -472,7 +472,7 @@ questions:
         text: "To provide a detailed explanation."
       - id: "b"
         text: "To give a brief, one-line summary used in help listings."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To list all possible flags."
       - id: "d"
@@ -486,7 +486,7 @@ questions:
         text: "It deletes the entire Meshery repository."
       - id: "b"
         text: "It removes the compiled binary from the bin directory."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It formats the Go source code."
       - id: "d"
@@ -498,7 +498,7 @@ questions:
     options:
       - id: "a"
         text: "Having a specific version of Go installed."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Having a Docker Enterprise license."
       - id: "c"
@@ -512,10 +512,10 @@ questions:
     options:
       - id: "a"
         text: "That the binary was compiled successfully."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "That the command is executable."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "That your local build can connect to the Meshery Cloud."
       - id: "d"
@@ -529,7 +529,7 @@ questions:
         text: "In root.go, using rootCmd.AddCommand()"
       - id: "b"
         text: "In perf.go, using PerfCmd.AddCommand()"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "In a new file called subcommand.go and it will be auto-detected."
       - id: "d"
@@ -541,15 +541,15 @@ questions:
     options:
       - id: "a"
         text: "A link to the corresponding issue."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "A detailed description of the changes made."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Your personal contact information."
       - id: "d"
         text: "Screenshots or recordings of the new functionality."
-        is_correct: true
+        isCorrect: true
   - id: "q41"
     text: "mesheryctl can be installed on Linux, macOS, or Windows systems using methods like bash, Homebrew, or Scoop."
     type: "single-answer"
@@ -557,7 +557,7 @@ questions:
     options:
       - id: "true"
         text: "Using the $status variable."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Using the $exit_code variable."
       - id: "c"
@@ -573,7 +573,7 @@ questions:
         text: "It loads test data from a file."
       - id: "b"
         text: "It shares code and sources another script file."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It loads the mesheryctl binary into memory."
       - id: "d"
@@ -587,7 +587,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q44"
     text: "`mesheryctl system context` allows users to switch between mesheryctl config files."
     type: "single-answer"
@@ -597,7 +597,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q45"
     text: "mesheryctl is a client of the Meshery Server REST API."
     type: "single-answer"
@@ -605,7 +605,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q46"
@@ -617,7 +617,7 @@ questions:
         text: "if [ \"$output\" == \"Success\" ]; then ... fi"
       - id: "b"
         text: "if [[ \"$output\" =~ \"Success\" ]]; then ... fi"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "assert_output_contains \"Success\""
       - id: "d"
@@ -631,7 +631,7 @@ questions:
         text: "A new license file."
       - id: "b"
         text: "An end-to-end test for it in a relevant .bats file."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A request to the maintainers to write a test."
       - id: "d"
@@ -645,7 +645,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q49"
     text: "What is a key difference between unit tests and the BATS end-to-end tests for mesheryctl?"
     type: "single-answer"
@@ -655,7 +655,7 @@ questions:
         text: "There is no difference; they test the same things."
       - id: "b"
         text: "Unit tests are written in Go using test functions, while BATS tests execute the compiled CLI binary."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Unit tests are manual, while BATS tests are automated."
       - id: "d"
@@ -667,7 +667,7 @@ questions:
     options:
       - id: "a"
         text: "To ensure subsequent tests run in a clean, predictable environment."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "To save disk space on the developer's machine."
       - id: "c"
@@ -683,7 +683,7 @@ questions:
         text: "To define all CLI commands."
       - id: "b"
         text: "To provide reusable helper functions, like HTTP clients or loggers."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To store end-to-end test scripts."
       - id: "d"
@@ -697,7 +697,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q53"
     text: "When a user provides an invalid flag to a mesheryctl command, what is the expected behavior?"
     type: "single-answer"
@@ -709,7 +709,7 @@ questions:
         text: "The command should crash with a panic."
       - id: "c"
         text: "The command should automatically reject the flag and show a helpful error."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The command should pause execution and await user input to re-enter the flag."
   - id: "q54"
@@ -721,7 +721,7 @@ questions:
         text: "mesheryctl/internal/cli/experimental/newthing.go"
       - id: "b"
         text: "mesheryctl/internal/cli/newthing.go"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "mesheryctl/cmd/exp/newthing.go"
       - id: "d"
@@ -735,7 +735,7 @@ questions:
         text: "cmd.SilenceErrors = true"
       - id: "b"
         text: "cmd.SilenceUsage = true"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "cmd.NoHelpAtAll = true"
       - id: "d"
@@ -749,7 +749,7 @@ questions:
         text: "Use a single line with `&nbsp;` characters."
       - id: "b"
         text: "Use a raw string literal with backticks (`)."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Golang `string` to concatenate multiple strings together."
       - id: "d"
@@ -761,7 +761,7 @@ questions:
     options:
       - id: "a"
         text: "A compiled mesheryctl binary in the bin directory."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "A running Kubernetes cluster."
       - id: "c"
@@ -777,7 +777,7 @@ questions:
         text: "The CPU architecture for mesheryctl builds."
       - id: "b"
         text: "The mesheryctl command and subcommand structure."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Meshery Server GraphQL API structure."
       - id: "d"
@@ -789,10 +789,10 @@ questions:
     options:
       - id: "a"
         text: "common.bash"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "utils.bash"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "test.go"
       - id: "d"
@@ -804,10 +804,10 @@ questions:
     options:
       - id: "a"
         text: "The name of the failing test case."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "The line number where the failure occurred."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Base64 encoded output of the command that failed."
       - id: "d"
@@ -821,7 +821,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q62"
     text: "The configuration file for mesheryctl is located at `~/.meshery/config.yaml` by default and contains information about your Meshery installation, such as the current release channel, Meshery version, your SSH keys, SSL certificates, and GitHub username."
     type: "single-answer"
@@ -831,7 +831,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q63"
     text: "The purpose of the PreRunE function in a mesheryctl command is to:"
     type: "single-answer"
@@ -841,7 +841,7 @@ questions:
         text: "Run after the main RunE function for cleanup."
       - id: "b"
         text: "Perform validation or setup tasks before the main command logic executes."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Define the main command logic."
       - id: "d"
@@ -855,7 +855,7 @@ questions:
         text: "Directly inside the command's RunE function."
       - id: "b"
         text: "In a shared utility/package to promote code reuse."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "In the main.go file."
       - id: "d"
@@ -869,7 +869,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q66"
     text: "Before submitting a PR, it is recommended to locally build, test your changes, define test scenarios, and document their outcome."
     type: "singe-answer"
@@ -877,7 +877,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q67"
@@ -889,7 +889,7 @@ questions:
         text: "That the last command produced no human-readable output."
       - id: "b"
         text: "That the last command executed successfully."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "That the last command failed."
       - id: "d"
@@ -903,7 +903,7 @@ questions:
         text: "By checking for the flag manually in the RunE function."
       - id: "b"
         text: "By using cmd.MarkFlagRequired(\"flag-name\")."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Cobra does not support required flags."
       - id: "d"
@@ -917,7 +917,7 @@ questions:
         text: "To automatically merge the pull request."
       - id: "b"
         text: "To run checks like building, linting, and end-to-end tests."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To email maintainers, asking for review of the pull request."
       - id: "d"
@@ -933,7 +933,7 @@ questions:
         text: "XML format"
       - id: "c"
         text: "Test Anything Protocol (TAP) format"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Plain-text format"
   - id: "q71"
@@ -945,7 +945,7 @@ questions:
         text: "Read directly from standard input with case-sensitivity enabled."
       - id: "b"
         text: "Use a dedicated library like Survey for a better user experience."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Interactive input is not allowed in mesheryctl commands."
       - id: "d"
@@ -957,7 +957,7 @@ questions:
     options:
       - id: "a"
         text: "Called by a different, often shorter, name."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Hidden from the main help command."
       - id: "c"
@@ -973,7 +973,7 @@ questions:
         text: "It defines Meshery's code of conduct and Community Insights."
       - id: "b"
         text: "It contains instructions for continuous integration pipeline."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It contains a list of project maintainers."
       - id: "d"
@@ -987,7 +987,7 @@ questions:
         text: "Comment out the @test line."
       - id: "b"
         text: "Use the skip command within the test."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Add @skip before the @test annotation."
       - id: "d"
@@ -1003,7 +1003,7 @@ questions:
         text: "Close the original issue."
       - id: "c"
         text: "Ensure the PR description explains changes made, whil awaiting for another contributor or maintainer to offer a review."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Delete their fork of the repository."
 #  - id: "q76"
