@@ -2,7 +2,7 @@
 title: "Meshery Extensibility Contributor Exam"
 type: "test"
 layout: "test"
-pass_percentage: 70
+passPercentage: 70
 draft: true
 questions:
 - id: "q1"
@@ -17,7 +17,7 @@ questions:
     text: "Policies"
   - id: "c"
     text: "Components"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Load Generators"
 
@@ -33,7 +33,7 @@ questions:
     text: "A unit of packaging to define managed infrastructure and their relationships."
   - id: "c"
     text: "Fundamental building block used to represent and define the infrastructure under management."
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "A prescriptive configuration for cloud native best practices."
 
@@ -45,15 +45,15 @@ questions:
   options:
   - id: "a"
     text: "Adapters"
-    is_correct: true
+    isCorrect: true
   - id: "b"
     text: "Model Registrants"
   - id: "c"
     text: "Load Generators"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Providers"
-    is_correct: true
+    isCorrect: true
   - id: "e"
     text: "Snapshots"
 
@@ -71,7 +71,7 @@ questions:
     text: "mesheryctl adapter"
   - id: "d"
     text: "mesheryctl filter"
-    is_correct: true
+    isCorrect: true
 
 - id: "q5"
   text: "True or False: Extensions in Meshery are strictly limited to core platform modifications and cannot provide integrations with external tools or services."
@@ -82,7 +82,7 @@ questions:
     text: "True"
   - id: "false"
     text: "False"
-    is_correct: true
+    isCorrect: true
 
 - id: "q6"
   text: "If a user desires to bundle their custom component definition(s) while keeping them private, what must they import into their Meshery deployment?"
@@ -93,7 +93,7 @@ questions:
     text: "The default Kubernetes model"
   - id: "b"
     text: "A custom model"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "A manifest file"
   - id: "d"
@@ -110,7 +110,7 @@ questions:
     text: "interaction"
   - id: "c"
     text: "action"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "mutate"
 
@@ -122,18 +122,18 @@ questions:
   options:
   - id: "a"
     text: "Kind"
-    is_correct: true
+    isCorrect: true
   - id: "b"
     text: "Schema ID"
   - id: "c"
     text: "Model"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Description"
-    is_correct: true
+    isCorrect: true
   - id: "e"
     text: "Version"
-    is_correct: true
+    isCorrect: true
 
 - id: "q9"
   text: "What `mesheryctl` command subsection is designed to manage the state and contents of Meshery’s internal registry of capabilities?"
@@ -144,7 +144,7 @@ questions:
     text: "mesheryctl system"
   - id: "b"
     text: "mesheryctl registry"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "mesheryctl adapter"
   - id: "d"
@@ -160,10 +160,10 @@ questions:
     text: "kubectl MeshSync Snapshot"
   - id: "b"
     text: "Helm Kanvas Snapshot"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "Kanvas Snapshot"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Envoy WASM Filter"
 
@@ -175,18 +175,18 @@ questions:
   options:
   - id: "a"
     text: "A working installation of Meshery CLI and Meshery Server"
-    is_correct: true
+    isCorrect: true
   - id: "b"
     text: "A working installation of the BATS testing framework"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "Access to the Meshery Cloud Remote Provider"
   - id: "d"
     text: "A verified account in the chosen provider to integrate with Meshery"
-    is_correct: true
+    isCorrect: true
   - id: "e"
     text: "Installation of `jq` and `yq` for processing JSON and YAML"
-    is_correct: true
+    isCorrect: true
 
 - id: "q12"
   text: "What `mesheryctl` command is associated with the scaffolding of a folder structure for Model creation?"
@@ -199,7 +199,7 @@ questions:
     text: "mesheryctl model generate"
   - id: "c"
     text: "mesheryctl model init"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "mesheryctl model export"
 
@@ -214,7 +214,7 @@ questions:
     text: "BATS"
   - id: "c"
     text: "Cobra Golang framework"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "MeshKit"
 
@@ -223,7 +223,7 @@ questions:
   type: "short-answer"
   marks: 2
   instructions: "Enter the environment variable name only (e.g., VARIABLE_NAME)"
-  correct_answer: "PLATFORM"
+  correctAnswer: "PLATFORM"
 
 - id: "q15"
   text: "Which two specific load generators are mentioned as choices when running performance tests via `mesheryctl perf apply`?"
@@ -233,14 +233,14 @@ questions:
   options:
   - id: "a"
     text: "wrk2"
-    is_correct: true
+    isCorrect: true
   - id: "b"
     text: "jmeter"
   - id: "c"
     text: "locust"
   - id: "d"
     text: "fortio"
-    is_correct: true
+    isCorrect: true
 
 - id: "q16"
   text: "What component is used to describe the operations that a model supports, such as configurations, interactions, styling, and runtime behavior, which Meshery dynamically interprets for full lifecycle management?"
@@ -251,7 +251,7 @@ questions:
     text: "Relationships"
   - id: "b"
     text: "Capabilities"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "Metadata"
   - id: "d"
@@ -270,7 +270,7 @@ questions:
     text: "RPC"
   - id: "d"
     text: "REST"
-    is_correct: true
+    isCorrect: true
 
 - id: "q18"
   text: "Which Meshery extension provides a native `kubectl` plugin for conveniently synchronizing the state of your cluster with the Meshery Server?"
@@ -281,7 +281,7 @@ questions:
     text: "Helm Kanvas Snapshot"
   - id: "b"
     text: "kubectl MeshSync Snapshot"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "Kanvas Snapshot"
   - id: "d"
@@ -292,14 +292,14 @@ questions:
   type: "short-answer"
   marks: 2
   instructions: "Enter the specification name, one word."
-  correct_answer: "smi"
+  correctAnswer: "smi"
 
 - id: "q20"
   text: "Which `mesheryctl model` subcommand prepares the local model files into a standardized distribution format?"
   type: "short-answer"
   marks: 2
   instructions: "Enter the subcommand name, one word."
-  correct_answer: "build"
+  correctAnswer: "build"
 
 - id: "q21"
   text: "Which CLI command is used to publish Meshery Models to Websites, a Remote Provider, or the Meshery Server?"
@@ -312,7 +312,7 @@ questions:
     text: "mesheryctl model register"
   - id: "c"
     text: "mesheryctl registry publish"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "mesheryctl component share"
 
@@ -327,7 +327,7 @@ questions:
     text: "Integration Testing"
   - id: "c"
     text: "End-to-End Testing"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Smoke Testing"
 
@@ -340,7 +340,7 @@ questions:
     text: "The main navigation bar"
   - id: "b"
     text: "The user preferences page"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "The Dashboard widgets area"
   - id: "d"
@@ -356,15 +356,15 @@ questions:
     text: "Initiate Interactive Terminal Session"
   - id: "b"
     text: "Change Shape of the component"
-    is_correct: true
+    isCorrect: true
   - id: "c"
     text: "Configure Workload Configuration"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "View underlying JSON Schema"
   - id: "e"
     text: "Configure the visual styles for the component"
-    is_correct: true
+    isCorrect: true
 
 - id: "q25"
   text: "The ability to manage WASM filters for data plane proxies in Meshery falls under which overall domain of Meshery's infrastructure management guides?"
@@ -377,7 +377,7 @@ questions:
     text: "Infrastructure Discovery"
   - id: "c"
     text: "Envoy WASM Filter Management"
-    is_correct: true
+    isCorrect: true
   - id: "d"
     text: "Managing Connections"
 ---

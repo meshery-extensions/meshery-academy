@@ -4,9 +4,9 @@ type: "test"
 layout: "test"
 draft: true
 weight: 2
-pass_percentage: 70
-max_attempts: 3
-time_limit: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 25
 questions:
   - id: "q1"
     text: "Which command is used to start Meshery?"
@@ -15,7 +15,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system start"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl start"
       - id: "c"
@@ -31,7 +31,7 @@ questions:
         text: "mesheryctl logs"
       - id: "b"
         text: "mesheryctl system logs"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "mesheryctl server logs"
       - id: "d"
@@ -43,7 +43,7 @@ questions:
     options:
       - id: "a"
         text: "--platform"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "--provider"
       - id: "c"
@@ -61,7 +61,7 @@ questions:
         text: "mesheryctl pattern -f <file-name> apply"
       - id: "c"
         text: "mesheryctl pattern apply -f <file-name>"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl apply -f <file-name>"
   - id: "q5"
@@ -73,7 +73,7 @@ questions:
         text: "Checks for the latest version of Meshery."
       - id: "b"
         text: "Performs a series of pre-flight and post-flight checks on your environment to ensure Meshery is running correctly."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Checks the syntax of a Meshery pattern file."
       - id: "d"
@@ -85,7 +85,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system context view"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl context list"
       - id: "c"
@@ -99,7 +99,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system adapter list"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl adapter list"
       - id: "c"
@@ -115,7 +115,7 @@ questions:
         text: "mesheryctl config reset"
       - id: "b"
         text: "mesheryctl system reset"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "mesheryctl reset"
       - id: "d"
@@ -129,7 +129,7 @@ questions:
         text: "To view the performance of the Meshery server itself."
       - id: "b"
         text: "To run performance tests on service meshes and their workloads."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To configure the performance settings of Meshery."
       - id: "d"
@@ -145,7 +145,7 @@ questions:
         text: "mesheryctl login"
       - id: "c"
         text: "mesheryctl system login"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl auth login"
   - id: "q11"
@@ -155,7 +155,7 @@ questions:
     options:
       - id: "a"
         text: "--token"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "--auth-token"
       - id: "c"
@@ -169,7 +169,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl version"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl --version"
       - id: "c"
@@ -185,7 +185,7 @@ questions:
         text: "To manage the Meshery application mesh."
       - id: "b"
         text: "To interact with and manage service meshes."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To create a new mesh design in the terminal."
       - id: "d"
@@ -197,7 +197,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl mesh validate --smi"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl smi validate"
       - id: "c"
@@ -213,7 +213,7 @@ questions:
         text: "Displays a terminal-based dashboard of Meshery's status."
       - id: "b"
         text: "Opens the Meshery UI in your default web browser."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Starts the Meshery UI in the background."
       - id: "d"
@@ -225,7 +225,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system update"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl update"
       - id: "c"
@@ -241,7 +241,7 @@ questions:
         text: "To filter the output of other mesheryctl commands."
       - id: "b"
         text: "To manage WebAssembly filters for Envoy."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To filter the list of available service meshes."
       - id: "d"
@@ -253,7 +253,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl <command> --help"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl help <command>"
       - id: "c"
@@ -267,7 +267,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system status"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl status"
       - id: "c"
@@ -283,7 +283,7 @@ questions:
         text: "To export Meshery data to a file."
       - id: "b"
         text: "To access experimental features of mesheryctl."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To explain a specific Meshery concept."
       - id: "d"
@@ -295,7 +295,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system stop"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl stop"
       - id: "c"
@@ -313,7 +313,7 @@ questions:
         text: "mesheryctl import pattern -f <url>"
       - id: "c"
         text: "mesheryctl pattern import -f <url>"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl pattern fetch -f <url>"
   - id: "q23"
@@ -323,7 +323,7 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl system context list"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "mesheryctl context list"
       - id: "c"
@@ -339,7 +339,7 @@ questions:
         text: "To configure the Meshery UI."
       - id: "b"
         text: "To manage the configuration of the Meshery server and mesheryctl."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To configure the service meshes connected to Meshery."
       - id: "d"
@@ -357,7 +357,7 @@ questions:
         text: "mesheryctl auth token"
       - id: "d"
         text: "mesheryctl system token"
-        is_correct: true
+        isCorrect: true
 
 ---
 The Meshery CLI examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Associate certification.

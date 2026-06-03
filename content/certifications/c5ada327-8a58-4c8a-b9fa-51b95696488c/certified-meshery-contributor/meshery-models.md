@@ -2,10 +2,10 @@
 title: "Meshery Models Contributor Exam"
 type: "test"
 layout: "test"
-max_attempts: 3
-time_limit: 25
-number_of_questions: 25
-pass_percentage: 70
+maxAttempts: 3
+timeLimit: 25
+numberOfQuestions: 25
+passPercentage: 70
 questions:                     
   - id: "q1"                       
     text: "Meshery Models are described as the 'unit of packaging' designed to describe which of the following managed entities:" 
@@ -16,13 +16,13 @@ questions:
         text: "Siblings"
       - id: "b" 
         text: "Relationships"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Components"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Connections"
-        is_correct: true
+        isCorrect: true
   - id: "q2"                       
     text: "Which Meshery CLI command subcommand is used to initiate the scaffolding of a folder structure for model creation?" 
     type: "single-answer"                     
@@ -36,7 +36,7 @@ questions:
         text: "mesheryctl model build"
       - id: "d"
         text: "mesheryctl model init"
-        is_correct: true
+        isCorrect: true
   - id: "q3"                       
     text: "When importing model into Meshery Server, which of the following formats are supported?"
     type: "single-answer"                     
@@ -44,7 +44,7 @@ questions:
     options:                       
       - id: "a"
         text: "yaml, json, csv, google sheet, oci"
-        is_correct: true        
+        isCorrect: true        
       - id: "b" 
         text: "toml, cue"
       - id: "c"
@@ -62,7 +62,7 @@ questions:
         text: "mesheryctl model package"
       - id: "c"
         text: "mesheryctl model build"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl registry publish"
   - id: "q5"                       
@@ -72,7 +72,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q6"                       
@@ -86,7 +86,7 @@ questions:
         text: "isNamespaced"
       - id: "c"
         text: "isAnnotation"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "isModelAnnotation"
   - id: "q7"                       
@@ -100,7 +100,7 @@ questions:
         text: "primaryColor"
       - id: "c"
         text: "shape"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "styleOverrides"
   - id: "q8"                       
@@ -110,15 +110,15 @@ questions:
     options:
       - id: "a"
         text: "kind (The genre of component, e.g., Pod)"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "description (A characterization of the component)"
       - id: "c"
         text: "model (The parent model, e.g., kubernetes)"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "version (The version of the component definition)"
-        is_correct: true
+        isCorrect: true
   - id: "q9"                       
     text: "If a contributor bundles their custom components and relationships into a custom model and imports it into their local Meshery deployment, the component definitions will be registered in the Meshery Server’s registry and available for use."
     type: "single-answer"            
@@ -126,7 +126,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q10"                       
@@ -136,7 +136,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q11"                       
@@ -146,7 +146,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q12"                       
@@ -156,15 +156,15 @@ questions:
     options:
       - id: "a"
         text: "kind"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "version"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "description"
       - id: "d"
         text: "model"
-        is_correct: true
+        isCorrect: true
   - id: "q13"                       
     text: "In a Relationship selector definition, if the 'version' property is omitted, how is this absence interpreted during matching?"
     type: "single-answer"                     
@@ -174,7 +174,7 @@ questions:
         text: "It explicitly restricts matching to version 1.0.0."
       - id: "b" 
         text: "It is interpreted as a wildcard (*), matching all available versions."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It causes an immediate validation failure, as the version is a required field."
       - id: "d"
@@ -186,12 +186,12 @@ questions:
     options:
       - id: "a"
         text: "mutatedRef"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "evaluationQuery"
       - id: "c"
         text: "mutatorRef"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "patchStrategy"
   - id: "q15"                       
@@ -203,7 +203,7 @@ questions:
         text: "Common Expression Language (CEL)"
       - id: "b" 
         text: "Open Policy Agent (OPA)"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Kyverno"
       - id: "d"
@@ -219,7 +219,7 @@ questions:
         text: "mutate"
       - id: "c"
         text: "action"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "interaction"
   - id: "q17"                       
@@ -231,7 +231,7 @@ questions:
         text: "view"
       - id: "b" 
         text: "mutate"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "action"
       - id: "d"
@@ -245,7 +245,7 @@ questions:
         text: "Performance Test"
       - id: "b" 
         text: "Workload Configuration"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Json Schema"
       - id: "d"
@@ -257,15 +257,15 @@ questions:
     options:
       - id: "a"
         text: "Styling"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Change Shape"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Interactive Terminal"
       - id: "d"
         text: "Compound Drag and Drop"
-        is_correct: true
+        isCorrect: true
   - id: "q20"                       
     text: "A fully configured entity with detailed intentions based on a generic definition is known as a Declaration."
     type: "single-answer"            
@@ -273,7 +273,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q21"                       
@@ -287,19 +287,19 @@ questions:
         text: "mesheryctl exp relationship view"
       - id: "c"
         text: "mesheryctl exp relationship search"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "mesheryctl exp relationship list"
   - id: "q22"                       
     text: "Which flag can optionally be used with `mesheryctl model generate` to prevent the newly generated model definition from being automatically registered with Meshery Server?"
     type: "short-answer"                
     marks: 2
-    correct_answer: "--register"
+    correctAnswer: "--register"
   - id: "q23"                       
     text: "Which primary Meshery CLI command category is dedicated to managing the fundamental building blocks used to represent and define the infrastructure under management?"
     type: "short-answer"                
     marks: 2
-    correct_answer: "component"
+    correctAnswer: "component"
   - id: "q24"                       
     text: "Which Meshery CLI command category is responsible for managing the state and contents of Meshery’s internal database of capabilities, typically interacting with spreadsheets or generating model definitions?"
     type: "single-answer"                
@@ -307,14 +307,14 @@ questions:
     options:
       - id: "a"
         text: "mesheryctl registry"
-        is_correct: true
+        isCorrect: true
       - id: "b" 
         text: "mesheryctl model"
       - id: "c"
         text: "mesheryctl component"
       - id: "d"
         text: "mesheryctl relationship"
-    correct_answer: "registry"
+    correctAnswer: "registry"
   # - id: "q25"                       
   #   text: "What capability kind is used for components that allow users to view defined relationships or the underlying JSON Schema definition?"
   #   type: "short-answer"                
@@ -324,12 +324,12 @@ questions:
     text: "What capability kind is used for components that allow users to modify the configuration of an entity?"
     type: "short-answer"                
     marks: 2
-    correct_answer: "mutate"
+    correctAnswer: "mutate"
   - id: "q27"                       
     text: "What capability kind is used for components that allow users to execute operational actions, such as initiating log streaming or starting a performance test?"
     type: "short-answer"                
     marks: 2
-    correct_answer: "action"
+    correctAnswer: "action"
   - id: "q28"
     text: "You can push or pull a model image to or from an OCI-compatible image repository using mesheryctl."
     type: "single-answer"
@@ -337,7 +337,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q29"                       
@@ -349,7 +349,7 @@ questions:
         text: "view"
       - id: "b" 
         text: "mutate"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "action"
       - id: "d"
@@ -361,16 +361,16 @@ questions:
     options:
       - id: "a"
         text: "Schema"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Definition"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Declaration"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Instance"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Template"
       - id: "f"
@@ -386,7 +386,7 @@ questions:
         text: "Associative"
       - id: "c"
         text: "Causal"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Dependency"
   - id: "q32"
@@ -402,7 +402,7 @@ questions:
         text: "Many-to-Many"
       - id: "d"
         text: "Many-to-One"
-        is_correct: true
+        isCorrect: true
   - id: "q33"
     text: "Which of the following is NOT a valid patch strategy in Meshery Models?"
     type: "single-answer"
@@ -416,7 +416,7 @@ questions:
         text: "StrategicMergePatch"
       - id: "d"
         text: "XMLPatch"
-        is_correct: true
+        isCorrect: true
   - id: "q34"
     text: "Which of the following is NOT a valid mutator reference in Meshery Models?"
     type: "single-answer"
@@ -430,7 +430,7 @@ questions:
         text: "StrategicMergePatch"
       - id: "d"
         text: "XMLPatch"
-        is_correct: true
+        isCorrect: true
   - id: "q34b"
     text: "An NGINX container configured as a Kubernetes Pod with port 443 and SSL termination represents which of the following Meshery entities?"
     type: "single-answer"
@@ -442,7 +442,7 @@ questions:
         text: "Definition"
       - id: "c"   
         text: "Declaration"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Instance"
   - id: "q35"
@@ -460,7 +460,7 @@ questions:
         text: "isModelAnnotation"
       - id: "e"
         text: "isVisualComponent"
-        is_correct: true
+        isCorrect: true
   - id: "q36"
     text: "Which of the following is NOT a valid component style override property in Meshery Models?"
     type: "single-answer"
@@ -476,7 +476,7 @@ questions:
         text: "logoURL"
       - id: "e"
         text: "fontStyle"
-        is_correct: true
+        isCorrect: true
   - id: "q37"
     text: "Models can be created from scratch or imported using either the Meshery UI or the Meshery CLI."
     type: "single-answer"
@@ -484,7 +484,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q38"                       
@@ -494,10 +494,10 @@ questions:
     options:
       - id: "a"
         text: "JSON"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "YAML"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "XML"
       - id: "d"
@@ -509,7 +509,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q40"
@@ -519,16 +519,16 @@ questions:
     options:
       - id: "a"
         text: "Local directory on your file system as YAML/JSON files"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Git Repository"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "OCI-compliant image registry"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "CSV files"
-        is_correct: true
+        isCorrect: true
   - id: "q41"
     text: "Meshery can automatically generate component definitions from Kubernetes Custom Resource Definitions (CRDs)."
     type: "single-answer"
@@ -536,7 +536,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q42"
@@ -546,15 +546,15 @@ questions:
     options:
       - id: "a"
         text: "name"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "version"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "kind"
       - id: "d"
         text: "displayName"
-        is_correct: true
+        isCorrect: true
   - id: "q43"
     text: "Which relationship type is used to represent parent-child component structures in a design?"
     type: "single-answer"
@@ -562,7 +562,7 @@ questions:
     options:
       - id: "a"
         text: "Hierarchical"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Edge"
       - id: "c"
@@ -576,7 +576,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q45"
@@ -586,13 +586,13 @@ questions:
     options:
       - id: "a"
         text: "displayName"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "category"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "subCategory"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "range"
   - id: "q46"
@@ -604,7 +604,7 @@ questions:
         text: "To specify styling properties for components."
       - id: "b"
         text: "To identify which components should participate in the relationship."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To define the color scheme of the relationship visualization."
       - id: "d"
@@ -616,7 +616,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q48"
@@ -626,7 +626,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q49"
@@ -636,7 +636,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q50"
@@ -648,7 +648,7 @@ questions:
         text: "Hierarchical"
       - id: "b"
         text: "Edge"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Sibling"
       - id: "d"
