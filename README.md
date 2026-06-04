@@ -36,19 +36,22 @@
 1. **Install prerequisites**
 
 - [Go](https://go.dev/dl/) ≥ 1.20
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) ≥ 0.158 (required for `hugo.Sites` in offline search index; CI uses 0.158)
+- [Node.js & npm](https://nodejs.org/) (to manage the local Hugo Extended binary)
 
-2. **Fetch and tidy dependencies**
+2. **Fetch dependencies and install local Hugo**
 
 ```bash
-   go mod tidy
-   ```
+go mod tidy
+make setup
+```
 
 3. **Run the local Hugo server**
 
 ```bash
-   hugo server
-   ```
+make site
+```
+
+*(This uses the locally installed `hugo-extended` version to prevent version conflicts).*
 
 The local preview uses [academy-theme](https://github.com/layer5io/academy-theme). In production, content is wrapped in the Layer5 Cloud UI so it may look slightly different.
 
@@ -194,7 +197,7 @@ src="cdn.js"
 To preview your content locally, run:
 
 ```bash
-hugo server
+make site
 ```
 
 ---
