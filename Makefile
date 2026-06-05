@@ -48,7 +48,7 @@ serve: check-deps check-go
 
 ## Empty build cache and run on your local machine.
 clean:
-	npm run clean
+	npm run dev:clean
 	$(MAKE) setup
 	$(MAKE) site
 
