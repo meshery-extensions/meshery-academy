@@ -1,6 +1,6 @@
 module github.com/meshery-extensions/meshery-academy
 
-go 1.25.0
+go 1.26.4
 
 // Uncomment line below when testing changes to the academy theme
 // replace github.com/layer5io/academy-theme v0.1.9 => ../academy-theme
@@ -9,6 +9,6 @@ replace github.com/FortAwesome/Font-Awesome v4.7.0+incompatible => github.com/Fo
 
 require (
 	github.com/FortAwesome/Font-Awesome v4.7.0+incompatible // indirect
-	github.com/layer5io/academy-theme v0.4.12 // indirect
+	github.com/layer5io/academy-theme v0.4.14 // indirect
 	github.com/twbs/bootstrap v5.3.7+incompatible // indirect
 )

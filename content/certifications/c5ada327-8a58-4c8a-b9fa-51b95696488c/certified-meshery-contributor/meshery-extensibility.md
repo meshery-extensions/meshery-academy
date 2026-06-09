@@ -2,10 +2,10 @@
 title: "Meshery Extensibility Contributor Exam"
 type: "test"
 layout: "test"
-pass_percentage: 70
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
 questions:
   - id: "q1"
     text: "What is the primary communication protocol used by Meshery Server to interface with Meshery Adapters?"
@@ -18,7 +18,7 @@ questions:
         text: "NATS Streaming"
       - id: "c"
         text: "gRPC"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "WebSockets"
   - id: "q2"
@@ -34,7 +34,7 @@ questions:
         text: "The Meshery Provider's Capability Map"
       - id: "d"
         text: "Meshery Server's Capability Registry"
-        is_correct: true
+        isCorrect: true
   - id: "q3"
     text: "Meshery Adapters are primarily classified as which type of architectural component in terms of statefulness?"
     type: "single-answer"
@@ -46,7 +46,7 @@ questions:
         text: "Caching"
       - id: "c"
         text: "Stateless"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Ephemeral"
   - id: "q4"
@@ -60,7 +60,7 @@ questions:
         text: "SampleApplication"
       - id: "c"
         text: "Monitor"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Invalidate"
   - id: "q5"
@@ -74,7 +74,7 @@ questions:
         text: "Acting as the persistent storage layer for the adapter's state."
       - id: "c"
         text: "Implementing common cross-cutting concerns like logging, errors, and tracing."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Generating the Kubernetes manifests for infrastructure deployment."
   - id: "q6"
@@ -90,7 +90,7 @@ questions:
         text: "Performance Management"
       - id: "d"
         text: "All of the above"
-        is_correct: true
+        isCorrect: true
   - id: "q7"
     text: "All Meshery Adapters must be written in Golang because it is the language used by Meshery Server."
     type: "single-answer"
@@ -99,7 +99,7 @@ questions:
       - id: "true"
         text: "true"
       - id: "false"
-        is_correct: true
+        isCorrect: true
         text: "false"
   - id: "q8"
     text: "If a Meshery Adapter starts before Meshery Server, what is its expected behavior for establishing connection/registration?"
@@ -110,7 +110,7 @@ questions:
         text: "It attempts to register once and then shuts down, requiring a restart."
       - id: "b"
         text: "It perpetually backs off and retries to connect to Meshery Server."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It registers directly with the Kubernetes API server and bypasses Meshery Server."
       - id: "d"
@@ -126,7 +126,7 @@ questions:
         text: "Implementing all business logic for the infrastructure under management."
       - id: "c"
         text: "Running the gRPC adapter service and calling the functions of handlers injected by the adapter code."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Establishing secure WebSocket connections to the Meshery Broker."
   - id: "q10"
@@ -140,7 +140,7 @@ questions:
         text: "Integration Tests using kustomize."
       - id: "c"
         text: "End-to-End Tests using a Meshery design."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Load Tests using a Performance Profile."
   - id: "q11"
@@ -154,7 +154,7 @@ questions:
         text: "A WebAssembly (WASM) module."
       - id: "c"
         text: "A Docker container image."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A Jekyll documentation file."
   - id: "q12"
@@ -166,7 +166,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q13"
     text: "In a Remote Provider-connected session, how are Meshery Server events managed?"
     type: "single-answer"
@@ -176,7 +176,7 @@ questions:
         text: "All events are sent directly to the Meshery Broker."
       - id: "b"
         text: "Events are stored locally and can be published to the Remote Provider."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Events are never persisted and are discarded immediately."
       - id: "d"
@@ -188,7 +188,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q15"
@@ -200,7 +200,7 @@ questions:
         text: "A timer that runs a system check every 10 seconds."
       - id: "b"
         text: "A client request (usually mesheryctl or Meshery UI)."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "The Meshery Adapter, which polls the Server for new tasks."
       - id: "d"
@@ -214,7 +214,7 @@ questions:
         text: "Meshery Server will fail to communicate with either adapter."
       - id: "b"
         text: "Ambiguity for users, as both adapters appear identical in name, while using separate lines of communication on their respectively dedicated port number."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Adapters will merge their capabilities as registered in Meshery Server."
       - id: "d"
@@ -228,7 +228,7 @@ questions:
         text: "Meshery UI"
       - id: "b"
         text: "Meshery Server"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Meshery Load Generator"
       - id: "d"
@@ -244,7 +244,7 @@ questions:
         text: "For service performance testing by first generating load, then analyzing performance metrics, including latency and throughput."
       - id: "c"
         text: "To offer a stateful interface for identity and a mechanism to deliver extensions on-the-fly to any running Meshery Server."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "To deploy Meshery's custom controllers and manage MeshSync."
   - id: "q19"
@@ -256,12 +256,12 @@ questions:
         text: "Ability to run performance tests."
       - id: "b"
         text: "Long-term persistence of user preferences and environment setup."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Storage of MeshSync data."
       - id: "d"
         text: "Injection of out-of-tree UI components and backend capabilities."
-        is_correct: true
+        isCorrect: true
   - id: "q20"
     text: "A single Meshery Server deployment supports use of the Local Provider and any number of Remote Providers simultaneously."
     type: "single-answer"
@@ -269,7 +269,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q21"
@@ -283,7 +283,7 @@ questions:
         text: "Ephemeral, with container-local storage."
       - id: "c"
         text: "Stateful, persisting user preferences, environment, and tests."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Caches state, storing application cache in the user's home folder."
   - id: "q22"
@@ -297,7 +297,7 @@ questions:
         text: "Ephemeral mode"
       - id: "c"
         text: "Multi-user mode"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Operator mode"
   - id: "q23"
@@ -307,7 +307,7 @@ questions:
     options:
       - id: "a"
         text: "No user authentication."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Store server events in a database."
       - id: "c"
@@ -325,7 +325,7 @@ questions:
         text: "The /provider-info manifest."
       - id: "c"
         text: "The /capabilities endpoint response."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The Meshery Operator's state."
   - id: "q25"
@@ -337,10 +337,10 @@ questions:
         text: "It allows the Meshery Server to be written in a different programming language."
       - id: "b"
         text: "It reduces liability to Meshery's stability by avoiding potential bugs in extended components."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It forces the extension's source code to be open source."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "It enables the Remote Provider to implement gRPC communication."
   - id: "q26"
@@ -352,7 +352,7 @@ questions:
         text: "A struct with embedded fields."
       - id: "b"
         text: "A Go interface."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A package-level global variable."
       - id: "d"
@@ -366,7 +366,7 @@ questions:
         text: "/login"
       - id: "b"
         text: "/status"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "/logout"
       - id: "d"
@@ -380,7 +380,7 @@ questions:
         text: "They return a simple boolean 'authenticated' flag."
       - id: "b"
         text: "They return JWTs with custom roles, permission keys, and keychains."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "They update Meshery Server's internal database directly."
       - id: "d"
@@ -394,7 +394,7 @@ questions:
         text: "The ephemeral state of Meshery Adapters."
       - id: "b"
         text: "Storage and retrieval of performance test results."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "The local database cache of Meshery Server."
       - id: "d"
@@ -408,7 +408,7 @@ questions:
         text: "It is saved to a persistent volume."
       - id: "b"
         text: "It is not saved."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It is synchronized to the Meshery Broker."
       - id: "d"
@@ -424,7 +424,7 @@ questions:
         text: "Pluggable Backend Functionality"
       - id: "c"
         text: "Pluggable UI Functionality"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Enhanced Visualization"
   - id: "q32"
@@ -438,7 +438,7 @@ questions:
         text: "Only Golang or Rust."
       - id: "c"
         text: "Any language, provided the extension adheres to Meshery Extension Point specifications."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Only the latest stable version of NodeJS."
   - id: "q33"
@@ -450,7 +450,7 @@ questions:
         text: "The extension provider's source code must be made open source."
       - id: "b"
         text: "The extension provider must update language versions as well."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "The extension provider's port must be changed from 443/tcp."
       - id: "d"
@@ -462,7 +462,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q35"
@@ -474,7 +474,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q36"
     text: "The Local Provider is best suited for which use case?"
     type: "single-answer"
@@ -486,7 +486,7 @@ questions:
         text: "Multi-user team environments."
       - id: "c"
         text: "Short-lived uses of Meshery."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Environments requiring LDAP integration."
   - id: "q37"
@@ -498,7 +498,7 @@ questions:
         text: "Performance test results are stored and persisted indefinitely."
       - id: "b"
         text: "Performance test results not guaranteed to remain available beyond reboot of the current Meshery Server instance."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "The history is saved to Meshery Server's database cache."
       - id: "d"
@@ -510,13 +510,13 @@ questions:
     options:
       - id: "a"
         text: "Pluggable UI Functionality (out-of-tree components)."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Pluggable Backend Functionality (unknown capabilities)."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Pluggable AuthZ (extensible role-based access control)."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Container-local storage of test results."
   - id: "q39"
@@ -528,7 +528,7 @@ questions:
         text: "It is placed in the Meshery Server code and compiled together."
       - id: "b"
         text: "Remote Providers and their extensions are retrieved and injected at user login."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It is loaded as a WebAssembly (WASM) module by the Meshery Operator."
       - id: "d"
@@ -544,7 +544,7 @@ questions:
         text: "80/tcp"
       - id: "c"
         text: "9081/tcp"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "6222/tcp"
   - id: "q41"
@@ -558,7 +558,7 @@ questions:
         text: "RJSFFormParentComponent"
       - id: "c"
         text: "RJSFFormChildComponent"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "RJSFBodyComponent"
   - id: "q42"
@@ -570,7 +570,7 @@ questions:
         text: "/api/provider/"
       - id: "b"
         text: "/api/extensions/"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "/api/remote/"
       - id: "d"
@@ -582,13 +582,13 @@ questions:
     options:
       - id: "a"
         text: "Queries (data retrieval)"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Mutations (create, update, delete)"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Subscriptions (watching for data changes)"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Introspection (schema discovery)"
   - id: "q44"
@@ -600,7 +600,7 @@ questions:
         text: "An SSL/TLS client certificate"
       - id: "b"
         text: "A valid JWT access token"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A basic authentication username and password"
       - id: "d"
@@ -616,7 +616,7 @@ questions:
         text: "Meshery Operator"
       - id: "c"
         text: "Remote Providers"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "MeshSync"
   - id: "q46"
@@ -632,7 +632,7 @@ questions:
         text: "[hostname]:[port]/api/rest/"
       - id: "d"
         text: "[hostname]:[port]/api/"
-        is_correct: true
+        isCorrect: true
   - id: "q47"
     text: "Meshery's extensible authorization system, used to evaluate user permissions in the UI, utilizes what JavaScript-based permission framework?"
     type: "single-answer"
@@ -646,7 +646,7 @@ questions:
         text: "OAuth 2.0"
       - id: "d"
         text: "CASL"
-        is_correct: true
+        isCorrect: true
   - id: "q48"
     text: "Meshery Server's REST API endpoints are exposed through `<meshery-server>/api/` and are logically grouped based on which criteria?"
     type: "single-answer"
@@ -660,14 +660,14 @@ questions:
         text: "The Meshery Server component they connect to (e.g., Broker, Adapter)."
       - id: "d"
         text: "By function (e.g., `/api/system`, `/api/events, `/api/perf`, `/api/environments`)."
-        is_correct: true
+        isCorrect: true
   - id: "q49"
     text: "A Meshery Server deployment can be configured to only allow use of a single, pre-selected Remote Provider."
     type: "single-answer"
     marks: 2
     options:
       - id: "true"
-        is_correct: true
+        isCorrect: true
         text: "True"
       - id: "false"
         text: "False"
@@ -678,7 +678,7 @@ questions:
     options:
       - id: "a"
         text: "To add custom menu items in Meshery UI’s main navigation menu."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "To add custom footer links in Meshery UI."
       - id: "c"

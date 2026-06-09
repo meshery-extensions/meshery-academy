@@ -2,10 +2,10 @@
 title: "Meshery Server Contributor Exam"
 type: "test"
 layout: "test"
-pass_percentage: 70
-max_attempts: 3
-time_limit: 30
-number_of_questions: 25
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 25
 questions:
   - id: "q1"
     text: "What is the primary command to build and run Meshery Server?"
@@ -16,7 +16,7 @@ questions:
         text: "make setup"
       - id: "b"
         text: "make server"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "make build"
       - id: "d"
@@ -32,7 +32,7 @@ questions:
         text: "MySQL"
       - id: "c"
         text: "SQLite"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "MongoDB"
   - id: "q3"
@@ -42,7 +42,7 @@ questions:
     options:
       - id: "a"
         text: "`--signoff` or `-s`"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "`-s` or `--signature`"
       - id: "c"
@@ -56,13 +56,13 @@ questions:
     options:
       - id: "a"
         text: "REST"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "gRPC"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "GraphQL"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "SOAP"
   - id: "q5"
@@ -76,7 +76,7 @@ questions:
         text: "Any version above 1.18."
       - id: "c"
         text: "The version specified in the `go.mod` file."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The version specified in the Dockerfile."
   - id: "q6"
@@ -88,7 +88,7 @@ questions:
         text: "To run the server in production mode."
       - id: "b"
         text: "To build and run the server without building the UI."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To run only the database migrations."
       - id: "d"
@@ -102,7 +102,7 @@ questions:
         text: "To create new user interface events."
       - id: "b"
         text: "To construct and track user and system activities as an audit trail."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To handle Golang channel events."
       - id: "d"
@@ -114,15 +114,15 @@ questions:
     options:
       - id: "a"
         text: "UserID"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "ActedUpon"
       - id: "c"
         text: "Action"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Category"
-        is_correct: true
+        isCorrect: true
   - id: "q9"
     text: "In the context of Meshery events, what does the 'ActedUpon' field represent?"
     type: "single-answer"
@@ -132,7 +132,7 @@ questions:
         text: "The user who performed the action."
       - id: "b"
         text: "The ID of the entity that the action was performed on."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "The timestamp of the event."
       - id: "d"
@@ -144,7 +144,7 @@ questions:
     options:
       - id: "a"
         text: "Using the `.WithSeverity()` method on the event builder."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "It is automatically inferred from the event category."
       - id: "c"
@@ -160,7 +160,7 @@ questions:
         text: "They are faster to create."
       - id: "b"
         text: "They provide a structured format with codes, descriptions, and remedies."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "They are automatically logged to a remote server."
       - id: "d"
@@ -174,13 +174,13 @@ questions:
         text: "Error stdout"
       - id: "b"
         text: "Short Description"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Probable Cause"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Suggested Remedy"
-        is_correct: true
+        isCorrect: true
   - id: "q13"
     text: "How do you create a new MeshKit error in code?"
     type: "single-answer"
@@ -194,7 +194,7 @@ questions:
         text: "meshkit.Error{...}"
       - id: "d"
         text: "errors.New(code, severity, shortDesc, longDesc, probableCause, suggestedRemedy)"
-        is_correct: true
+        isCorrect: true
   - id: "q14"
     text: "Meshery Server log level can be configured at runtime by changing the env variable `LOG_LEVEL`. The default setting for the `LOG_LEVEL` is 4 (Info)."
     type: "single-answer"
@@ -202,7 +202,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   - id: "q15"
@@ -218,7 +218,7 @@ questions:
         text: "CircleCI"
       - id: "d"
         text: "GitHub Actions"
-        is_correct: true
+        isCorrect: true
   - id: "q16"
     text: "What triggers the 'edge' channel build and release workflow?"
     type: "single-answer"
@@ -230,7 +230,7 @@ questions:
         text: "Pushing a tag in the format `vX.Y.Z`."
       - id: "c"
         text: "A push to the `master` branch."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A manual trigger by a maintainer."
   - id: "q17"
@@ -242,7 +242,7 @@ questions:
         text: "Make"
       - id: "b"
         text: "GoReleaser"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Docker Build"
       - id: "d"
@@ -256,7 +256,7 @@ questions:
         text: "Stable releases are from the `master` branch, while edge releases are from feature branches."
       - id: "b"
         text: "Stable releases are tagged versions, while edge releases are built from the latest commit on the `master` branch."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "There is no functional difference; the names are for marketing."
       - id: "d"
@@ -270,7 +270,7 @@ questions:
         text: "To define the structure of the database."
       - id: "b"
         text: "To provide a structured way to define component capabilities, models, and relationships for validation and UI generation."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To configure the CI/CD pipeline."
       - id: "d"
@@ -284,7 +284,7 @@ questions:
         text: "True"
       - id: "b"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q21"
     text: "The `make error` command is used to:"
     type: "single-answer"
@@ -294,7 +294,7 @@ questions:
         text: "Run a battery of Meshery Server error handling tests."
       - id: "b"
         text: "Analyze Meshery Server code for missing or duplicate error codes."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Build and run Meshery Server in error mode."
   - id: "q22"
@@ -306,7 +306,7 @@ questions:
         text: "True"
       - id: "false"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q23"
     text: "What information can be added to a Meshery event using the `.WithMetadata()` method?"
     type: "multiple-answers"
@@ -314,14 +314,14 @@ questions:
     options:
       - id: "a"
         text: "Additional key-value pairs for context."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "The user's password."
       - id: "c"
         text: "The Golang version."
       - id: "d"
         text: "Error details or supplementary information related to the event."
-        is_correct: true
+        isCorrect: true
   - id: "q24"
     text: "In a MeshKit error code, what does the component part of the code signify?"
     type: "single-answer"
@@ -333,7 +333,7 @@ questions:
         text: "The specific function where the error occurred."
       - id: "c"
         text: "The Meshery component or package where the error originates (e.g., Meshery Server, Adapter)."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A random number for uniqueness."
   - id: "q25"
@@ -345,7 +345,7 @@ questions:
         text: "To pull base images from Docker Hub."
       - id: "b"
         text: "To log into Docker Hub to push the newly built Meshery images."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To download dependencies during the build."
       - id: "d"
@@ -361,7 +361,7 @@ questions:
         text: "The `go.mod` file."
       - id: "c"
         text: "The JSON Schema files (`.json`)."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The `Makefile`."
   - id: "q27"
@@ -371,7 +371,7 @@ questions:
     options:
       - id: "a"
         text: "proxy.golang.org"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "goproxy.io"
       - id: "c"
@@ -387,7 +387,7 @@ questions:
         text: "A very long and detailed technical explanation."
       - id: "b"
         text: "A human-readable summary of the event."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A JSON object with metadata."
       - id: "d"
@@ -401,7 +401,7 @@ questions:
         text: "Always create a new one for every error."
       - id: "b"
         text: "Reuse an existing code if it accurately represents the new error's cause and meaning."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Only project maintainers can create new error codes."
       - id: "d"
@@ -415,7 +415,7 @@ questions:
         text: "It checks if the Go version is correct."
       - id: "b"
         text: "It validates the `.goreleaser.yml` configuration file for errors."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It checks for spelling mistakes in the release notes."
       - id: "d"
@@ -429,7 +429,7 @@ questions:
         text: "/graphql/handlers"
       - id: "b"
         text: "/handlers/graphql"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "/api/gql"
       - id: "d"
@@ -445,7 +445,7 @@ questions:
         text: "make dependencies"
       - id: "c"
         text: "go mod tidy"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "go install"
   - id: "q33"
@@ -457,7 +457,7 @@ questions:
         text: "True"
       - id: "b"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q34"
     text: "The 'Probable Cause' field in a MeshKit error should explain:"
     type: "single-answer"
@@ -467,7 +467,7 @@ questions:
         text: "The user's mistake."
       - id: "b"
         text: "A technical, root-cause explanation for why the error occurred."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Who to contact for help."
       - id: "d"
@@ -485,7 +485,7 @@ questions:
         text: "With the `stable` tag."
       - id: "d"
         text: "With the `edge-<short-sha>` tag."
-        is_correct: true
+        isCorrect: true
   - id: "q36"
     text: "In schema-driven development, what is a 'model'?"
     type: "single-answer"
@@ -497,7 +497,7 @@ questions:
         text: "A 3D model of the infrastructure."
       - id: "c"
         text: "A schema that defines the entity, its category, and metadata."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "A template for creating new components."
   # - id: "q37"
@@ -523,7 +523,7 @@ questions:
         text: ".FromComponent()"
       - id: "b"
         text: ".FromSystem()"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: ".WithComponent()"
       - id: "d"
@@ -541,7 +541,7 @@ questions:
         text: "Error"
       - id: "d"
         text: "Trivial"
-        is_correct: true
+        isCorrect: true
   - id: "q40"
     text: "Pull requests involving changes to Meshery Server run a GitHub Action workflow to analyze error codes and add new error codes, if needed."
     type: "single-answer"
@@ -549,7 +549,7 @@ questions:
     options:
       - id: "true"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "False"
   # - id: "q41"
@@ -573,14 +573,14 @@ questions:
     options:
       - id: "a"
         text: "Layer5"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "LDAP"
       - id: "c"
         text: "SAML"
       - id: "d"
         text: "Remote Providers (e.g. Meshery Cloud)"
-        is_correct: true
+        isCorrect: true
   - id: "q43"
     text: "The final step in creating and dispatching a Meshery event is to call which method?"
     type: "single-answer"
@@ -592,7 +592,7 @@ questions:
         text: ".Dispatch()"
       - id: "c"
         text: ".Build()"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: ".Commit()"
   - id: "q44"
@@ -604,7 +604,7 @@ questions:
         text: "To provide a link to the documentation."
       - id: "b"
         text: "To offer actionable advice to the user or operator on how to resolve the error."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To suggest an alternative software."
       - id: "d"
@@ -616,7 +616,7 @@ questions:
     options:
       - id: "a"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "False"
   - id: "q46"
@@ -628,7 +628,7 @@ questions:
         text: "Through foreign keys in the database."
       - id: "b"
         text: "They are defined within the JSON schema definitions."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "They are hardcoded in the Go structs."
       - id: "d"
@@ -644,7 +644,7 @@ questions:
         text: "To run unit tests."
       - id: "c"
         text: "To enforce coding style and find potential bugs."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "To manage dependencies."
   # - id: "q48"
@@ -670,7 +670,7 @@ questions:
         text: "True"
       - id: "b"
         text: "False"
-        is_correct: true
+        isCorrect: true
   - id: "q50"
     text: "Which GitHub event triggers the `stable` release workflow?"
     type: "single-answer"
@@ -682,7 +682,7 @@ questions:
         text: "pull_request"
       - id: "c"
         text: "release"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "workflow_dispatch"
   # - id: "q51"
@@ -708,7 +708,7 @@ questions:
         text: "To provide a machine-readable ID for the event."
       - id: "b"
         text: "To add a detailed, human-readable summary of what occurred."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "To specify the event category."
       - id: "d"
@@ -720,7 +720,7 @@ questions:
     options:
       - id: "a"
         text: "String"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Integer"
       - id: "c"
@@ -738,7 +738,7 @@ questions:
         text: "In their local terminal."
       - id: "c"
         text: "In the 'Actions' tab of the GitHub repository for the specific failed workflow run."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "In the project's Slack channel."
   - id: "q55"
@@ -748,12 +748,12 @@ questions:
     options:
       - id: "a"
         text: "Automatic generation of user interface forms."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Reduced compilation time."
       - id: "c"
         text: "Enforced consistency and validation of data models."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Automatic generation of database schemas."
   - id: "q56"
@@ -767,7 +767,7 @@ questions:
         text: "3000"
       - id: "c"
         text: "9081"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "5000"
   - id: "q57"
@@ -777,7 +777,7 @@ questions:
     options:
       - id: "a"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "False"
   - id: "q58"
@@ -787,7 +787,7 @@ questions:
     options:
       - id: "a"
         text: "Log the entire MeshKit error object."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Only log the `ShortDescription`."
       - id: "c"
@@ -801,10 +801,10 @@ questions:
     options:
       - id: "a"
         text: "`make server` builds Meshery from source and runs it on your local OS."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "`mesheryctl system start` runs Meshery as a set of one or more containers in Docker or in Kubernetes."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "`make server` builds Meshery from source and runs it on your local machine."
       - id: "d"
@@ -862,7 +862,7 @@ questions:
         text: "Warning"
       - id: "c"
         text: "Critical"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Debug"
   - id: "q64"
@@ -874,7 +874,7 @@ questions:
         text: "GitHub Container Registry (ghcr.io)"
       - id: "b"
         text: "Docker Hub (docker.io)"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Quay.io"
       - id: "d"
@@ -888,7 +888,7 @@ questions:
         text: "A Go file containing the struct."
       - id: "b"
         text: "A JSON file following the JSON Schema standard."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "A YAML configuration file."
       - id: "d"
@@ -904,7 +904,7 @@ questions:
         text: "To log into the Meshery UI."
       - id: "c"
         text: "To enable integration with a Grafana instance for metrics and dashboards."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "To download Grafana plugins."
   - id: "q67"
@@ -914,7 +914,7 @@ questions:
     options:
       - id: "a"
         text: "The ID of the user performing the action."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "The session ID of the user's browser."
       - id: "c"
@@ -934,7 +934,7 @@ questions:
         text: "meshkit.Wrap(newErr, oldErr)"
       - id: "d"
         text: "By using the `.Wrap()` method on the new error instance."
-        is_correct: true
+        isCorrect: true
   - id: "q69"
     text: "What does the `actions/setup-go` step in Meshery's CI workflow do?"
     type: "single-answer"
@@ -944,7 +944,7 @@ questions:
         text: "It runs `go mod download`."
       - id: "b"
         text: "It installs the Go compiler and sets up the environment for the specified version."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "It compiles the Meshery Server binary."
       - id: "d"
@@ -956,7 +956,7 @@ questions:
     options:
       - id: "a"
         text: "True"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "False"
   - id: "q71"
@@ -966,13 +966,13 @@ questions:
     options:
       - id: "a"
         text: "Run `make` to ensure the code builds successfully."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Run `make test` to ensure all tests pass."
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Rebase their branch on the latest `master` branch."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "Force push to the `master` branch."
   - id: "q72"
@@ -982,12 +982,12 @@ questions:
     options:
       - id: "a"
         text: "The name of the connection."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "The user's ID."
       - id: "c"
         text: "The type of authentication used for the connection."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The event severity."
   - id: "q73"
@@ -999,7 +999,7 @@ questions:
         text: "(result, *meshkit.Error)"
       - id: "b"
         text: "(result, error)"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "(result, interface{})"
       - id: "d"
@@ -1015,7 +1015,7 @@ questions:
         text: "A version number hardcoded in the workflow file."
       - id: "c"
         text: "The Git tag that was pushed to trigger the workflow."
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: "The number of commits since the last release."
   - id: "q75"
@@ -1025,7 +1025,7 @@ questions:
     options:
       - id: "a"
         text: "go generate ./..."
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "make graphql"
       - id: "c"
@@ -1043,7 +1043,7 @@ questions:
         text: "Rust"
       - id: "c"
         text: "Golang"
-        is_correct: true
+        isCorrect: true
       - id: "d"
         text: WebAssembly
   - id: "q77"
@@ -1055,12 +1055,12 @@ questions:
         text: "TOML"
       - id: "b"
         text: "YAML"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "INI"
       - id: "d"
         text: "JSON"
-        is_correct: true
+        isCorrect: true
   - id: "q78"
     text: "What is the primary role of Meshery Server in the Meshery architecture?"
     type: "single-answer"
@@ -1070,7 +1070,7 @@ questions:
         text: "Identity management"
       - id: "b"
         text: "Central orchestration and infrastructure lifecycle management"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "Monitoring agent"
       - id: "d"
@@ -1082,18 +1082,18 @@ questions:
     options:
       - id: "a"
         text: "Adapters"
-        is_correct: true
+        isCorrect: true
       - id: "b"
         text: "Load Generators"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "WebAssembly plugin"
       - id: "d"
         text: "Catalog"
-        is_correct: true
+        isCorrect: true
       - id: "e"
         text: "Models"
-        is_correct: true
+        isCorrect: true
   - id: "q80"
     text: "True or False: Meshery can be deployed as a Docker container."
     type: "single-answer"
@@ -1101,7 +1101,7 @@ questions:
     options:
       - id: "true"
         text: "true"
-        is_correct: true
+        isCorrect: true
       - id: "false"
         text: "false"
   - id: "q81"
@@ -1113,7 +1113,7 @@ questions:
         text: "MySQL"
       - id: "b"
         text: "PostgreSQL"
-        is_correct: true
+        isCorrect: true
       - id: "c"
         text: "MongoDB"
       - id: "d"
@@ -1133,7 +1133,7 @@ questions:
         text: "Meshery UI"
       - id: "d"
         text: "MeshKit"
-        is_correct: true
+        isCorrect: true
  
 ---
 The Meshery Server examination verifies contributor understanding of one of Meshery's core architectural components and is one of a set of mandatory exams comprising the Certified Meshery Contributor certification.
