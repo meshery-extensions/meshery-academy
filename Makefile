@@ -18,7 +18,7 @@ include .github/build/Makefile.show-help.mk
 #----------------------------------------------------------------------------
 # Academy
 # ---------------------------------------------------------------------------
-.PHONY: setup check-deps check-go build site serve clean theme-update
+.PHONY: setup check-deps check-go build build-preview site serve clean theme-update
 
 ## ------------------------------------------------------------
 ----LOCAL_BUILDS: Show help for available targets
@@ -38,6 +38,10 @@ check-deps:
 build: check-deps check-go
 	npm run build:production
 
+## Build site for preview (no drafts, no future, no expired content) with dynamically set baseURL.
+build-preview: check-deps check-go
+	npm run build:preview
+
 ## Local: Build and run site locally with draft and future content enabled.
 site: check-deps check-go
 	npm run dev:site
@@ -48,7 +52,7 @@ serve: check-deps check-go
 
 ## Empty build cache and run on your local machine.
 clean:
-	npm run dev:clean
+	npm run clean
 	$(MAKE) setup
 	$(MAKE) site
 
