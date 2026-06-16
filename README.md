@@ -1,22 +1,32 @@
 [![Meshery Academy](https://img.shields.io/badge/Meshery-Academy-00B39F?style=flat-square&logo=meshery&logoColor=white)](https://cloud.meshery.io/academy)
 
 ![Meshery-Logo](.github/assets/images/meshery-logo-dark-text-side.svg)
+
 # Meshery Academy
 
- Meshery Academy is the official content repository for the **Meshery** learning platform. It hosts Meshery-focused learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
+This repo is the official content repository for the Meshery Academy, which can be run stand-alone and alongside your Meshery deployment(s) for an integrated learning experience. This academy contains learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
+
+**[Academies as Meshery Extensions](https://docs.meshery.io/extensions/academies/)**
+
+Academies are modular, Git-native learning management systems (LMS), which can be run stand-alone and/or as an extension of your Meshery deployment(s) for an integrated learning experience. Academies emphasize hands-on, cloud-native education (AI, Cloud, Kubernetes, CNCF projects, configuration and infrastructure management) through structured curricula, interactive Labs, embedded visualizations, and verifiable credentials.
 
  ---
 
 ## 📚 Overview
 
-  **Role:** Primary source of official Meshery learning content
   **Features**
 
-- Structured, production-ready reference material
-- Markdown-based authoring with live local preview
-- Runs on the shared Layer5 Academy platform
-- Supports learning paths, challenges, and certifications
-  
+- **Git-native authoring & no vendor lock-in** — Content lives in Git repositories (starter template: `academy-example`). Authors use Markdown + YAML frontmatter, custom Hugo shortcodes, and PR-based workflows. Hugo generates the static site.
+- **Meshery integration** — Embed live, editable cloud-native designs, visualizations, and contextual infrastructure directly into Pages, Labs, and other content.
+- **Hands-on focus** — Dedicated Labs, scenario-based Challenges, and interactive assessments alongside traditional content.
+- **Three curriculum types** — Learning Paths (comprehensive teaching), Challenges (practical/problem-solving), and Certifications (formal validation). Each optimized for different goals.
+- **Advanced assessment engine** — Quizzes, tests, and exams with multiple question types, progress gating, question banks, time limits, retakes, and strict scoring rules.
+- **Learner experience** — Progress tracking and resumption, Learning Map sidebar navigation, central Study Area (Markdown + embedded media/interactives), content discovery via filters (type, level, tags, categories), and related content suggestions.
+- **Credentials** — Free verifiable digital badges on completion of Learning Paths or Challenges; optional paid Certificates of Completion for Certifications (with shareable verification).
+- **Enterprise capabilities** (white-labeling) — Multi-tenancy, custom branding (logos, colors), branded emails/notifications, custom shortcodes/CSS, and organization-specific content isolation.
+- **Local preview & publishing** — `make site` (or Makefile targets) for authors; automated Git-based publishing workflows to hosted environments.
+- **Extensibility** — Mix Markdown + HTML, custom CSS, reusable shortcodes (organization-specific in `layouts/shortcodes/<org-uuid>/`), and bundled assets (images/videos with size recommendations).
+ 
    ---
 
 ## 🔗 Related Repositories
@@ -24,15 +34,13 @@
 - [meshery/meshery](https://github.com/meshery/meshery) – Meshery core project
 - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
 - [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
-- [layer5io/academy-theme](https://github.com/layer5io/academy-theme) – provides styles, Hugo shortcodes, and layouts
-- [layer5io/academy-build](https://github.com/layer5io/academy-build) – build pipeline that aggregates this and other academies for publishing
+- [meshery-extensions/tcslabs-academy](https://github.com/meshery-extensions/tcslabs-academy)
   
   ---
   
 ## 🚀 Quick Start (Local Preview)
 
-> ⚠️ Local preview is only needed while authoring content.
-> The official site will be built and published through academy-build.
+> Use the local preview is only needed while authoring content.
 
 1. **Install prerequisites**
 
@@ -51,7 +59,7 @@
    hugo server
    ```
 
-The local preview uses [academy-theme](https://github.com/layer5io/academy-theme). In production, content is wrapped in the Layer5 Cloud UI so it may look slightly different.
+The local preview uses the academy-theme or any styling updates that you have made. When paired with a Remote Provider, academy content might be presented differently.
 
 ---
 
@@ -195,7 +203,8 @@ src="cdn.js"
 To preview your content locally, run:
 
 ```bash
-hugo server
+make setup
+make site
 ```
 
 ---
@@ -204,8 +213,7 @@ hugo server
 
 Once your learning path content is ready and tested locally, open a pull request in this repository.
 
-A maintainer will review and merge your changes.
-The Meshery team will then integrate the content into the central [Academy build](https://github.com/layer5io/academy-build) so it appears on the public Academy site.
+Meshery Extension contributors and maintainers will review and merge your changes. 
 
 ---
 
@@ -224,13 +232,6 @@ We welcome contributions to improve:
 
 ## Resources
 
-- Academy Documentation: <https://docs.layer5.io/cloud/academy>
-- Content Creation Guide: <https://docs.layer5.io/cloud/academy/creating-content>
 - Community Slack: <https://slack.meshery.io/>
 
 Happy Learning!
-
-
-
-
-
