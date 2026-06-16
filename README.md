@@ -228,8 +228,8 @@ We welcome contributions to improve:
 - Additional learning paths, challenges, or certifications
 - Shortcodes, layouts, and formatting
 
- 1. See [CONTRIBUTING.md](https://github.com/meshery-extensions/meshery-academy/blob/master/CONTRIBUTING.md) for details on branching, committing, and opening PRs.  
- 2. Please review our [CODE_OF_CONDUCT.md](https://github.com/meshery-extensions/meshery-academy/blob/master/CODE_OF_CONDUCT.md) and [SECURITY.md](https://github.com/meshery-extensions/meshery-academy/blob/master/SECURITY.md) before contributing.
+ 1. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on branching, committing, and opening PRs.  
+ 2. Please review our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md) before contributing.
 
 ---
 
