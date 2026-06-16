@@ -1,6 +1,7 @@
-[![Meshery Academy](https://img.shields.io/badge/Meshery-Academy-00B39F?style=flat-square&logo=meshery&logoColor=white)](https://cloud.meshery.io/academy)
-
-![Meshery-Logo](.github/assets/images/meshery-logo-dark-text-side.svg)
+<div align="center">
+  <img src=".github/assets/images/meshery-logo-dark-text-side.svg" width="70%" /> <br />
+  <img src="https://img.shields.io/badge/Meshery-Academy-00B39F?style=flat-square&logo=meshery&logoColor=white" />
+</div>
 
 # Meshery Academy
 
