@@ -13,9 +13,10 @@ This repo is the official content repository for the Meshery Academy, which can 
 
 Academies are modular, Git-native learning management systems (LMS), which can be run stand-alone and/or as an extension of your Meshery deployment(s) for an integrated learning experience. Academies emphasize hands-on, cloud-native education (AI, Cloud, Kubernetes, CNCF projects, configuration and infrastructure management) through structured curricula, interactive Labs, embedded visualizations, and verifiable credentials.
 
- ---
+  ---
 
-|---|---|
+| | |
+|--------------|-------------|
 | **Purpose** | Primary source of DigitalOcean-specific Meshery learning content |
 | **Platform** | Runs stand-alone or alongside your Meshery deployment(s) |
 | **Authoring** | Markdown-based content with live local preview via Hugo |
