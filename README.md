@@ -7,13 +7,20 @@
 
 # Meshery Academy
 
-This repo is the official content repository for the Meshery Academy, which can be run stand-alone and alongside your Meshery deployment(s) for an integrated learning experience. This academy contains learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
+This repo is the official content repository for the Meshery Academy, which can be run stand-alone or alongside your Meshery deployment(s) for an integrated learning experience. This academy contains learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
 
 **[Academies as Meshery Extensions](https://docs.meshery.io/extensions/academies/)**
 
 Academies are modular, Git-native learning management systems (LMS), which can be run stand-alone and/or as an extension of your Meshery deployment(s) for an integrated learning experience. Academies emphasize hands-on, cloud-native education (AI, Cloud, Kubernetes, CNCF projects, configuration and infrastructure management) through structured curricula, interactive Labs, embedded visualizations, and verifiable credentials.
 
  ---
+
+|---|---|
+| **Purpose** | Primary source of DigitalOcean-specific Meshery learning content |
+| **Platform** | Runs stand-alone or alongside your Meshery deployment(s) |
+| **Authoring** | Markdown-based content with live local preview via Hugo |
+| **Content types** | Learning paths · Challenges · Certifications · Infrastructure designs |
+| **Org ID** | `c5ada327-8a58-4c8a-b9fa-51b95696488c` |
 
 ## 📚 Overview
 
@@ -41,145 +48,141 @@ Academies are modular, Git-native learning management systems (LMS), which can b
   
   ---
   
-## 🚀 Quick Start (Local Preview)
 
-> Use the local preview is only needed while authoring content.
+## 🛠️ Prerequisites
 
-1. **Install prerequisites**
+Before you begin, ensure you have the following installed:
 
-- [Go](https://go.dev/dl/) ≥ 1.26
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) ≥ 0.158 (required for `hugo.Sites` in offline search index; CI uses 0.158)
-
-2. **Fetch and tidy dependencies**
-
-```bash
-   go mod tidy
-   ```
-
-3. **Run the local Hugo server**
-
-```bash
-   hugo server
-   ```
-
-The local preview uses the academy-theme or any styling updates that you have made. When paired with a Remote Provider, academy content might be presented differently.
+| Tool | Version | Link |
+|------|---------|------|
+| **Hugo** (extended) | see go.mod | [Install Hugo](https://gohugo.io/getting-started/installing/) |
+| **Go** | see go.mod| [Install Go](https://go.dev/doc/install) |
+| **Node.js / npm** | see package.json | [Install Node.js](https://nodejs.org/) |
+| **Git** | Latest | [Install Git](https://git-scm.com/) |
 
 ---
 
-## Add Your Content
+## 🚀 Getting Started
 
-Now you're ready to create your learning path. The structure is: Learning Path → Course → Chapter → Lesson.
+### 1. Fork & Clone
 
-A high-level view of the structure looks like this:
+```bash
+# Fork this repository on GitHub, then clone your fork
+git clone https://github.com/<your-username>/digitalocean-academy.git
+cd digitalocean-academy
+```
+
+### 2. Install Dependencies
+
+```bash
+make setup
+```
+
+### 3. Run the Site Locally
+
+_Preferred:_ Start the Hugo development server with drafts and future content enabled, using the Makefile target:
+
+```bash
+make site
+```
+
+
+_Alternative: _ Or use the hugo CLI directly (at your own risk):
+
+```bash
+hugo server -D
+```
+
+The site will be available at `http://localhost:1313/academy/` (or the port shown in your terminal).
+
+> **Note:** The local preview uses basic styling. Full Academy branding is applied after content is integrated into the cloud platform.
+
+### 4. Other Useful Commands
+
+| Command | Description |
+|---------|-------------|
+| `make setup` | Install npm dependencies |
+| `make build` | Build the site for production |
+| `make site`  | Build and run site locally with draft and future content enabled |
+| `make clean` | Clear build cache and restart the dev server |
+| `make theme-update` | Update the `academy-theme` Hugo module to the latest version |
+
+---
+
+## 📁 Repository Structure
+
+```text
+digitalocean-academy/
+├── .github/                  # GitHub workflows, issue templates, PR templates
+│   ├── build/                # Makefile includes
+│   ├── readme/images/        # README assets
+│   ├── workflows/            # CI/CD pipelines
+│   └── PULL_REQUEST_TEMPLATE.md
+├── assets/json/              # JSON data assets
+├── content/                  # 📝 All learning content lives here
+│   ├── _index.md             # Site root page
+│   ├── learning-paths/       # Learning paths scoped by org ID
+│   ├── certifications/       # Certification content
+│   └── challenges/           # Challenge content
+├── designs/                  # Meshery infrastructure designs (YAML)
+├── layouts/                  # Hugo layout overrides & shortcodes
+│   ├── _partials/            # Partial templates
+│   └── shortcodes/           # Custom Hugo shortcodes
+├── public/                   # Generated site output (git-ignored)
+├── resources/                # Hugo resource cache
+├── go.mod / go.sum           # Go module (pulls academy-theme)
+├── hugo.yaml                 # Hugo configuration
+├── Makefile                  # Build & dev targets
+├── package.json              # Node.js dependencies
+└── README.md                 # ← You are here
+```
+
+---
+
+## ✍️ Content Authoring
+
+### Content Hierarchy
+
+The Academy content follows this structure: **Learning Path → Course → Chapter → Lesson**.
 
 ```text
 content/
 └── learning-paths/
     ├── _index.md
-    └── <organization-uid>/
-        └── <learning-path>/
+    └── <orgID>
+        └── <your-learning-path>/
             ├── _index.md
-            └── <course-1>/
-            └── <course-2>/
+            └── <your-course>/
                 ├── _index.md
                 └── content/
-                    └── lesson-1.md
+                    ├── lesson-1.md
                     └── lesson-2.md
 ```
-
-- Create your folder structure following the hierarchy.
-- Add your lessons as Markdown (.md) files inside the content directory of a course.
-- Each `_index.md` and `lesson` file should begin with Hugo front-matter specifying title, description, and weight.
-
-```yaml
----
-title: "Title of Section"
-description: "One-liner summary"
-weight: 10  # for menu order, lower numbers appear first
----
-```
-
----
-## Developing Certification Exams
-
-Now you're ready to create your certification exam.
-A high-level view of the structure looks like this:
-
-```text
-content/
-└── certifications/
-    ├── _index.md
-    └── <organization-uid>/
-        └── certified-meshery-associate/
-            ├── _index.md
-            └── exam-1.md
-            └── exam-2.md
-        └── certified-meshery-contributor/
-            ├── _index.md
-            └── exam-1.md
-            └── exam-2.md
-```
-- Create your folder structure following the hierarchy.
-- Add your exam as Markdown (.md) files inside the exam directory, for e.g. in `certified-meshery-contributor` directory.
-- Each `_index.md` and `exam` file should begin with Hugo frontmatter specifying title, description, weight, `passPercentage`, `maxAttempts`, `timeLimit`, `numberOfQuestions`, and `questions`.
-- Give every question a stable `id`, and give every option within a question a stable `id`. These author-facing IDs may be short values like `q1`, `a`, or `true`, but question IDs must be unique within one assessment and option IDs must be unique within one question. The Academy theme converts them into stable UUIDs in the generated JSON consumed by Meshery Cloud.
-
-```yaml
----
-title: "Meshery xxxx Contributor Exam"
-type: "test"
-layout: "test"
-weight: 2
-passPercentage: 70
-maxAttempts: 3
-timeLimit: 30
-numberOfQuestions: 25
-questions:
-  - id: "q1"
-    text: "Meshery manages cloud native infrastructure."
-    type: "true-false"
-    marks: 1
-    options:
-      - id: "true"
-        text: "True"
-        isCorrect: true
-      - id: "false"
-        text: "False"
-
----
-```
-- Ensure that each `exam` contains question pool as multiple of `numberOfQuestions`. For e.g., if the exam has `numberOfQuestions` is 25, the question pool could be 50 or 75 or so on.
-
-## Managing Assets: Images, Videos, and Embedded Designs
-
-Enhance your courses with images and rich visual content using the Page Bundling method for optimal compatibility.
 
 ### How to Add an Image
 
 1. Place your image files directly in the same directory as your markdown content (Page Bundling method):
 
-```text
-content/learning-paths/1e2a8e46-937c-47ea-ab43-5716e3bcab2e/
+```shell
+content/learning-paths/<orgID>/
 └── your-course/
     └── your-module/
         ├── _index.md
         └── meshery-logo.png
 ```
 
-In your markdown file, reference the image using standard Markdown syntax:
-
-`![Meshery Logo](./.github/readme/images/mershery-icon.png)`
-
 ### How to Add a Video
 
 Embed videos in a visually distinct card using:
 
+```markdown
 {{</*card title="Video: Example" */>}}
 <video width="100%" height="100%" controls>
     <source src="https://example.com/your-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 {{</* /card*/>}}
+```
 
 ### How to Add a Meshery Design
 
@@ -198,6 +201,35 @@ src="cdn.js"
 - Replace `src` with the path to your JS asset responsible for rendering.
 
 > Always use these shortcodes for images, videos, and embedded designs. This keeps assets portable, ensures they resolve correctly for each organization, and integrates properly with the Academy platform’s build and deployment flow.
+
+### Adding Assessments
+
+Assessment files use the Academy test layout. Question and option IDs must be unique within their scope.
+
+```yaml
+---
+title: "Assessment Example"
+id: "assessment-example"
+type: "test"
+layout: "test"
+passPercentage: 70
+maxAttempts: 3
+timeLimit: 30
+numberOfQuestions: 1
+questions:
+  - id: "q1"
+    text: "DigitalOcean Academy content is authored in Markdown."
+    type: "true-false"
+    marks: 1
+    options:
+      - id: "true"
+        text: "True"
+        isCorrect: true
+      - id: "false"
+        text: "False"
+---
+```
+
 
 ---
 
