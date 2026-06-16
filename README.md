@@ -42,10 +42,10 @@ Academies are modular, Git-native learning management systems (LMS), which can b
 
 ## 🔗 Related Repositories
 
-- [meshery/meshery](https://github.com/meshery/meshery) – Meshery core project
-- [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
-- [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
-- [meshery-extensions/tcslabs-academy](https://github.com/meshery-extensions/tcslabs-academy)
+ - [meshery/meshery](https://github.com/meshery/meshery) – Meshery core project
+ - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
+ - [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
+ - [meshery-extensions/tcslabs-academy](https://github.com/meshery-extensions/tcslabs-academy)
   
   ---
   
