@@ -44,7 +44,7 @@ Academies are modular, Git-native learning management systems (LMS), which can b
 
  - [meshery/meshery](https://github.com/meshery/meshery) – Meshery core project
  - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
- - [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
+ - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy)
  - [meshery-extensions/tcslabs-academy](https://github.com/meshery-extensions/tcslabs-academy)
   
   ---
@@ -69,8 +69,8 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # Fork this repository on GitHub, then clone your fork
-git clone https://github.com/<your-username>/digitalocean-academy.git
-cd digitalocean-academy
+git clone https://github.com/<your-username>/meshery-academy.git
+cd meshery-academy
 ```
 
 ### 2. Install Dependencies
@@ -113,7 +113,7 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 ## 📁 Repository Structure
 
 ```text
-digitalocean-academy/
+meshery-academy/
 ├── .github/                  # GitHub workflows, issue templates, PR templates
 │   ├── build/                # Makefile includes
 │   ├── readme/images/        # README assets
