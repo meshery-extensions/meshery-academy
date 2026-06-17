@@ -5,7 +5,7 @@
 
 </div>
 
-# Meshery Academy
+<h1><img src=".github/assets/images/meshery-academy-light.svg" alt="Meshery Academy" height="32px" valign="top" /> Meshery Academy</h1>
 
 This repo is the official content repository for the Meshery Academy, which can be run stand-alone or alongside your Meshery deployment(s) for an integrated learning experience. This academy contains learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
 
