@@ -17,7 +17,7 @@ Academies are modular, Git-native learning management systems (LMS), which can b
 
 | | |
 |--------------|-------------|
-| **Purpose** | Primary source of DigitalOcean-specific Meshery learning content |
+| **Purpose** | Primary source of Meshery learning content |
 | **Platform** | Runs stand-alone or alongside your Meshery deployment(s) |
 | **Authoring** | Markdown-based content with live local preview via Hugo |
 | **Content types** | Learning paths · Challenges · Certifications · Infrastructure designs |
@@ -111,7 +111,6 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 ---
 
 ## 📁 Repository Structure
-
 ```text
 meshery-academy/
 ├── .github/                  # GitHub workflows, issue templates, PR templates
@@ -119,23 +118,22 @@ meshery-academy/
 │   ├── readme/images/        # README assets
 │   ├── workflows/            # CI/CD pipelines
 │   └── PULL_REQUEST_TEMPLATE.md
-├── assets/json/              # JSON data assets
 ├── content/                  # 📝 All learning content lives here
 │   ├── _index.md             # Site root page
-│   ├── learning-paths/       # Learning paths scoped by org ID
+│   ├── learning-paths/       # Learning paths
 │   ├── certifications/       # Certification content
 │   └── challenges/           # Challenge content
-├── designs/                  # Meshery infrastructure designs (YAML)
 ├── layouts/                  # Hugo layout overrides & shortcodes
 │   ├── _partials/            # Partial templates
 │   └── shortcodes/           # Custom Hugo shortcodes
+├── static/                   # Static assets
 ├── public/                   # Generated site output (git-ignored)
 ├── resources/                # Hugo resource cache
-├── go.mod / go.sum           # Go module (pulls academy-theme)
+├── go.mod / go.sum           # Go module dependencies
 ├── hugo.yaml                 # Hugo configuration
-├── Makefile                  # Build & dev targets
+├── Makefile                  # Build & development commands
 ├── package.json              # Node.js dependencies
-└── README.md                 # ← You are here
+└── README.md                 # Project documentation
 ```
 
 ---
@@ -219,7 +217,7 @@ timeLimit: 30
 numberOfQuestions: 1
 questions:
   - id: "q1"
-    text: "DigitalOcean Academy content is authored in Markdown."
+    text: "Meshery Academy content is authored in Markdown."
     type: "true-false"
     marks: 1
     options:
