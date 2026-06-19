@@ -2,7 +2,7 @@
   <img src=".github/assets/images/meshery-logo-dark-text-side.svg" width="70%" /> <br />
   <img src="https://img.shields.io/badge/Meshery-Academy-00B39F?style=flat-square&logo=meshery&logoColor=white" />
 <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/meshery-extensions/meshery-academy">
-
+<img alt="Hugo" src="https://img.shields.io/badge/Hugo-Framework-FF4088?logo=hugo&logoColor=white">
 </div>
 
 <h1><img src=".github/assets/images/meshery-academy-light.svg" alt="Meshery Academy" height="32px" valign="top" /> Meshery Academy</h1>
