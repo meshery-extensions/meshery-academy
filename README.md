@@ -2,14 +2,14 @@
   <img src=".github/assets/images/meshery-logo-dark-text-side.svg" width="70%" /> <br />
   <img src="https://img.shields.io/badge/Meshery-Academy-00B39F?style=flat-square&logo=meshery&logoColor=white" />
 <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/meshery-extensions/meshery-academy">
-
+<img alt="Hugo" src="https://img.shields.io/badge/Hugo-Framework-FF4088?logo=hugo&logoColor=white">
 </div>
 
-# Meshery Academy
+<h1><img src=".github/assets/images/meshery-academy-light.svg" alt="Meshery Academy" height="32px" valign="top" /> Meshery Academy</h1>
 
 This repo is the official content repository for the Meshery Academy, which can be run stand-alone or alongside your Meshery deployment(s) for an integrated learning experience. This academy contains learning paths, challenges, and certifications, helping engineers learn how to manage cloud-native infrastructure with Meshery.
 
-**[Academies as Meshery Extensions](https://docs.meshery.io/extensions/academies/)**
+<img src=".github/assets/images/meshery-academy-light.svg" alt="Meshery Academy" height="20px" valign="top" /> **[Academies as Meshery Extensions](https://docs.meshery.io/extensions/academies/)**
 
 Academies are modular, Git-native learning management systems (LMS), which can be run stand-alone and/or as an extension of your Meshery deployment(s) for an integrated learning experience. Academies emphasize hands-on, cloud-native education (AI, Cloud, Kubernetes, CNCF projects, configuration and infrastructure management) through structured curricula, interactive Labs, embedded visualizations, and verifiable credentials.
 
@@ -103,9 +103,12 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 | Command | Description |
 |---------|-------------|
 | `make setup` | Install npm dependencies |
-| `make build` | Build the site for production |
 | `make site`  | Build and run site locally with draft and future content enabled |
+| `make build` | Build the site for production |
+| `make build-preview` | Build site for preview draft and future content enabled (honors `BASEURL`) |
 | `make clean` | Clear build cache and restart the dev server |
+| `make lint-fix` | Fix Markdown linting issues with `markdownlint-cli2` |
+| `make check-go` | Verify Go is installed locally |
 | `make theme-update` | Update the `academy-theme` Hugo module to the latest version |
 
 ---
