@@ -117,9 +117,11 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 ```text
 meshery-academy/
 ├── .github/                         # GitHub-related resources and automation
+|   ├── archive/meetings             # Archived meeting minutes and discussion notes   
 |   ├── assets/images                # README assets
 │   ├── build/                       # Makefile includes
 │   ├── ISSUE_TEMPLATE/              # Templates for bug reports, feature requests, and documentation issues
+|   ├── welcome/                     # Assets used in contributor welcome messages
 │   ├── workflows/                   # CI/CD pipelines
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── content/                         # 📝 All learning content lives here
