@@ -116,27 +116,29 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 ## 📁 Repository Structure
 ```text
 meshery-academy/
-├── .github/                  # GitHub workflows, issue templates, PR templates
-│   ├── build/                # Makefile includes
-│   ├── readme/images/        # README assets
-│   ├── workflows/            # CI/CD pipelines
+├── .github/                         # GitHub-related resources and automation
+|   ├── assets/images                # README assets
+│   ├── build/                       # Makefile includes
+│   ├── ISSUE_TEMPLATE/              # Templates for bug reports, feature requests, and documentation issues
+│   ├── workflows/                   # CI/CD pipelines
 │   └── PULL_REQUEST_TEMPLATE.md
-├── content/                  # 📝 All learning content lives here
-│   ├── _index.md             # Site root page
-│   ├── learning-paths/       # Learning paths
-│   ├── certifications/       # Certification content
-│   └── challenges/           # Challenge content
-├── layouts/                  # Hugo layout overrides & shortcodes
-│   ├── _partials/            # Partial templates
-│   └── shortcodes/           # Custom Hugo shortcodes
-├── static/                   # Static assets
-├── public/                   # Generated site output (git-ignored)
-├── resources/                # Hugo resource cache
-├── go.mod / go.sum           # Go module dependencies
-├── hugo.yaml                 # Hugo configuration
-├── Makefile                  # Build & development commands
-├── package.json              # Node.js dependencies
-└── README.md                 # Project documentation
+├── content/                         # 📝 All learning content lives here
+│   ├── _index.md                    # Site root page
+│   ├── learning-paths/              # Learning paths
+│   ├── certifications/              # Certification content
+│   ├── challenges/                  # Challenge content
+│   └── content-formatting-examples/ # Examples of Markdown and Hugo shortcodes
+├── layouts/                         # Hugo layout overrides & shortcodes
+│   ├── _partials/                   # Partial templates
+│   └── shortcodes/                  # Custom Hugo shortcodes
+├── static/                          # Static assets
+├── public/                          # Generated site output (git-ignored)
+├── resources/                       # Hugo resource cache
+├── go.mod / go.sum                  # Go module dependencies
+├── hugo.yaml                        # Hugo configuration
+├── Makefile                         # Build & development commands
+├── package.json                     # Node.js dependencies
+└── README.md                        # Project documentation
 ```
 
 ---
