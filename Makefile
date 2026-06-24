@@ -38,7 +38,7 @@ check-deps:
 build: check-deps check-go
 	npm run build:production
 
-## Build site for preview (no drafts, no future, no expired content) with dynamically set baseURL.
+## Build site for preview (includes drafts, future, and expired content) with dynamically set baseURL.
 build-preview: check-deps check-go
 	npm run build:preview
 
@@ -66,5 +66,5 @@ check-go:
 
 ## Update the academy-theme package to latest version
 theme-update: check-deps check-go
-	echo "Updating to latest academy-theme..." && \
+	@echo "Updating to latest academy-theme..."
 	npm run update:theme
