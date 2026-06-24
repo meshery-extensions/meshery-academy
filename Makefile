@@ -18,7 +18,6 @@ include .github/build/Makefile.show-help.mk
 #----------------------------------------------------------------------------
 # Academy
 # ---------------------------------------------------------------------------
-.PHONY: setup check-deps check-go build build-preview site serve clean theme-update
 
 ## ------------------------------------------------------------
 ----LOCAL_BUILDS: Show help for available targets
@@ -56,6 +55,17 @@ clean:
 	$(MAKE) setup
 	$(MAKE) site
 
+## Fix Markdown linting issues
+lint-fix:
+	@echo "Checking for markdownlint-cli2..."
+	@command -v markdownlint-cli2 > /dev/null || { \
+		echo "markdownlint-cli2 not found. Attempting to install globally..."; \
+		command -v npm > /dev/null || { echo "npm is not installed. Please install Node.js/npm and re-run 'make lint-fix'."; exit 1; }; \
+		npm install -g markdownlint-cli2; \
+	}
+	@echo "Running markdownlint-cli2 --fix..."
+	@markdownlint-cli2 --fix "**/*.md" "#node_modules" "#public" "#resources"
+
 ## ------------------------------------------------------------
 ----MAINTENANCE: Show help for available targets
 
@@ -68,3 +78,5 @@ check-go:
 theme-update: check-deps check-go
 	@echo "Updating to latest academy-theme..."
 	npm run update:theme
+
+.PHONY: setup check-deps check-go build build-preview site serve clean lint-fix theme-update
