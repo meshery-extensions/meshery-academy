@@ -80,10 +80,18 @@ Please contribute! Layer5 documentation uses Jekyll and GitHub Pages to host doc
 1. Open a pull request (in your web browser) against the repo.
 
 
-#### Build Verification
-To verify the site builds correctly on your local machine, run:
+#### Tests
+Users can now test their code on their local machine against the CI checks implemented using `make run-tests`.
+
+To test code changes on your local machine, run the following command:
 ```
-make build
+make run-tests
+```
+
+#### Building Docker image
+To build a Docker image of the project, please ensure you have `Docker` installed to be able to build the image. Now, run the following command to build the Docker image:
+```sh
+make docker
 ```
 
 ### UI Lint Rules
