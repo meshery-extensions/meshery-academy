@@ -18,42 +18,30 @@ include .github/build/Makefile.show-help.mk
 #----------------------------------------------------------------------------
 # Academy
 # ---------------------------------------------------------------------------
-
 ## ------------------------------------------------------------
 ----LOCAL_BUILDS: Show help for available targets
-
+	
 ## Local: Install site dependencies
 setup:
-	npm i
-
-## Verify required commands and local dependencies are present.
-check-deps:
-	@echo "Checking if 'npm' and local 'hugo' binary are present..."
-	@command -v npm > /dev/null || { echo "Error: 'npm' not found. Please install Node.js and npm."; exit 1; }
-	@test -x node_modules/.bin/hugo || { echo "Error: Hugo binary not found in node_modules. Please run 'make setup' first."; exit 1; }
-	@echo "Dependencies check passed."
-
-## Build site for production (no drafts, no future, no expired content).
-build: check-deps check-go
-	npm run build:production
-
-## Build site for preview (includes drafts, future, and expired content) with dynamically set baseURL.
-build-preview: check-deps check-go
-	npm run build:preview
+	npm install
 
 ## Local: Build and run site locally with draft and future content enabled.
-site: check-deps check-go
-	npm run dev:site
+site: check-go
+	hugo server -D -F
 
-## Local: Run site locally in serve mode (without file watching).
-serve: check-deps check-go
-	npm run dev:serve
+## Local: Build site for local consumption
+build:
+	hugo build
+
+## Build site for local consumption
+build-preview:
+	hugo --baseURL=$(BASEURL)
 
 ## Empty build cache and run on your local machine.
-clean:
-	npm run clean
-	$(MAKE) setup
-	$(MAKE) site
+clean: 
+	hugo --cleanDestinationDir
+	make setup
+	make site
 
 ## Fix Markdown linting issues
 lint-fix:
@@ -75,8 +63,8 @@ check-go:
 	@echo "Go is installed."
 
 ## Update the academy-theme package to latest version
-theme-update: check-deps check-go
-	@echo "Updating to latest academy-theme..."
-	npm run update:theme
+theme-update:
+	echo "Updating to latest academy-theme..." && \
+	hugo mod get github.com/layer5io/academy-theme
 
-.PHONY: setup check-deps check-go build build-preview site serve clean lint-fix theme-update
+.PHONY: setup build build-preview site clean lint-fix check-go theme-update
