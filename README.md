@@ -56,10 +56,11 @@ Before you begin, ensure you have the following installed:
 
 | Tool | Version | Link |
 |------|---------|------|
-| **Hugo** (extended) | see go.mod | [Install Hugo](https://gohugo.io/getting-started/installing/) |
 | **Go** | see go.mod| [Install Go](https://go.dev/doc/install) |
 | **Node.js / npm** | see package.json | [Install Node.js](https://nodejs.org/) |
 | **Git** | Latest | [Install Git](https://git-scm.com/) |
+
+*(Note: Hugo Extended is managed locally via npm and does not need to be installed globally).*
 
 ---
 
@@ -88,11 +89,7 @@ make site
 ```
 
 
-_Alternative: _ Or use the hugo CLI directly (at your own risk):
 
-```bash
-hugo server -D
-```
 
 The site will be available at `http://localhost:1313/academy/` (or the port shown in your terminal).
 
