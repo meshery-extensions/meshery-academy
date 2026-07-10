@@ -392,7 +392,7 @@ This image was processed from a page resource using the Docsy `imgproc` shortcod
 
 
 &lt;div class="md__image"&gt;
- &lt;img id="[411 200 139 300 84 93]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-140/examples/images/exoscale-icon.png" onclick="openModal(this.id)" alt="Rendered tab image" 
+ &lt;img id="[276 212 416 307 320 136]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-140/examples/images/exoscale-icon.png" onclick="openModal(this.id)" alt="Rendered tab image" 
  class="md-image-responsive" /&gt;
 &lt;/div&gt;&lt;/p&gt;
 
