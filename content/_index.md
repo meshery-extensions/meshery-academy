@@ -1,51 +1,32 @@
 ---
-title: Academy 
+title: Academy
 ---
 
 <!-- this page is only used in local dev setup , this wont be used or rendered in production -->
 
-{{% blocks/lead color="primary" %}}
+- [Learning Paths](https://cloud.layer5.io/academy/learning-paths)
+- [Challenges](https://cloud.layer5.io/academy/challenges)
+- [Certifications](https://cloud.layer5.io/academy/certifications)
 
 ---
-*Below this line, this reminder won't appear when published.*
 
-- [Certifications](/academy/certifications)
-- [Challenges](academy/challenges)
-- [Learning Paths](/academy/learning-paths)  
-
-### Welcome to your Academy's content development environment
+### Welcome to dev environment for your Academy
 
 This is just a development page that shows during the build process. The development process is extraordinarily simple - you can start building it out bit by bit or dive right in.
 
-{{% /blocks/lead %}}
-
 #### What Your Academy Will Look Like
 
-When published, your Academy will feature two main sections ([see example](https://cloud.layer5.io/academy/)). 
+When published, your Academy will look like ([https://cloud.layer5.io/academy/](https://cloud.layer5.io/academy/) and will feature **Learning Paths, Challenges, and Certifications** that are not set to `draft: true` in their front matter.)
 
-Type of content includes:
+It provides structured, Markdown-authored curricula with hands-on practice and assessments. Content is organized hierarchically and supports rich media.
 
-- **[Certifications](/academy/certifications/)** - a formal assessment designed to validate a learner’s professional skills in a specific domain. Unlike a Learning Path, which guides a user through a curriculum, a Certification’s primary goal is evaluation. [Learn more](https://docs.layer5.io/cloud/academy/creating-content/building-certifications/)
-- **[Challenges](/academy/challenges/)** - Time-based, practical labs to test and validate skills
-- **[Learning Paths](/academy/learning-paths/)** - Structured courses combining theoretical knowledge with hands-on labs
+#### Build Process
 
-#### Content Development Process
+Here's the simple workflow:
+> 1. **Develop locally** - Make your changes and test them here
 
-Simple overview:
+> 2. **Merge when ready** - Your Academy stays private until you decide to publish
 
-1. **Develop locally** - Make your changes and test them here  
-2. **Merge when ready** - Your Academy stays private until you decide to publish  
-3. **Publish when ready** - Release it to your organization
+> 3. **Publish when ready** - Release it to your organization
 
-Detailed overview:
-
-- **[Content Creator Guide](https://docs.layer5.io/cloud/academy/creating-content/)**  
-Learn how to create, manage, and publish learning paths, challenges, and certifications on the Layer5 Academy platform.
-- **[Learner Guide](https://docs.layer5.io/cloud/academy/using-the-academy/)**  
-Learn how to navigate the Layer5 Academy platform, understand its features, and maximize your learning experience.
-- **[Platform Development Guide](https://docs.layer5.io/cloud/academy/platform-development/)**  
-An advanced guide to the Layer5 Academy architecture, multi-repository workflow, and development best practices for contributors.
-
----
-
-**Need help?** Find answers on our [discussion forum](http://discuss.meshery.io) or chat with us in [Slack](https://mesheryio.slack.com).
+**Need help?** [Documentation](https://github.com/layer5io/layer5-academy/blob/master/README.md) | [Contact Us](https://mesheryio.slack.com/ssb/redirect)
