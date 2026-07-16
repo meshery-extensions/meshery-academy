@@ -55,7 +55,7 @@
 
 
 &lt;div class="md__image"&gt;
- &lt;img id="[461 171 67 174 249 180]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/academy/examples/images/deploy.png" onclick="openModal(this.id)" alt="Spruce shoot close-up" 
+ &lt;img id="[252 256 131 275 138 134]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/academy/examples/images/deploy.png" onclick="openModal(this.id)" alt="Spruce shoot close-up" 
  class="md-image-responsive" /&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;Large images should always scale down and fit in the content container.&lt;/p&gt;
@@ -67,7 +67,7 @@
 
 
 &lt;div class="md__image"&gt;
- &lt;img id="[457 483 218 450 141 428]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/academy/examples/images/kubernetes-icon.svg" onclick="openModal(this.id)" alt="Large spruce shoot photo" 
+ &lt;img id="[94 97 344 26 119 142]" src="https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/academy/examples/images/kubernetes-icon.svg" onclick="openModal(this.id)" alt="Large spruce shoot photo" 
  class="md-image-responsive" /&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Tables</title><link>https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/content-formatting-examples/markdown/tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://meshery-extensions.github.io/meshery-academy/pr-preview/pr-152/content-formatting-examples/markdown/tables/</guid><description>&lt;table&gt;
