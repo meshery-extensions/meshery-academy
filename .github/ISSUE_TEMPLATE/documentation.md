@@ -15,3 +15,4 @@ assignees: ''
 #### Contributor Guide and Resources
 - 📚 [Instructions for contributing to academy-example](https://github.com/meshery-extensions/meshery-academy/blob/master/CONTRIBUTING.md)
 - 🙋🏾🙋🏼 Questions: [Discussion Forum](https://discuss.meshery.io) and [Community Slack](https://slack.meshery.io)
+- 📺 [Self-paced Contributor Trainings](https://meshery.io/talks-and-trainings#trainings)
