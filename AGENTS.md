@@ -173,3 +173,10 @@ The Certified Meshery Contributor Certification recognizes individuals who have 
 - Follow Layer5's standards for inclusivity and clarity.
 
 For more details, refer to the [Layer5 Academy Documentation](https://docs.layer5.io/cloud/academy/).
+
+## AXI Agent Tooling
+
+- Use the `gh-axi` CLI tool to interact with GitHub. Prefer `gh-axi` over `gh`.
+- Use `chrome-devtools-axi` for browser automation (navigate, snapshot, click, fill forms, run JS, inspect console/network) in place of raw Playwright/chrome-devtools MCP for ad hoc tasks.
+- Run `quota-axi` to check local agent-provider quota windows before long-running work.
+- Use the `lavish` skill (`lavish-axi` CLI) to turn a plan, comparison, or report into a reviewable HTML artifact.
