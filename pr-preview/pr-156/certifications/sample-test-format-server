@@ -1,0 +1,61 @@
+Generate 75 questions for the following exam, using the following YAML format and the following source materials.
+
+This exam focuses on software engineers and their ability to contribute to the Meshery Server codebase. The exam covers a variety of topics, including:
+
+- [Contributing to Meshery Server](https://docs.meshery.io/project/contributing/contributing-server)
+- [Contributing to Meshery Server Events](https://docs.meshery.io/project/contributing/contributing-server-events)
+- [How to write MeshKit Compatible Errors](https://docs.meshery.io/project/contributing/contributing-error)
+- [Build & Release (CI)](https://docs.meshery.io/project/contributing/build-and-release)
+- [Schema-driven development in Meshery](https://docs.meshery.io/project/contributing/contributing-schemas)
+
+This exam does not cover Meshery Server usage, but focuses on Meshery Server contribution. Format questions in YAML.
+
+---
+title: "Meshery Server Contributor Exam"
+type: "test"
+layout: "test"
+pass_percentage: 70
+max_attempts: 3
+time_limit: 30
+number_of_questions: 25
+questions:
+  - id: "q1"
+    text: "example question here"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "a"
+        text: "example correct answer here"
+        is_correct: true
+      - id: "b"
+        text: "example incorrect answer here"
+      - id: "c"
+        text: "example incorrect answer here"
+      - id: "d"
+        text: "example incorrect answer here"
+  - id: "q2"
+    text: "example question here"
+    type: "single-answer"
+    marks: 2
+    options:
+      - id: "true"
+        text: "True"
+      - id: "false"
+        text: "False"
+        is_correct: true
+  - id: "q3"
+    text: "example question here"
+    type: "multiple-answers"
+    marks: 2
+    options:
+      - id: "a"
+        text: "correct answer example"
+        is_correct: true
+      - id: "b"
+        text: "correct answer example"
+        is_correct: true
+      - id: "c"
+        text: "incorrect answer example"
+      - id: "d"
+        text: "incorrect answer example"
+---
