@@ -164,6 +164,20 @@ The Certified Meshery Contributor Certification recognizes individuals who have 
 - [Setting up Meshery Development Environment on Windows](/project/contributing/meshery-windows) - How to set up Meshery Development Environment on Windows
 - [End-to-End Test Status](/project/contributing/test-status) - Status reports of Meshery's various test results.
 
+#### How certification/learning-path frontmatter renders
+
+Certification pages (`type: "certification"`, an `_index.md` section) are consumed by the
+cloud.meshery.io academy registry, not by a local HTML template. The academy-theme partial
+`layouts/partials/learning-path.json.html` serializes the frontmatter to JSON: `competencies`,
+`objectives`, `audience`, `additionalAttributes`, and the full `prerequisiteKnowledge` /
+`relatedResources` trees are emitted raw via `jsonify` (so any nested field passes through Hugo),
+and the markdown body becomes `detailedDescription`. There is no theme template that renders a
+per-item `description` on `prerequisiteKnowledge` / `relatedResources` entries - only `title`,
+`link`, and nested `children` are structurally consumed - so put explanatory prose in the body,
+not in unrendered item fields. `additionalAttributes` items do render `title`/`value`/`description`.
+The local `make build` produces `index.html` only; the JSON output format is what the platform
+uses, so validate frontmatter by confirming the build succeeds and the body renders.
+
 ## Contribution Guidelines
 
 - Use the provided templates for consistency.
@@ -180,3 +194,10 @@ For more details, refer to the [Layer5 Academy Documentation](https://docs.layer
 - Use `chrome-devtools-axi` for browser automation (navigate, snapshot, click, fill forms, run JS, inspect console/network) in place of raw Playwright/chrome-devtools MCP for ad hoc tasks.
 - Run `quota-axi` to check local agent-provider quota windows before long-running work.
 - Use the `lavish` skill (`lavish-axi` CLI) to turn a plan, comparison, or report into a reviewable HTML artifact.
+
+## Maintaining this file
+
+Keep this file for knowledge useful to almost every future agent session in this project.
+Do not repeat what the codebase already shows; point to the authoritative file or command instead.
+Prefer rewriting or pruning existing entries over appending new ones.
+When updating this file, preserve this bar for all agents and keep entries concise.
