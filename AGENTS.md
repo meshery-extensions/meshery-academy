@@ -174,9 +174,22 @@ The Certified Meshery Contributor Certification recognizes individuals who have 
 
 For more details, refer to the [Layer5 Academy Documentation](https://docs.layer5.io/cloud/academy/).
 
+## Agent Skills
+
+All agent skills live in `.agents/skills/<name>/SKILL.md` - the single source of truth. Add or edit
+skills there, never in a tool-specific directory. Codex and OpenCode read `.agents/skills` natively;
+`.claude/skills` is a relative symlink to it for Claude Code.
+
 ## AXI Agent Tooling
 
 - Use the `gh-axi` CLI tool to interact with GitHub. Prefer `gh-axi` over `gh`.
 - Use `chrome-devtools-axi` for browser automation (navigate, snapshot, click, fill forms, run JS, inspect console/network) in place of raw Playwright/chrome-devtools MCP for ad hoc tasks.
 - Run `quota-axi` to check local agent-provider quota windows before long-running work.
 - Use the `lavish` skill (`lavish-axi` CLI) to turn a plan, comparison, or report into a reviewable HTML artifact.
+
+## Maintaining this file
+
+Keep this file for knowledge useful to almost every future agent session in this project.
+Do not repeat what the codebase already shows; point to the authoritative file or command instead.
+Prefer rewriting or pruning existing entries over appending new ones.
+When updating this file, preserve this bar for all agents and keep entries concise.
