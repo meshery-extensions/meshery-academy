@@ -32,7 +32,7 @@ Shortcodes included with Hugo: `figure`, `highlight`, `ref`, `relref`, `param`, 
 
 ### [Docsy Shortcodes](./docsy/)
 
-Shortcodes from the Google Docsy theme: alerts, page info, blocks (cover, lead, section, feature), cards, tabs, comments, conditional text, iframe, imgproc, readfile, and API docs (Redoc, SwaggerUI).
+Shortcodes from the Google Docsy theme: alerts, page info, blocks (cover, lead, section, feature), cards, tabs, comments, conditional text, imgproc, readfile, and API docs (Redoc).
 
 ### [Hextra Shortcodes](./hextra/)
 
@@ -40,4 +40,4 @@ Shortcodes ported from the Hextra theme: callouts, cards, details, steps, tabs, 
 
 ### [Academy Theme Shortcodes](./academy-theme/)
 
-Custom shortcodes for the Academy platform: alerts, details, pageinfo, chapterstyle, image, SVG, local video, version labels, CSV tables, Meshery design embeds, and usestatic path resolution.
+Custom shortcodes for the Academy platform: alerts, details, pageinfo, chapterstyle, image, SVG, local video, version labels, CSV tables, Meshery design embeds, lab intro/outro, and Swagger UI API embeds.
