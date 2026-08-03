@@ -1,5 +1,5 @@
 ---
-title: Content Formatting Examples
+title: test
 weight: 5
 description: A collection of examples for formatting content, from basic Markdown text to advanced custom components and shortcodes.
 draft: true
