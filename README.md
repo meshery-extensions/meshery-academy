@@ -1,7 +1,8 @@
 <div align="center">
   <img src=".github/assets/images/meshery-logo-dark-text-side.svg" width="70%" /> <br />
-<a href="https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions"><img src="https://img.shields.io/badge/support-official-2f6feb?style=flat-square&logo=meshery&logoColor=white"  alt="Level of support for this repo"></a><img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/meshery-extensions/meshery-academy">
-<img alt="Hugo" src="https://img.shields.io/badge/Hugo-Framework-FF4088?logo=hugo&logoColor=white">
+<a href="https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions"><img src="https://img.shields.io/badge/support-official-2f6feb?style=flat-square&logo=meshery&logoColor=white"  alt="Level of support for this repo"></a>
+<img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/meshery-extensions/meshery-academy">
+<img alt="Hugo" src="https://img.shields.io/badge/Hugo-Framework-dd4088?logo=hugo&logoColor=white">
   
 </div>
 
