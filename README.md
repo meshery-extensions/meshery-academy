@@ -3,7 +3,7 @@
 <a href="https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions"><img src="https://img.shields.io/badge/support-official-2f6feb?style=flat-square&logo=meshery&logoColor=white"  alt="Level of support for this repo"></a>
 <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/meshery-extensions/meshery-academy">
 <img alt="Hugo" src="https://img.shields.io/badge/Hugo-Framework-dd4088?logo=hugo&logoColor=white">
-  
+
 </div>
 
 <h1><img src=".github/assets/images/meshery-academy-light.svg" alt="Meshery Academy" height="32px" valign="top" /> Meshery Academy</h1>
@@ -38,7 +38,7 @@ Academies are modular, Git-native learning management systems (LMS), which can b
 - **Enterprise capabilities** (white-labeling) — Multi-tenancy, custom branding (logos, colors), branded emails/notifications, custom shortcodes/CSS, and organization-specific content isolation.
 - **Local preview & publishing** — `make site` (or Makefile targets) for authors; automated Git-based publishing workflows to hosted environments.
 - **Extensibility** — Mix Markdown + HTML, custom CSS, reusable shortcodes (organization-specific in `layouts/shortcodes/<org-uuid>/`), and bundled assets (images/videos with size recommendations).
- 
+
    ---
 
 ## 🔗 Related Repositories
@@ -47,9 +47,9 @@ Academies are modular, Git-native learning management systems (LMS), which can b
  - [meshery-extensions/meshery-academy](https://github.com/meshery-extensions/meshery-academy) – this repo
  - [meshery-extensions/digitalocean-academy](https://github.com/meshery-extensions/digitalocean-academy)
  - [meshery-extensions/tcslabs-academy](https://github.com/meshery-extensions/tcslabs-academy)
-  
+
   ---
-  
+
 
 ## 🛠️ Prerequisites
 
@@ -89,9 +89,6 @@ _Preferred:_ Start the Hugo development server with drafts and future content en
 make site
 ```
 
-
-
-
 The site will be available at `http://localhost:1313/academy/` (or the port shown in your terminal).
 
 > **Note:** The local preview uses basic styling. Full Academy branding is applied after content is integrated into the cloud platform.
@@ -101,11 +98,16 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 | Command | Description |
 |---------|-------------|
 | `make setup` | Install npm dependencies |
-| `make site`  | Build and run site locally with draft and future content enabled |
-| `make build` | Build the site for production |
-| `make build-preview` | Build site for preview draft and future content enabled (honors `BASEURL`) |
-| `make clean` | Clear build cache and restart the dev server |
+| `make site` | Build and run site locally with live reload (draft and future content enabled) |
+| `make serve` | Build and serve the site once with the file watcher off (no live reload) |
+| `make build` | Build the site locally with draft and future content enabled |
+| `make build-preview` | Build the site for a deploy preview (honors `DEPLOY_PRIME_URL`) |
+| `make build-production` | Build the site for production (pass `BASE_URL=...` to set the base URL) |
+| `make clean` | Empty the build cache, reinstall dependencies, and run the site locally |
+| `make lint` | Check Markdown for linting issues |
 | `make lint-fix` | Fix Markdown linting issues with `markdownlint-cli2` |
+| `make check-links` | Check internal links in the built site |
+| `make check-deps` | Verify required commands and local dependencies are present |
 | `make check-go` | Verify Go is installed locally |
 | `make theme-update` | Update the `academy-theme` Hugo module to the latest version |
 
@@ -115,7 +117,7 @@ The site will be available at `http://localhost:1313/academy/` (or the port show
 ```text
 meshery-academy/
 ├── .github/                         # GitHub-related resources and automation
-|   ├── archive/meetings             # Archived meeting minutes and discussion notes   
+|   ├── archive/meetings             # Archived meeting minutes and discussion notes
 |   ├── assets/images                # README assets
 │   ├── build/                       # Makefile includes
 │   ├── ISSUE_TEMPLATE/              # Templates for bug reports, feature requests, and documentation issues
@@ -252,7 +254,7 @@ make site
 
 Once your learning path content is ready and tested locally, open a pull request in this repository.
 
-Meshery Extension contributors and maintainers will review and merge your changes. 
+Meshery Extension contributors and maintainers will review and merge your changes.
 
 ---
 
@@ -264,7 +266,7 @@ We welcome contributions to improve:
 - Additional learning paths, challenges, or certifications
 - Shortcodes, layouts, and formatting
 
- 1. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on branching, committing, and opening PRs.  
+ 1. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on branching, committing, and opening PRs.
  2. Please review our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [SECURITY.md](SECURITY.md) before contributing.
 
 ---
