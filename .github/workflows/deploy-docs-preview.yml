@@ -90,14 +90,23 @@ jobs:
           pr-number: ${{ needs.read-metadata.outputs.pr-number }}
 
       - name: Comment preview URL
+        if: needs.read-metadata.outputs.action != 'closed'
         uses: marocchino/sticky-pull-request-comment@67d0dec7b07ed060a405f9b2a64b8ab319fdd7db # v2.9.2
         with:
           header: pr-preview
           number: ${{ needs.read-metadata.outputs.pr-number }}
           message: |
-            ${{ needs.read-metadata.outputs.action == 'closed'
-            && 'Preview removed because the pull request was closed.'
-            || format('🚀 Preview deployment: {0}\n> *Note: Preview may take a moment (GitHub Pages deployment in progress). Please wait and refresh. Track deployment [here](https://github.com/{1}/actions/workflows/pages/pages-build-deployment)*', steps.preview.outputs.preview-url, github.repository) }}
+            🚀 Preview deployment: ${{ steps.preview.outputs.preview-url }}
+            > *Note: Preview may take a moment (GitHub Pages deployment in progress). Please wait and refresh. Track deployment [here](https://github.com/${{ github.repository }}/actions/workflows/pages/pages-build-deployment)*
+
+      - name: Comment preview removed
+        if: needs.read-metadata.outputs.action == 'closed'
+        uses: marocchino/sticky-pull-request-comment@67d0dec7b07ed060a405f9b2a64b8ab319fdd7db # v2.9.2
+        with:
+          header: pr-preview
+          number: ${{ needs.read-metadata.outputs.pr-number }}
+          message: |
+            Preview removed because the pull request was closed.
 
   prune:
     needs: read-metadata
