@@ -28,20 +28,20 @@ jobs:
 
     steps:
       - name: Checkout site
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           fetch-depth: 0
 
       # Required: academy-theme is a Hugo module, so the build needs Go.
       # 'make build-production' runs check-go and fails fast without it.
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
         with:
           go-version-file: go.mod
           cache: false
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '22'
 
@@ -53,7 +53,7 @@ jobs:
 
       - name: Publish to layer5 academy
         id: academy
-        uses: layer5io/academy-build@v0.1.6
+        uses: layer5io/academy-build@657b2ecc9e146aaf6b698851bd0c151e489ad668 # v0.1.6
         with:
           orgId: ${{ github.event.inputs.orgId || secrets.ACADEMY_ORG_ID }}
           token: ${{ github.event.inputs.token || secrets.ACADEMY_TOKEN }}

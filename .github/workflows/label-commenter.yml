@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo 🛎️
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: master # Set your default branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Label Commenter
-        uses: peaceiris/actions-label-commenter@v1
+        uses: peaceiris/actions-label-commenter@262a37a5718dc9706d19f80b2afa59fbc0d379b7 # v1.9.2
