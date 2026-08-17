@@ -3,7 +3,7 @@ type: "certification"
 id: "a2852b8b-4c68-4897-8e5a-5b5c1a470b17"
 title: "Certified Meshery Contributor"
 description: |
-  The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written assessments. 
+  The Certified Meshery Contributor (CMC) validates hands-on proficiency in contributing to the Meshery open source project across its five core areas - Server, CLI, UI, Models, and Extensibility. Five exams, each weighted 20%, confirm you can implement, test, and integrate real changes to the codebase.
 
 banner: "meshery-light-icon.svg"
 weight: 1
@@ -146,7 +146,26 @@ prerequisiteKnowledge:
 relatedResources:
   - title: "Meshery Certification Program Tracks"
     link: "https://kanvas.new/extension/meshmap?catalog-design=c2141477-379b-432e-b47e-1c89600235a5"
-    
+
+  - title: "Get Started & Community"
+    children:
+      - title: "Meshery Newcomers Guide"
+        link: "https://meshery.io/community/newcomers/"
+      - title: "How to Contribute to Meshery (Contributing Overview)"
+        link: "https://docs.meshery.io/project/contributing"
+      - title: "Contributing to Meshery Using Git"
+        link: "https://docs.meshery.io/project/contributing/contributing-gitflow"
+      - title: "Layer5 Community Handbook"
+        link: "https://layer5.io/community/handbook"
+      - title: "Meshery Contributor Trainings (all recordings & slides)"
+        link: "https://meshery.io/talks-and-trainings/"
+      - title: "Join the Meshery Community on Slack"
+        link: "https://slack.meshery.io"
+      - title: "Meshery Community"
+        link: "https://meshery.io/community"
+      - title: "Layer5 Community"
+        link: "https://layer5.io/community"
+
   - title: "Self-paced Training: Meshery CLI"
     children:
       - title: "End-to-end Testing in Meshery CLI (recording)"
@@ -207,6 +226,42 @@ additionalAttributes:
     description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
-The Certified Meshery Contributor (CMC) certification validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. The certification consists of five distinct exams, each dedicated to one of Meshery's major architectural domains: Meshery Server, Meshery CLI, Meshery UI, Meshery Models, and Meshery Extensibility.
+The **Certified Meshery Contributor (CMC)** validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. It is the credential for developers who want to prove they can contribute meaningfully to Meshery - not just navigate it - across code implementation, testing, integration, and optimization.
 
-The target audience for this exam is developers with intermediate coding skills with Go, React, and OpenAPI schemas, who have experience contributing to Meshery's codebase. This certification validates an individual's ability to contribute meaningfully to project development, including code implementation, testing, integration, and optimization.
+## What the CMC validates
+
+The certification is made up of **five distinct exams**, each dedicated to one of Meshery's major architectural domains and each weighted equally at **20%** toward your overall result:
+
+| Domain | What it covers |
+| --- | --- |
+| **Contributing to Meshery Server** | Self-documenting errors and error codes, MeshKit eventing (Notification Center) and log handling, and schema-driven development. |
+| **Contributing to Meshery CLI** | User-centered command design, Cobra (Go) command categories, and end-to-end testing with BATS. |
+| **Contributing to Meshery UI** | Schema-driven UI components (RJSF), the Sistent design system, Redux state management, and end-to-end testing with Playwright. |
+| **Contributing to Meshery Models** | Models as units of packaging, and defining new models through Components, Relationships, and Connections. |
+| **Understanding Meshery Extensibility** | Extension points - Adapters, Providers, UI and Server plugins, and APIs - and the patterns for extending Meshery safely. |
+
+Passing all five earns the certification. Each domain is scored independently and weighted at 20%, producing a holistic composite score that is also used for recertification tracking.
+
+## Who it is for
+
+The CMC is aimed at developers with **intermediate coding skills in Go, React, and OpenAPI schemas** who already have some experience working in Meshery's codebase. You will get the most from it if you are comfortable reading and writing Go, working with a React/Redux front end, and reasoning about schema-driven APIs. If you are brand new to the project, start with the [Meshery Newcomers Guide](https://meshery.io/community/newcomers/) and make a few contributions before attempting the exams.
+
+## What you will gain
+
+- **Formal recognition** as a contributor who can ship real, reviewed changes to Meshery.
+- **Breadth across the stack** - server, CLI, UI, models, and extensibility - rather than familiarity with a single area.
+- A **credential valid for 24 months**, backed by the Meshery Authors, that signals readiness to take on maintainer-track work.
+
+## Recommended preparation path
+
+1. **Confirm your fundamentals.** Work through the domain documentation in the **Prerequisites** section below - it maps one-to-one to the five exam domains. Each group is the source material the questions draw from, so treat it as your primary study list.
+2. **Watch the self-paced trainings.** The **Resources** section links the full [Meshery Contributor Trainings](https://meshery.io/talks-and-trainings/) catalog - recordings and slides for CLI, UI, Server, Models, CI/CD, and Docs. These walk through the same workflows the exams assess.
+3. **Contribute for real.** Nothing prepares you better than opening a pull request. Pick a good-first-issue, follow the [Contributing Guide](https://docs.meshery.io/project/contributing), and get it reviewed.
+
+## Effort and expectations
+
+Plan for genuine study time rather than a quick sitting. Because there are five independent exams, you can prepare for and attempt them in the order that fits your strengths - many contributors start with the domain closest to their day-to-day work and build from there. You are allowed **up to three retakes per exam**, so a single off day on one domain will not cost you the certification.
+
+## Where to get help
+
+Questions about the program, the exams, or preparing to contribute are welcome in the community. Join the [Meshery Community on Slack](https://slack.meshery.io), explore the [Layer5 Community Handbook](https://layer5.io/community/handbook), or connect through the [Meshery](https://meshery.io/community) and [Layer5](https://layer5.io/community) community pages.
