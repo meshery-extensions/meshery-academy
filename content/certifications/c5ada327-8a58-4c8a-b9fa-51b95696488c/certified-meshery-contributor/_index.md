@@ -226,7 +226,7 @@ additionalAttributes:
     description: "The overall certification requires passing all five, with each domain weighted at 20% toward a holistic score for recertification tracking."
 
 ---
-The **Certified Meshery Contributor (CMC)** validates technical proficiency in contributing to the Meshery open source project through written, performance-based assessments. It is the credential for developers who want to prove they can contribute meaningfully to Meshery - not just navigate it - across code implementation, testing, integration, and optimization.
+The **Certified Meshery Contributor (CMC)** validates technical proficiency in contributing to the Meshery open-source project through written, performance-based assessments. It is the credential for developers who want to prove they can contribute meaningfully to Meshery - not just navigate it - across code implementation, testing, integration, and optimization.
 
 ## What the CMC validates
 

@@ -175,8 +175,14 @@ and the markdown body becomes `detailedDescription`. There is no theme template 
 per-item `description` on `prerequisiteKnowledge` / `relatedResources` entries - only `title`,
 `link`, and nested `children` are structurally consumed - so put explanatory prose in the body,
 not in unrendered item fields. `additionalAttributes` items do render `title`/`value`/`description`.
-The local `make build` produces `index.html` only; the JSON output format is what the platform
-uses, so validate frontmatter by confirming the build succeeds and the body renders.
+The local `make build` emits `index.html` (plus RSS) only - the effective outputs are
+HTML/RSS, so there is no local `index.json` to inspect; the registry JSON is produced
+downstream when the platform pulls content (see the `layer5io/academy-build` step) through
+the theme's `*.json.html` serializers. Those serializers read snake_case keys
+(`prerequisite_knowledge`, `related_resources`, `additional_attributes`), so a camelCase key
+builds cleanly but serializes as null - a green body render does not prove the registry
+payload. Validate frontmatter by confirming the build succeeds, the body renders, and the
+touched keys match what the theme serializers read.
 
 ## Contribution Guidelines
 
