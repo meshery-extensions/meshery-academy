@@ -93,7 +93,7 @@ prerequisiteKnowledge:
     - title: "Contributing to Model Relationships"
       link: "https://docs.meshery.io/project/contributing/contributing-relationships"
     - title: "Contributing to Models Quick Start"
-      link: "https://docs.meshery.io/project/contributing/contributing-models-quick-start"
+      link: "https://docs.meshery.io/project/contributing/models/contributing-models-quick-start"
     - title: "Contributing to Meshery Policies"
       link: "https://docs.meshery.io/project/contributing/contributing-policies"
   
