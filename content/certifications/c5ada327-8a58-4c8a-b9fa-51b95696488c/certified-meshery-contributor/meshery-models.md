@@ -659,7 +659,7 @@ The Meshery Models examination verifies contributor understanding of one of Mesh
 
 The exam covers a variety of topics, including:
 
-- [Contributing to Models Quick Start](https://docs.meshery.io/project/contributing/contributing-models-quick-start)
+- [Contributing to Models Quick Start](https://docs.meshery.io/project/contributing/models/contributing-models-quick-start)
 - [Contributing to Meshery Models](https://docs.meshery.io/project/contributing/contributing-models)
 - [Contributing to Model Components](https://docs.meshery.io/project/contributing/contributing-components)
 - [Contributing to Model Relationships](https://docs.meshery.io/project/contributing/contributing-relationships)
