@@ -45,6 +45,14 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Cache Hugo image pipeline
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: ${{ runner.os }}-hugo-gen-${{ hashFiles('go.sum', 'package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-gen-
+
       - name: Install dependencies
         run: make setup
 

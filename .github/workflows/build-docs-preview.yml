@@ -85,6 +85,15 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Cache Hugo image pipeline
+        if: github.event.action != 'closed'
+        uses: actions/cache@5a4e84d0c6b65dc4d2fc9d6c0c7a4749bdfebd84c6 # v4.2.2
+        with:
+          path: resources/_gen
+          key: ${{ runner.os }}-hugo-gen-${{ hashFiles('go.sum', 'package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-gen-
+
       - name: Install dependencies
         if: github.event.action != 'closed'
         run: |
