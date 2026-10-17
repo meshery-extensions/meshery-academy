@@ -21,6 +21,12 @@ module:
     # used to source the base theme for academy.
     - path: github.com/layer5io/academy-theme
       disable: false
+  mounts:
+    - source: assets
+      target: assets
+
+    - source: content
+      target: assets/contentimg
 
 security:
   node:
