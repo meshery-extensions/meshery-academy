@@ -872,7 +872,7 @@ questions:
         isCorrect: true
   - id: "q66"
     text: "Before submitting a PR, it is recommended to locally build, test your changes, define test scenarios, and document their outcome."
-    type: "singe-answer"
+    type: "single-answer"
     marks: 2
     options:
       - id: "true"

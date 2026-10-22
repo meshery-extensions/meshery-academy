@@ -10,7 +10,7 @@ questions:
   - id: "q1"
     text: "What is the primary command to build and run Meshery Server?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "make setup"
@@ -24,7 +24,7 @@ questions:
   - id: "q2"
     text: "Which database system does Meshery Server use for persisting data?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "PostgreSQL"
@@ -38,7 +38,7 @@ questions:
   - id: "q3"
     text: "All pull requests to the Meshery repository must be signed off. What is the `git` command flag to sign off on a commit?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "`--signoff` or `-s`"
@@ -52,7 +52,7 @@ questions:
   - id: "q4"
     text: "Meshery Server supports which types of APIs?"
     type: "multiple-answers"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "REST"
@@ -68,7 +68,7 @@ questions:
   - id: "q5"
     text: "According to the contribution guide, what is the required version of Go for developing on Meshery Server?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The latest stable version of Go."
@@ -82,7 +82,7 @@ questions:
   - id: "q6"
     text: "What is the purpose of the `make server` command?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To run the server in production mode."
@@ -96,7 +96,7 @@ questions:
   - id: "q7"
     text: "What is the primary function of the `NewEvent` builder in the Meshery Server codebase?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To create new user interface events."
@@ -126,7 +126,7 @@ questions:
   - id: "q9"
     text: "In the context of Meshery events, what does the 'ActedUpon' field represent?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The user who performed the action."
@@ -140,7 +140,7 @@ questions:
   - id: "q10"
     text: "How is an event's severity level specified?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Using the `.WithSeverity()` method on the event builder."
@@ -154,7 +154,7 @@ questions:
   - id: "q11"
     text: "What is the main benefit of using MeshKit errors over standard Go errors in Meshery?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "They are faster to create."
@@ -184,7 +184,7 @@ questions:
   - id: "q13"
     text: "How do you create a new MeshKit error in code?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "errors.New(\"...\")"
@@ -198,7 +198,7 @@ questions:
   - id: "q14"
     text: "Meshery Server log level can be configured at runtime by changing the env variable `LOG_LEVEL`. The default setting for the `LOG_LEVEL` is 4 (Info)."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -208,7 +208,7 @@ questions:
   - id: "q15"
     text: "What is the primary CI/CD platform used for Meshery's build and release process?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Jenkins"
@@ -222,7 +222,7 @@ questions:
   - id: "q16"
     text: "What triggers the 'edge' channel build and release workflow?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Creating a pull request."
@@ -236,7 +236,7 @@ questions:
   - id: "q17"
     text: "Which tool is used to automate the creation of the Meshery CLI release artifacts like binaries?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Make"
@@ -250,7 +250,7 @@ questions:
   - id: "q18"
     text: "What is the difference between the `stable` and `edge` release channels?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Stable releases are from the `master` branch, while edge releases are from feature branches."
@@ -264,7 +264,7 @@ questions:
   - id: "q19"
     text: "What is the primary purpose of using OpenAPI schemas in Meshery?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To define the structure of the database."
@@ -278,7 +278,7 @@ questions:
   - id: "q20"
     text: "True or False: Schemas in Meshery are primarily used for backend data validation and implication on Meshery UI or its user experience."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -288,7 +288,7 @@ questions:
   - id: "q21"
     text: "The `make error` command is used to:"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Run a battery of Meshery Server error handling tests."
@@ -300,7 +300,7 @@ questions:
   - id: "q22"
     text: "The Meshery project has a single `make` target."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -325,7 +325,7 @@ questions:
   - id: "q24"
     text: "In a MeshKit error code, what does the component part of the code signify?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The severity of the error."
@@ -339,7 +339,7 @@ questions:
   - id: "q25"
     text: "What is the purpose of the `DOCKER_USERNAME` and `DOCKER_PASSWORD` secrets in the GitHub Actions workflow?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To pull base images from Docker Hub."
@@ -353,7 +353,7 @@ questions:
   - id: "q26"
     text: "Which file defines the models and their relationships for Meshery's schema-driven approach?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The GraphQL schema file (`.graphql`)."
@@ -367,7 +367,7 @@ questions:
   - id: "q27"
     text: "When contributing to Meshery Server, which Go modules proxy should be used?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "proxy.golang.org"
@@ -381,7 +381,7 @@ questions:
   - id: "q28"
     text: "The 'Description' field of a Meshery event should be:"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "A very long and detailed technical explanation."
@@ -395,7 +395,7 @@ questions:
   - id: "q29"
     text: "When should a developer create a new MeshKit error code versus reusing an existing one?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Always create a new one for every error."
@@ -409,7 +409,7 @@ questions:
   - id: "q30"
     text: "In the context of the CI pipeline, what does 'goreleaser check' do?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "It checks if the Go version is correct."
@@ -423,7 +423,7 @@ questions:
   - id: "q31"
     text: "Where are the GraphQL handlers for the Meshery Server API located in the source code?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "/graphql/handlers"
@@ -437,7 +437,7 @@ questions:
   - id: "q32"
     text: "If you need to add a new dependency to Meshery Server, what command should you run after modifying the `go.mod` file?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "go get"
@@ -451,7 +451,7 @@ questions:
   - id: "q33"
     text: "True or False: Events are only tracked for actions performed through the Meshery UI."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -461,7 +461,7 @@ questions:
   - id: "q34"
     text: "The 'Probable Cause' field in a MeshKit error should explain:"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The user's mistake."
@@ -475,7 +475,7 @@ questions:
   - id: "q35"
     text: "How are Docker images for edge releases tagged?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "With the version number (e.g., `v0.6.1`)."
@@ -489,7 +489,7 @@ questions:
   - id: "q36"
     text: "In schema-driven development, what is a 'model'?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "A machine learning model for predicting failures."
@@ -517,7 +517,7 @@ questions:
   - id: "q38"
     text: "Which method on the event builder can be used to specify the system on which the event was generated?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: ".FromComponent()"
@@ -531,7 +531,7 @@ questions:
   - id: "q39"
     text: "Which of the following is NOT a valid severity level for a MeshKit error?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Alert"
@@ -545,7 +545,7 @@ questions:
   - id: "q40"
     text: "Pull requests involving changes to Meshery Server run a GitHub Action workflow to analyze error codes and add new error codes, if needed."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -584,7 +584,7 @@ questions:
   - id: "q43"
     text: "The final step in creating and dispatching a Meshery event is to call which method?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: ".Send()"
@@ -598,7 +598,7 @@ questions:
   - id: "q44"
     text: "What is the purpose of the 'Suggested Remedy' field in a MeshKit error?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To provide a link to the documentation."
@@ -612,7 +612,7 @@ questions:
   - id: "q45"
     text: "True or False: The build and release process generates binaries for Windows, macOS, and Linux."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -622,7 +622,7 @@ questions:
   - id: "q46"
     text: "How are relationships between different models (e.g., a user has many connections) defined in Meshery's schema-driven approach?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Through foreign keys in the database."
@@ -636,7 +636,7 @@ questions:
   - id: "q47"
     text: "What is the purpose of the `golangci-lint` tool in the Meshery project?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To compile the Go code."
@@ -664,7 +664,7 @@ questions:
   - id: "q49"
     text: "True or False: It is acceptable to create a MeshKit error with only an error code and leave all other fields empty."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -674,7 +674,7 @@ questions:
   - id: "q50"
     text: "Which GitHub event triggers the `stable` release workflow?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "push"
@@ -702,7 +702,7 @@ questions:
   - id: "q52"
     text: "What is the purpose of the `.WithDescription()` method in the Meshery event builder?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To provide a machine-readable ID for the event."
@@ -716,7 +716,7 @@ questions:
   - id: "q53"
     text: "A MeshKit error code is typically represented as a:"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "String"
@@ -730,7 +730,7 @@ questions:
   - id: "q54"
     text: "If a CI build fails, where should a contributor look first for detailed logs and error messages?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "In the Meshery Discuss forum."
@@ -759,7 +759,7 @@ questions:
   - id: "q56"
     text: "When running Meshery Server locally for development, what is the default port it listens on?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "8080"
@@ -773,7 +773,7 @@ questions:
   - id: "q57"
     text: "True or False: Events are stored permanently in the Meshery database and are never deleted."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -783,7 +783,7 @@ questions:
   - id: "q58"
     text: "When logging an error, what is the recommended practice for handling MeshKit errors?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Log the entire MeshKit error object."
@@ -797,7 +797,7 @@ questions:
   - id: "q59"
     text: "What is the difference between the commands `make server` and `mesheryctl system start`?"
     type: "multiple-answers"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "`make server` builds Meshery from source and runs it on your local OS."
@@ -854,7 +854,7 @@ questions:
   - id: "q63"
     text: "A developer encounters a database connection error. Which MeshKit severity level would be most appropriate?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "Info"
@@ -868,7 +868,7 @@ questions:
   - id: "q64"
     text: "The release workflow pushes Docker images to which container registry?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "GitHub Container Registry (ghcr.io)"
@@ -882,7 +882,7 @@ questions:
   - id: "q65"
     text: "The 'definition' of a model schema is typically found in which file?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "A Go file containing the struct."
@@ -896,7 +896,7 @@ questions:
   - id: "q66"
     text: "What is the purpose of the `WithGRAFANA_TOKEN` make variable when running the server?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "To authenticate with a Prometheus instance."
@@ -910,7 +910,7 @@ questions:
   - id: "q67"
     text: "When creating a new event, the `UserID` typically corresponds to which entity?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The ID of the user performing the action."
@@ -924,7 +924,7 @@ questions:
   - id: "q68"
     text: "How would you add a new MeshKit error to an existing error to provide more context?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "err := oldErr + newErr"
@@ -938,7 +938,7 @@ questions:
   - id: "q69"
     text: "What does the `actions/setup-go` step in Meshery's CI workflow do?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "It runs `go mod download`."
@@ -952,7 +952,7 @@ questions:
   - id: "q70"
     text: "True or False: A contributor needs to manually update the component definition schemas when adding a new feature."
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "True"
@@ -993,7 +993,7 @@ questions:
   - id: "q73"
     text: "If a function can return both a standard Go error and a MeshKit error, how should the function signature's return values be declared?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "(result, *meshkit.Error)"
@@ -1007,7 +1007,7 @@ questions:
   - id: "q74"
     text: "The version number for a stable release (e.g., `v0.9.1`) is determined by what?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "The date of the release."
@@ -1021,7 +1021,7 @@ questions:
   - id: "q75"
     text: "What command generates the Go models and resolvers from the GraphQL schema?"
     type: "single-answer"
-    marks: 1
+    marks: 2
     options:
       - id: "a"
         text: "go generate ./..."

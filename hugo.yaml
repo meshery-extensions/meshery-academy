@@ -8,6 +8,16 @@ markup:
     renderer:
       unsafe: true
 
+
+ignoreFiles:
+  - '.*draft-questions.*'
+  - '.*sample-test-format.*'
+
+
+outputs:
+  section: [HTML, print, RSS, JSON]
+  page: [HTML, JSON]
+
 params:
   academy:
     domain: cloud.meshery.io

@@ -3,7 +3,7 @@ title: "Meshery Models Contributor Exam"
 type: "test"
 layout: "test"
 maxAttempts: 3
-timeLimit: 25
+timeLimit: 30
 numberOfQuestions: 25
 passPercentage: 70
 questions:                     
@@ -68,7 +68,7 @@ questions:
   - id: "q5"                       
     text: "A Component, the fundamental building block of a Meshery Model, represents and defines the infrastructure under management."
     type: "single-answer"            
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -106,7 +106,7 @@ questions:
   - id: "q8"                       
     text: "Which attributes are essential for uniquely identifying a specific Meshery Component definition?"
     type: "multiple-answers"             
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "kind (The genre of component, e.g., Pod)"
@@ -122,7 +122,7 @@ questions:
   - id: "q9"                       
     text: "If a contributor bundles their custom components and relationships into a custom model and imports it into their local Meshery deployment, the component definitions will be registered in the Meshery Server’s registry and available for use."
     type: "single-answer"            
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -132,7 +132,7 @@ questions:
   - id: "q10"                       
     text: "Meshery Relationships function to explain the connection and interaction rules between components to aid visualization, comprehension, and to affect the configuration of associated components."
     type: "single-answer"            
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -142,7 +142,7 @@ questions:
   - id: "q11"                       
     text: "When defining a Hierarchical relationship, the purpose of the 'from' field and the 'to' field is to identify the parent and child components."
     type: "single-answer"            
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -152,7 +152,7 @@ questions:
   - id: "q12"                       
     text: "Which properties must be consistent in casing (e.g., all lowercase or specific casing) when matching relationship targets to ensure accurate selection?"
     type: "multiple-answers"             
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "kind"
@@ -182,7 +182,7 @@ questions:
   - id: "q14"                       
     text: "What are the two primary fields used within a relationship selector definition to specify how data modification occurs during a component association (i.e., modifying the target component)?"
     type: "multiple-answers"             
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "mutatedRef"
@@ -253,7 +253,7 @@ questions:
   - id: "q19"                       
     text: "Which sets of capabilities primarily focus on UI interaction and visual rendering of components?"
     type: "multiple-answers"             
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Styling"
@@ -269,7 +269,7 @@ questions:
   - id: "q20"                       
     text: "A fully configured entity with detailed intentions based on a generic definition is known as a Declaration."
     type: "single-answer"            
-    marks: 1
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -542,7 +542,7 @@ questions:
   - id: "q42"
     text: "Model metadata includes which of the following identifying properties?"
     type: "multiple-answers"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "name"
@@ -582,7 +582,7 @@ questions:
   - id: "q45"
     text: "Which of the following are valid model metadata properties?"
     type: "multiple-answers"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "displayName"

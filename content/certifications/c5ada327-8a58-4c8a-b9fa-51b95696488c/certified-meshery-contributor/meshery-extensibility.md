@@ -80,7 +80,7 @@ questions:
   - id: "q6"
     text: "Meshery Adapters can extend Meshery's management capabilities in which of the following area(s)?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Lifecycle Management"
@@ -208,7 +208,7 @@ questions:
   - id: "q16"
     text: "What is a pitfall when two adapter instances of the same type are registered under the same name, using different network ports?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Meshery Server will fail to communicate with either adapter."
@@ -275,7 +275,7 @@ questions:
   - id: "q21"
     text: "According to Meshery's component statefulness classification, what is the persistence description for **Meshery Remote Providers**?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Stateless, due to transactional interfacing."
@@ -317,7 +317,7 @@ questions:
   - id: "q24"
     text: "Meshery Server uses a mechanism to proxy all requests to remote provider endpoints. These endpoints are dynamically determined and identified in which specific provider response?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "The /login endpoint response."
@@ -331,7 +331,7 @@ questions:
   - id: "q25"
     text: "What is the primary benefit of a Remote Provider offering **out-of-tree support** for Meshery extensions?"
     type: "multiple-answers"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "It allows the Meshery Server to be written in a different programming language."
@@ -374,7 +374,7 @@ questions:
   - id: "q28"
     text: "Remote Providers enforce identity with authentication and authorization. How do they communicate permissions back to Meshery Server for fine-grained access control?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "They return a simple boolean 'authenticated' flag."
@@ -416,7 +416,7 @@ questions:
   - id: "q31"
     text: "In order to collaborate in real-time, users must be logged into the same Meshery Server."
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Pluggable AuthZ"
@@ -458,7 +458,7 @@ questions:
   - id: "q34"
     text: "Meshery's extensible and fine-grained permission keys are assigned per user at time of session establishment. They are embedded into each of Meshery UI's pages and Javascript components. Because Meshery UI evaluates these keys client-side, these keys - from Meshery UI's perspective - are primarly used for purposes of enhancing user experience, not privilege enforcement."
     type: "single-answer"
-    marks: 4
+    marks: 2
     options:
       - id: "true"
         text: "True"
@@ -506,7 +506,7 @@ questions:
   - id: "q38"
     text: "Which of the following functionalities are enabled by Meshery's Remote Provider extensibility framework?"
     type: "multiple-answers"
-    marks: 4
+    marks: 2
     options:
       - id: "a"
         text: "Pluggable UI Functionality (out-of-tree components)."
@@ -550,7 +550,7 @@ questions:
   - id: "q41"
     text: "To fully customize the internals of an RJSF form within the Meshery UI, which specific React prop would be used to customize the body of the form?"
     type: "single-answer"
-    marks: 4
+    marks: 2
     options:
       - id: "a"
         text: "RJSFWrapperComponent"
@@ -564,7 +564,7 @@ questions:
   - id: "q42"
     text: "Meshery Server's REST API is typically available at port 9081/tcp. Remote Providers can extend Meshery's endpoints behind which specific API path?"
     type: "single-answer"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "/api/provider/"
@@ -578,7 +578,7 @@ questions:
   - id: "q43"
     text: "Meshery Server's GraphQL API supports which of the following operations?"
     type: "multiple-answers"
-    marks: 3
+    marks: 2
     options:
       - id: "a"
         text: "Queries (data retrieval)"
