@@ -168,19 +168,27 @@ The Certified Meshery Contributor Certification recognizes individuals who have 
 
 Certification pages (`type: "certification"`, an `_index.md` section) are consumed by the
 cloud.meshery.io academy registry, not by a local HTML template. The academy-theme partial
-`layouts/partials/learning-path.json.html` serializes the frontmatter to JSON: `competencies`,
-`objectives`, `audience`, `additionalAttributes`, and the full `prerequisiteKnowledge` /
-`relatedResources` trees are emitted raw via `jsonify` (so any nested field passes through Hugo),
-and the markdown body becomes `detailedDescription`. There is no theme template that renders a
-per-item `description` on `prerequisiteKnowledge` / `relatedResources` entries - only `title`,
-`link`, and nested `children` are structurally consumed - so put explanatory prose in the body,
-not in unrendered item fields. `additionalAttributes` items do render `title`/`value`/`description`.
-The local `make build` emits `index.html` (plus RSS) only - the effective outputs are
-HTML/RSS, so there is no local `index.json` to inspect; the registry JSON is produced
-downstream when the platform pulls content (see the `layer5io/academy-build` step) through
-the theme's `*.json.html` serializers. Those serializers read snake_case keys
-(`prerequisite_knowledge`, `related_resources`, `additional_attributes`), so a camelCase key
-builds cleanly but serializes as null - a green body render does not prove the registry
+`layouts/partials/learning-path.json.html` serializes Hugo frontmatter into JSON.
+
+Note that Hugo frontmatter and the generated registry JSON use different naming conventions for
+different stages; they are not interchangeable frontmatter keys:
+- **Hugo frontmatter (source YAML)** uses snake_case source keys:
+  `prerequisite_knowledge`, `related_resources`, and `additional_attributes`.
+- **Generated JSON (output)** exposes the corresponding camelCase properties:
+  `prerequisiteKnowledge`, `relatedResources`, and `additionalAttributes`.
+
+In the generated JSON, `competencies`, `objectives`, `audience`, `additionalAttributes`, and the full
+`prerequisiteKnowledge` / `relatedResources` trees are emitted raw via `jsonify` (so any nested field
+passes through Hugo), and the markdown body becomes `detailedDescription`. There is no theme template
+that renders a per-item `description` on `prerequisite_knowledge` / `related_resources` entries - only
+`title`, `link`, and nested `children` are structurally consumed - so put explanatory prose in the
+body, not in unrendered item fields. `additional_attributes` items do render
+`title`/`value`/`description`. The local `make build` emits `index.html` (plus RSS) only - the
+effective outputs are HTML/RSS, so there is no local `index.json` to inspect; the registry JSON is
+produced downstream when the platform pulls content (see the `layer5io/academy-build` step) through
+the theme's `*.json.html` serializers. Because those serializers read snake_case keys
+(`prerequisite_knowledge`, `related_resources`, `additional_attributes`), using camelCase keys in
+frontmatter builds cleanly but serializes as null - a green body render does not prove the registry
 payload. Validate frontmatter by confirming the build succeeds, the body renders, and the
 touched keys match what the theme serializers read.
 
